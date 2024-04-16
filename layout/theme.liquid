@@ -1,0 +1,317 @@
+ 
+      {% unless request.path contains '/account' %} {% assign restrict_page = true %} {% endunless %} 
+      {% if shop.metafields.adv_reg.noFraming == 'on' %} {% assign restrict_page = true %}{% endif %}
+      {% if shop.metafields.adv_reg.useBlacklist == 'on' %}
+        {% assign restrict_page = false %} 
+        {% assign blockPages = shop.metafields.adv_reg.blockPageUrls | split: "|" %}
+          {% for url in blockPages %}
+            {% if request.path == url %}{% assign restrict_page = true %} {% endif %}
+          {% endfor %}   
+      {% else %}
+          {% assign exceptionUrls = shop.metafields.adv_reg.lockShopExceptionUrls | split: "|" %}
+          {% for url in exceptionUrls %}
+            {% if request.path == url %}{% assign restrict_page = false %} {% endif %}
+          {% endfor %}            
+      {% endif %}    
+      <!-- using block list: {{shop.metafields.adv_reg.useBlacklist}} -->
+      <!-- current request path:{{request.path}} -->
+      <!-- shop lock exceptions:{{shop.metafields.adv_reg.lockShopExceptionUrls }} -->
+      <!--restricting page: {{restrict_page}} -->
+      <!--shop locking: {{shop.metafields.adv_reg.lockShop}} -->
+      {% if request.path == '/challenge' %} {% assign restrict_page = false %} {% endif %}
+      {% if request.path == '/password' %} {% assign restrict_page = false %} {% endif %}
+      {% if request.path == '/account/recover' %} {% assign restrict_page = false %} {% endif %}
+      {% liquid 
+        assign is_allowed = true
+        assign required_tag = shop.metafields.adv_reg.lockRequireTagged 
+        if required_tag
+            assign is_allowed = false
+            if customer
+                for tag in customer.tags
+                    if tag == required_tag
+                        assign is_allowed = true
+                    endif
+                endfor
+            endif
+        endif
+        if is_allowed 
+            assign require_not_tag = shop.metafields.adv_reg.lockRequireNotTagged 
+             if require_not_tag
+                if customer
+                    for tag in customer.tags
+                        if tag == require_not_tag
+                            assign is_allowed = false
+                        endif
+                    endfor
+                endif
+            endif
+        endif
+        if customer == nil or is_allowed == false
+          assign customer_fail = true
+        endif
+        %} 
+        
+      {% if request.path contains '/tools/emails' %} {% assign restrict_page = false %} {% endif %}
+
+      {% if request.path contains '/account/reset' %} {% assign restrict_page = false %} {% endif %}
+      {% if request.path contains '/account/activate' %} {% assign restrict_page = false %} {% endif %}
+
+    {% if request.path contains '/reset-password' %} {% assign restrict_page = false %} {% endif %}
+     {% if request.path contains '/customer-account-password-reset' %} {% assign restrict_page = false %} {% endif %}
+    
+        
+      {% if shop.metafields.adv_reg.lockShop == 'on' and restrict_page and request.design_mode == false and  customer_fail %}
+        <!-- lock on -->
+
+            {% if shop.metafields.adv_reg.noFraming == 'on' %}
+                {% include 'advanced_registration_locked_page' %}
+            {% else %}
+            <!DOCTYPE html>
+<head>     
+
+<title>{{page_title}}</title>
+<meta name="title" content="{{ page_title | escape }}"> 
+{% if page_description %}
+  <meta name="description" content="{{ page_description | escape }}">
+{% endif %}
+{% if shop.metafields.adv_reg.showRegistrationPageFirst == 'on' %}
+<script>window.location='/account/register?checkout_url='+window.location.pathname</script>
+{% else %}
+<script>window.location='/account/login?checkout_url='+window.location.pathname</script>
+{% endif %}
+</head> 
+            {% endif %}
+      {% else %}<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="no-js ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html
+	class="no-js"
+	lang="{{ request.locale.iso_code }}"
+	data-headings-size="{{ settings.heading--base-size }}"
+>
+<!--<![endif]-->
+
+<head>
+<style>
+.variants-container .swatch label:not(.color) {
+    min-width: 89px;
+    min-height: 70px;
+}
+.variants-container .swatch .varian-images-c {
+    width: 55px!important;
+}
+.variants-container .swatch .swatch-element {
+    margin: 0 12px 15px 0;
+}
+.variants-container .swatch .tooltip {
+    opacity: 1;
+    visibility: visible;
+    left: 0 !important;
+    bottom: -23px !important;
+    width: 89px !important;
+    padding: 0px !important;
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: unset !important;
+}
+.variants-container .swatch .tooltip:after {
+    display: none !important;
+}
+</style>
+	<meta charset="utf-8">
+
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	{%- comment -%}DemoStoreRequirements{%- endcomment -%}
+
+	<title>
+		{{ page_title }}{% if current_tags %}{% assign meta_tags = current_tags | join: ', ' %} &ndash; {{
+		'general.meta.tags' | t: tags: meta_tags }}{% endif %}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t:
+		page: current_page }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}
+	</title>
+
+	<link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+
+	<script type="text/javascript">
+		document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+	</script>
+
+	{% if page_description %}
+	<meta name="description" content="{{ page_description | escape }}">
+	{% endif %}
+
+	{% if template contains 'product' %}
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	{% else %}
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	{% endif %}
+
+	{% render 'social-meta-tags' %}
+
+	<link rel="canonical" href="{{ canonical_url }}" />
+
+	<!-- CSS -->
+	{% render 'css-variables' %}
+
+	{% if template == 'index' %}
+	<link rel="preload" href="{{ 'theme-index.min.css' | asset_url }}" as="style">
+	{{ 'theme-index.min.css' | asset_url | stylesheet_tag }}
+	{% elsif template.name == 'collection' %}
+	<link rel="preload" href="{{ 'theme-collection.min.css' | asset_url }}" as="style">
+	{{ 'theme-collection.min.css' | asset_url | stylesheet_tag }}
+	{% elsif template == 'list-collections' %}
+	<link rel="preload" href="{{ 'theme-collection-list.min.css' | asset_url }}" as="style">
+	{{ 'theme-collection-list.min.css' | asset_url | stylesheet_tag }}
+	{% elsif template.name == 'product' %}
+	<link rel="preload" href="{{ 'theme-product.min.css' | asset_url }}" as="style">
+	{{ 'theme-product.min.css' | asset_url | stylesheet_tag }}
+	{% elsif template.name == 'blog' %}
+	<link rel="preload" href="{{ 'theme-blog.min.css' | asset_url }}" as="style">
+	{{ 'theme-blog.min.css' | asset_url | stylesheet_tag }}
+	{% elsif template == 'cart' %}
+	<link rel="preload" href="{{ 'theme-cart.min.css' | asset_url }}" as="style">
+	{{ 'theme-cart.min.css' | asset_url | stylesheet_tag }}
+	{% else %}
+	<link rel="preload" href="{{ 'theme.min.css' | asset_url }}" as="style">
+	{{ 'theme.min.css' | asset_url | stylesheet_tag }}
+	{% endif %}
+
+	{{ 'custom.css' | asset_url | stylesheet_tag }}
+
+	{% if settings.type_base_font contains 'Google' %}
+		{%- assign type_body_parts = settings.type_base_font | split: '_' -%}
+		{% capture bodyGoogleUrl %}{{ type_body_parts[1] }}:400,700{% endcapture %}
+		{{ '//fonts.googleapis.com/css?family=' | append: bodyGoogleUrl | stylesheet_tag }}
+	{% endif %}
+
+	{% if settings.type_header_font contains 'Google' %}
+		{% unless settings.type_header_font contains type_body_parts[1] and settings.type_header_font contains '700' %}
+			{%- assign type_heading_parts = settings.type_header_font | split: '_' -%}
+			{% capture headingGoogleUrl %}{{ type_heading_parts[1] }}:{{ type_heading_parts[2] }}{% endcapture %}
+			{{ '//fonts.googleapis.com/css?family=' | append: headingGoogleUrl | stylesheet_tag }}
+		{% endunless %}
+	{% endif %}
+
+	{% if settings.favicon != blank %}
+	<link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
+	{% endif %}
+
+	<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+
+	{{ content_for_header }}
+
+	<script type="text/javascript">
+		window.wetheme = {
+			name: 'Envy',
+			webcomponentRegistry: {
+                registry: {},
+				checkScriptLoaded: function(key) {
+					return window.wetheme.webcomponentRegistry.registry[key] ? true : false
+				},
+                register: function(registration) {
+                    if(!window.wetheme.webcomponentRegistry.checkScriptLoaded(registration.key)) {
+                      window.wetheme.webcomponentRegistry.registry[registration.key] = registration
+                    }
+                }
+            }
+        };
+	</script>
+
+	{% if template contains 'customers' %}
+	{{ "shopify_common.js" | shopify_asset_url | script_tag }}
+	{{ "customer_area.js" | shopify_asset_url | script_tag }}
+	{% endif %}
+
+	{% if template.name == 'article' %}
+		<script src="{{ 'textSlideshow.js' | asset_url }}" defer="defer"></script>
+	{% endif %}
+</head>
+
+<body id="{{ page_title | handle }}"
+	class="page-title--{{ page_title | handle }} {% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} flexbox-wrapper{% unless settings.animations_enabled %} animations-disabled{% endunless %} using-mouse">
+
+	{% if template != 'cart' and settings.cart-type == "drawer" or settings.cart-action == "drawer" %}
+		{% render 'cart-drawer' %}
+	{% endif %}
+
+	<div id="main-body" class="{% if template == 'search' %} search-template{% elsif template.name == 'collection' %} collection-template{% endif %}" data-editor-open="{{ request.design_mode }}">
+		<div class="no-js disclaimer container">
+			<p>{{ "general.homepage.javascript_disabled" | t }}</p>
+		</div>
+
+		<div id="slideout-overlay"></div>
+
+		{% sections 'header-group' %}
+
+		<main id="main">
+
+			{{ content_for_layout }}
+
+		</main>
+
+		{% sections 'footer-group' %}
+	</div>
+
+	{% if settings.enable_verification_popup %}
+		{% render 'verification-popup' %}
+	{% endif %}
+
+	{% if settings.popup--enable %}
+		{% render 'popup' %}
+	{% endif %}
+
+	{% render 'back-to-top-button' %}
+
+	<script type="application/json" id="wetheme-global">
+		{
+			{% comment %}Translations that will be used in javascript section handling{% endcomment %}
+			"translations": {
+				"addToCart": {{ 'products.product.add_to_cart' | t | json }},
+				"added": {{ 'products.product.added' | t | json }},
+				"soldOut": {{ 'products.product.sold_out' | t | json }},
+				"unavailable": {{ 'products.product.unavailable' | t | json }},
+				"unavailable_with_option": {{ 'products.product.value_unavailable' | t: option_value: '[value]' | json }},
+				"makeASelection": {{ 'products.product.make_a_selection' | t | json }},
+				"loading": {{ 'collections.paginate.loading' | t | json }},
+				"showMore": {{ 'general.filters.show_more' | t | json }},
+				"showLess": {{ 'general.filters.show_less' | t | json }},
+				"saving": {{ 'products.general.saving' | t | json }},
+				"products": {{ 'general.search.products' | t | json }},
+				"pages": {{ 'general.search.pages' | t | json }},
+				"collections": {{ 'general.search.collections' | t | json }},
+				"articles": {{ 'general.search.articles' | t | json }},
+				"suggestions": {{ 'general.search.suggestions' | t | json }},
+				"loading": {{ 'collections.paginate.loading' | t | json }},
+				"no_results_html": {{ 'general.search.no_results_html' | t | json }},
+				"view_all": {{ 'general.search.view_all' | t | json }},
+				"clear": {{ 'general.search.clear' | t | json }},
+				"cart_title": {{ 'cart.general.title' | t | json }},
+				"cart_subtotal": {{ 'cart.general.subtotal' | t | json }},
+				"added_to_cart": {{ 'cart.general.added_to' | t | json }},
+				"removed_from_cart": {{ 'cart.general.removed_from' | t | json }},
+				"cart_item": {{ 'cart.general.item' | t | json }},
+				"slide": {{ 'general.slider.slide' | t | json }},
+				"pause": {{ 'general.slider.pause' | t | json }},
+				"search_found": {{ 'general.search.search_found' | t | json }},
+				"none_found": {{ 'general.search.none_found' | t | json }},
+				"search_result": {{ 'general.search.search_result' | t | json }},
+				"search_result_plural": {{ 'general.search.search_result_plural' | t | json }},
+        "days": {{ 'general.time.days' | t | json }},
+        "hours": {{ 'general.time.hours' | t | json }},
+        "minutes": {{ 'general.time.minutes' | t | json }},
+        "seconds": {{ 'general.time.seconds' | t | json }}
+			},
+			"moneyFormat": {{ shop.money_format | json }}
+		}
+	</script>
+	{% render 'structured-data' %}
+  	<script defer type="module" src="{{ 'theme.min.js' | asset_url }}"></script>
+	<script defer src="{{ 'safeLoadScripts.js' | asset_url }}"></script>
+	<script defer nomodule src="{{ 'theme.legacy.min.js' | asset_url }}"></script>
+</body>
+
+</html>{% endif %}

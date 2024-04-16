@@ -1,0 +1,192 @@
+/*
+
+Please add any custom CSS code in here, it will be easier to transfer if updating themes.
+
+We highly recommend labelling changes, or App installs, so these can also be updated or removed as needed.
+
+*/
+
+
+.site-header__logo-image { 
+  background-color: transparent !important; animation: none !important;
+}
+.swatch .swatch-element
+{
+  display:inline-grid;
+      float: inherit !important;
+}
+
+.custom_swatch{
+  margin: 0 0px 0px 0px;
+}
+.variant_custom{
+  padding: 5px 15px 20px 15px !important;
+}
+.swatch-title{
+  margin-bottom: 15px;
+}
+.tooltip{
+  left:0 !important;
+  bottom: 27px !important;
+  width: 110px !important;
+  padding: 6px !important;
+}
+.tooltip:before{
+  bottom:0 !important;
+  height:100% !important;
+}
+.product_variant_title
+{
+ overflow:auto;
+  height:100%;
+}
+.price-message-link{color:#ff6565 !important;}
+
+#main-navigation-wrapper .nav>li .clicked-open .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.varian-images-c{
+  width:40px!important;
+}
+
+.jdgm-all-reviews-text--style-branded .jdgm-all-reviews-rating{
+  height:20px! important;
+}
+.jdgm-all-reviews-text--style-branded .jdgm-all-reviews-rating__score{
+  font-size:20px! important;
+}
+.media_size_column 
+{
+    display: flex;
+    max-width: 50%;
+}
+
+.media_size_column .product-medias
+{
+    width: 84%;
+    flex: 0 0 84%;
+    max-width: 84%;
+}
+.thumbnail_slider
+{
+  height: 100%;
+}
+.media_size_column .product-single__thumbnails
+{
+    flex: 0 0 20%;
+    max-width: 20%;
+    padding: 0 !important;
+}
+.thumbnail_img {
+    margin: 5px 0;
+}
+
+.media_size_column.loading{
+  position: relative;
+  width: 700px;
+  height: 500px;
+  overflow:hidden;
+}
+
+.media_size_column.loading:before {
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #000;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    z-index: 2;
+}
+
+.media_size_column.loading:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index:1;
+}
+/* .thumbnail_slider .slick-list 
+{
+    height: 310px!important;
+} */
+.thumbnail_slider button.slick-prev:before
+{
+    content: '\276E';
+    color: #000;
+}
+.thumbnail_slider button.slick-prev.slick-arrow 
+{
+    top: -20px;
+    transform: rotate(90deg);
+    left: 50%;
+}
+.thumbnail_slider button.slick-next.slick-arrow {
+    top: unset;
+    left: 50%;
+    transform: rotate(90deg);
+}
+
+.thumbnail_slider .slick-next:before 
+{
+    content: '\276F';
+    color: #000;
+    padding-left: 11px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+@media (max-width: 767px){
+.media_size_column .product-single__thumbnails {
+  flex: 0 0 20%;
+    max-width: 100%;
+    padding: 20px!important;
+}
+/*   .prd_media
+  {
+      width: 215px!important;
+  } */
+  .media_size_column {
+       max-width: 100%;
+}
+/*   .media_size_column .product-single__thumbnails
+  {
+      display: none;
+  }
+  
+  .media_size_column .product-medias
+  {
+     width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  } */
+}
+(min-width: 992px){
+	.header-content .logo-placement-within-wrapper__item:nth-child(1){
+		order: 2;
+	}
+	.header-content .logo-placement-within-wrapper__item:nth-child(1) .localization-selectors--left{
+		justify-content: center !important;
+	}
+	.header-content .logo-placement-within-wrapper__item:nth-child(2){
+		order: 1;
+	}
+	.header-content .logo-placement-within-wrapper__item:nth-child(2) .site-header__logo{
+		justify-content: left !important;
+	}
+	.header-content .logo-placement-within-wrapper__item:nth-child(3){
+		order: 3;
+	}
+}

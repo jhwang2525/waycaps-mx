@@ -1,0 +1,465 @@
+{{ 'section-announcement-bar.min.css' | asset_url | stylesheet_tag }}
+<style>
+  .notification-bar__wrapper,
+  .notification-bar__wrapper * {
+    {% liquid
+      case section.settings.announcement-font
+        when 'heading'
+          assign announcement_font_family = 'var(--header-font-stack)'
+          assign announcement_font_weight = 'var(--header-font-weight)'
+          assign announcement_font_style = 'var(--header-font-style)'
+          assign announcement_text_case = 'var(--header-font-transform)'
+          assign announcement_letter_spacing = 'var(--header-letter-spacing)'
+          assign announcement_line_height = 'var(--subheading-line-height)'
+        when 'subheading'
+          assign announcement_font_family = 'var(--subheading-font-stack)'
+          assign announcement_font_weight = 'var(--subheading-font-weight)'
+          assign announcement_font_style = 'var(--subheading-font-style)'
+          assign announcement_text_case = 'var(--subheading-font-transform)'
+          assign announcement_letter_spacing = 'var(--header-letter-spacing)'
+          assign announcement_line_height = 'var(--subheading-line-height)'
+
+        when 'body'
+          assign announcement_font_family = 'var(--body-font-stack)'
+          assign announcement_font_weight = 'var(--body-font-weight)'
+          assign announcement_font_style = 'var(--body-font-style)'
+          assign announcement_text_case = 'none'
+          assign announcement_letter_spacing = 'normal'
+          assign announcement_line_height = 'normal'
+      endcase
+    %}
+
+    font-size: {{ section.settings.announcement-font-size }}px;
+    font-family: {{ announcement_font_family }};
+    font-weight: {{ announcement_font_weight }};
+    font-style: {{ announcement_font_style }};
+    text-transform: {{ announcement_text_case }};
+    letter-spacing: {{ announcement_letter_spacing }};
+    line-height: {{ announcement_line_height }};
+  }
+</style>
+
+{% assign social_links = blank %}
+{% if section.settings.social-enable %}
+  {% capture social_links %}
+    {% render 'social-links' %}
+  {% endcapture %} 
+{% endif %}
+
+{% if section.settings.menu != blank %}
+  {% capture menu %}
+    {% render 'nav--top' with section.settings.menu, class: 'nav-pills' %}
+  {% endcapture %}
+  <template data-template-id="mobile-topbar">
+    {% for link in section.settings.menu.links %}
+      <li>
+          <a
+            class="alt-focus mobile-menu-link{% if settings.navigation--font == 'subheading' %} type-subheading{% endif %}"
+            href="{{ link.url }}"
+            data-link="{{ forloop.index0 }}"
+          >
+            {{ link.title | escape }}
+          </a>
+      </li>
+    {% endfor %}
+  </template>
+{% endif %}
+
+{% if section.settings.enable_locale_selector or section.settings.enable_country_selector %}
+  {% capture locale %}
+    <div class="notification-bar__localization-selectors">
+      {% render 'localization-form', enable_locale_selector: section.settings.enable_locale_selector, enable_country_selector: section.settings.enable_country_selector %}
+    </div>
+  {% endcapture %}
+{% endif %}
+
+{% if social_links != blank or menu != blank or locale != blank %}
+  {% assign has_additional_content = true %}
+{% endif %}
+
+{% if section.blocks.size > 0 or has_additional_content %}
+
+  <style>
+    .notification-bar__wrapper {
+      background-color: {{ section.settings.notification-bar--background-color }};
+      color: {{ section.settings.notification-bar--text-color }};
+    }
+
+    .notification-bar .localization__list {
+      background-color: {{ section.settings.notification-bar--background-color }};
+    }
+
+    .notification-bar .localization__list li:hover,
+    .notification-bar .localization__list li[active],
+    .notification-bar .localization__list li[selected] {
+      background-color: {{ section.settings.notification-bar--text-color | color_modify: 'alpha', 0.1 }};
+    }
+
+    .notification-bar a,
+    .notification-bar a:hover,
+    .notification-bar a:focus,
+    .notification-bar__message .feather-chevron-left,
+    .notification-bar__message .feather-chevron-right {
+      color: {{ section.settings.notification-bar--text-color }};
+    }
+
+    .notification-bar__message ol.flex-control-nav.flex-control-paging a {
+      background-color: {{ section.settings.notification-bar--text-color | color_modify: 'alpha', 0.6 }};
+      width: 7px;
+      height: 7px;
+    }
+
+    .notification-bar__message ol.flex-control-nav.flex-control-paging a.flex-active {
+      background-color: {{ section.settings.notification-bar--text-color }};
+    }
+  </style>
+
+  <div
+    data-wetheme-section-type="announcement-bar"
+    data-wetheme-section-id="{{ section.id }}"
+    class="notification-bar__wrapper{% if section.blocks.size == 0 %} hide-m-down{% else %}{% if section.settings.multi_msg_nav %} multi-msg-nav-enabled{% endif %}{% endif %}"
+    data-selector="localization-form-offset-container"
+    style="padding-top:{{ section.settings.padding_top }}px;padding-bottom:{{ section.settings.padding_bottom }}px;"
+  >
+    <div class="notification-bar{% if has_additional_content %} notification-bar--with-content{% endif %}{% if section.settings.section_width == 'page' %} container-no-padding{% endif %}">
+      {% if has_additional_content %}
+        <div class="notification-bar__menu">
+          {% if menu %}
+            {{ menu }}
+          {% endif %}
+        </div>
+      {% endif %}
+
+      <div class="notification-bar__message">
+        {% if section.blocks.size > 1 %}
+          <div 
+            data-selector="flexslider-announcement-bar"
+            data-slider-id="{{ section.id }}"
+            data-slider-slide-time="5000"
+            data-slider-animation="fade"
+            data-slider-controls="false"
+            data-slider-arrows="{{ section.settings.multi_msg_nav }}"
+            data-slider-dots="true"
+            data-slider-pause-on-hover="true"
+            class="flexslider"
+          >
+
+            {% if section.settings.multi_msg_nav %}
+              <ul class="flex-direction-nav slider--{{ section.id }}">
+                <li class="flex-nav-prev">
+                  <button class="flex-direction-nav__button alt-focus flex-prev" aria-label="{{ 'general.slider.previous' | t }}" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                  </button>
+                </li>
+
+                <li class="flex-nav-next">
+                  <button class="flex-direction-nav__button alt-focus flex-next" aria-label="{{ 'general.slider.next' | t }}" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                  </button>
+                </li>
+              </ul>
+            {% endif %}
+
+            <ul class="slides{% if section.settings.multi_msg_nav %} arrows_enabled{% endif %}">
+              {% for block in section.blocks %}
+                {% if block.settings.announcement_text != blank %}
+                  <li {{ block.shopify_attributes }} data-slide-index="{{ forloop.index0 }}" class="slider-block--{{ block.id }}">
+                    {{ block.settings.announcement_text }}
+                  </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+
+            <div class="slider-pagination-container{% if section.settings.multi_msg_nav %} arrows_enabled{% endif %} slider--{{ section.id }}"></div>
+            
+          </div>
+        {% else %}
+          <div>
+            {% for block in section.blocks %}
+              {% if block.settings.announcement_text != blank %}
+                {{ block.settings.announcement_text }}
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+
+      {% if has_additional_content %}
+        <div class="notification-bar__right">
+          {{ locale }}
+          {{ social_links }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+{% endif %}
+
+{% schema %}
+{
+    "name": {
+        "en": "Announcement bar",
+        "de": "Ankündigungsleiste",
+        "es": "Barra de anuncios",
+        "fr": "Barre d'annonce",
+        "pt-PT": "Barra de anúncio"
+    },
+    "settings": [
+        {
+            "type": "color",
+            "id": "notification-bar--background-color",
+            "label": {
+                "en": "Announcement background",
+                "de": "Ankündigungshintergrund",
+                "es": "Fondo del anuncio",
+                "fr": "Contexte de l'annonce",
+                "pt-PT": "Fundo do anúncio"
+            },
+            "default": "#e3e3e3"
+        },
+        {
+            "type": "color",
+            "id": "notification-bar--text-color",
+            "label": {
+                "en": "Announcement text",
+                "de": "Ankündigungstext",
+                "es": "Texto del anuncio",
+                "fr": "Texte de l'annonce",
+                "pt-PT": "Texto do anúncio"
+            },
+            "default": "#333333"
+        },
+        {
+            "type": "link_list",
+            "id": "menu",
+            "label": "Menu",
+            "info": "This menu won't show dropdown items"
+        },
+        {
+            "type": "checkbox",
+            "id": "multi_msg_nav",
+            "label": {
+                "en": "Enable multiple message navigation",
+                "de": "Aktivieren Sie die Navigation durch mehrere Nachrichten",
+                "es": "Habilitar la navegación de mensajes múltiples",
+                "fr": "Activer la navigation dans plusieurs messages",
+                "pt-PT": "Ativar navegação de várias mensagens"
+            },
+            "default": true
+        },
+        {
+            "type": "checkbox",
+            "id": "social-enable",
+            "label": {
+                "en": "Show social media icons on desktop",
+                "de": "Social-Media-Symbole auf Desktop aktivieren",
+                "es": "Habilitar iconos de redes sociales en el escritorio",
+                "fr": "Activez les icônes des réseaux sociaux sur votre bureau",
+                "pt-PT": "Ativar ícones de redes sociais no ambiente de trabalho"
+            },
+            "default": true,
+            "info": {
+                "en": "Edit your social media settings and accounts in Theme settings",
+                "de": "Bearbeiten Sie Ihre sozialen Einstellungen und Konten in den Theme-Einstellungen.",
+                "es": "Edite sus ajustes de redes sociales y cuentas en la configuración del tema",
+                "fr": "Modifiez les paramètres de vos médias sociaux et de vos comptes dans les paramètres du Thème",
+                "pt-PT": "Edite as suas configurações e contas sociais nas configurações do Tema"
+            }
+        },
+        {
+          "type": "header",
+          "content": {
+            "en": "Country\/region selector",
+            "de": "Auswahl für Land\/Region",
+            "es": "Selector de país\/región",
+            "fr": "Sélecteur de pays\/région",
+            "pt-PT": "Seletor de país\/região"
+          },
+          "info": {
+            "en": "To add a country\/region, go to your [market settings.](\/admin\/settings\/markets)",
+            "de": "Gehe zu den [Markteinstellungen](\/admin\/settings\/markets), um ein Land \/ eine Region hinzuzufügen.",
+            "es": "Para agregar un país\/región, ve a tu [configuración de mercado.](\/admin\/settings\/markets)",
+            "fr": "Pour ajouter un pays\/une région, allez à vos [paramètres du marché.](\/admin\/settings\/markets)",
+            "pt-PT": "Para adicionar um país\/região, vá a [configurações de mercado.](\/admin\/settings\/markets)"
+          }
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_country_selector",
+          "label": {
+            "en": "Enable country\/region selector",
+            "de": "Auswahl für Land\/Region aktivieren",
+            "es": "Activar selector de país\/región",
+            "fr": "Activer le sélecteur de pays\/région",
+            "pt-PT": "Ativar seletor de país\/região"
+          },
+          "default": true
+        },
+        {
+          "type": "header",
+          "content": {
+            "en": "Language Selector",
+            "de": "Sprachauswahl",
+            "es": "Selector de idioma",
+            "fr": "Sélecteur de langue",
+            "pt-PT": "Seletor de Idioma"
+          },
+          "info": {
+            "en": "To add a language, go to your [language settings.](/admin/settings/languages)",
+            "de": "Gehen Sie zu Ihren [Spracheinstellungen](/admin/settings/languages), um eine Sprache hinzuzufügen.",
+            "es": "Para agregar un idioma, ve a tu[configuración de idioma](/admin/settings/languages)",
+            "fr": "Pour ajouter une langue, allez dans vos [paramètres de langue.](/admin/settings/languages).",
+            "pt-PT": "Para adicionar um idioma, aceda a [definições de idioma.](/admin/settings/languages)"
+          }
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_locale_selector",
+          "label": {
+            "en": "Enable language selector",
+            "de": "Sprachauswahl aktivieren",
+            "es": "Activar selector de idioma",
+            "fr": "Activer le sélecteur de langue",
+            "pt-PT": "Ativar seletor de idioma"
+          },
+          "default": true
+        },
+        {
+          "type": "header",
+          "content": {
+            "en": "Typography",
+            "fr": "Typographie",
+            "de": "Typographie",
+            "es": "Tipografía",
+            "pt-PT": "Tipografia"
+          }
+        },
+        {
+          "type": "select",
+          "id": "announcement-font",
+          "label": {
+            "en": "Style",
+            "fr": "Style",
+            "de": "Stil",
+            "es": "Estilo",
+            "pt-PT": "Estilo"
+          },
+          "default": "body",
+          "options": [
+            {
+              "value": "heading",
+              "label": {
+                "en": "Heading",
+                "de": "Überschrift",
+                "es": "Encabezado",
+                "fr": "Titre",
+                "pt-PT": "Título"
+              }
+            },
+            {
+              "value": "subheading",
+              "label": {
+                "en": "Subheading",
+                "de": "Unterüberschrift",
+                "es": "Subencabezado",
+                "fr": "Sous-rubrique",
+                "pt-PT": "Subtítulo"
+              }
+            },
+            {
+              "value": "body",
+              "label": {
+                "en": "Body",
+                "de": "Textkörper",
+                "es": "Texto principal",
+                "fr": "Corps de texte",
+                "pt-PT": "Corpo de texto"
+              }
+            }
+          ]
+        },
+        {
+          "type": "range",
+          "id": "announcement-font-size",
+          "min": 12,
+          "max": 22,
+          "step": 1,
+          "unit": {
+            "en": "px",
+            "de": "px",
+            "es": "px",
+            "fr": "px",
+            "pt-PT": "px"
+          },
+          "label": {
+            "en": "Size",
+            "fr": "Taille",
+            "de": "Größe",
+            "es": "Tamaño",
+            "pt-PT": "Tamanho"
+          },
+          "default": 16
+        },
+        {
+          "type": "header",
+          "content": "Section spacing"
+        },
+        {
+          "type": "select",
+          "id": "section_width",
+          "label": "Width",
+          "options": [
+            {
+              "value": "full",
+              "label": "Full width"
+            },
+            {
+              "value": "page",
+              "label": "Page width"
+            }
+          ],
+          "default": "full"
+        },
+        {
+          "type": "range",
+          "id": "padding_top",
+          "label": "Padding top",
+          "min": 0,
+          "max": 200,
+          "step": 2,
+          "unit": "px",
+          "default": 8
+        },
+        {
+          "type": "range",
+          "id": "padding_bottom",
+          "label": "Padding bottom",
+          "min": 0,
+          "max": 200,
+          "step": 2,
+          "unit": "px",
+          "default": 8
+        }
+    ],
+    "blocks": [
+      {
+        "type": "announcement",
+        "name": "Announcement",
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "announcement_text",
+            "label": "Text",
+            "default": {
+              "en": "<p>Announce something here</p>",
+              "de": "<p>Kündigen Sie hier etwas an</p>",
+              "es": "<p>Anuncie algo aquí</p>",
+              "fr": "<p>Annoncez quelque chose ici</p>",
+              "pt-PT": "<p>Anunciar algo aqui</p>"
+            }
+          }
+        ]
+      }
+    ]
+}
+{% endschema %}

@@ -1,0 +1,232 @@
+{%- if section.settings.show_product_recommendations %}
+    <div
+        class="product-recommendations"
+        data-product-id="{{ product.id }}"
+        data-limit="4"
+        data-recommendations-url="{{ routes.product_recommendations_url }}"
+        data-wetheme-section-type="template--product--recommandations"
+        data-wetheme-section-id="{{ section.id }}"
+    >
+
+        {%- if recommendations.products_count > 0 -%}
+            {% unless section.settings.product_recommendations_heading == blank %}
+                <div class="title-bar section-header-padding custom-font">
+                <h2>{{ section.settings.product_recommendations_heading }}</h2>
+                </div>
+            {% endunless %}
+
+            {% if section.settings.quick_view_enabled %}
+                {% render 'quick-view-drawer' with variant_has_label: section.settings.show_variant_labels %}
+            {% endif %}
+
+            <div class="row" data-section-id="{{ section.id }}">
+                {%- for product in recommendations.products -%}
+                    {% assign sold_out = true %}
+                    {% if product.available %}
+                        {% assign sold_out = false %}
+                    {% endif %}
+                    <div class="grid__item collection-image-anim wow fadeInUp col-md-3 col-6 indiv-product-wrapper{% cycle ' alpha mobile-clear tablet-clear', ' delay-1', ' mobile-clear tablet-clear delay-2', ' omega delay-3' %}">
+
+                      {%-
+                        render 'product-grid--no-blocks',
+                        liquidObject: product,
+                        quick_view_aspect_ratio: section.settings.quick-view-image-size,
+                        show_quick_view_on_mobile: section.settings.enable_on_mobile,
+                        quick_view_enabled: section.settings.quick_view_enabled,
+                        discount_display: section.settings.discount-display,
+                        description_enabled: section.settings.show_product_description,
+                        variant_labels_enabled: section.settings.show_variant_labels,
+                        show_sold_out_variants: section.settings.show_sold_out_variants,
+                        show_dynamic_checkout: section.settings.show_dynamic_checkout_button
+                      -%}
+
+                    </div>
+                {%- endfor -%}
+                </div>
+        {%- endif -%}
+    </div>
+{%- endif -%}
+    
+{% schema %}
+{
+    "name": {
+        "en": "Product recommendations",
+        "de": "Produktempfehlungen",
+        "es": "Recomendaciones de productos",
+        "fr": "Recommandations de produits",
+        "pt-PT": "Recomendações de produtos"
+    },
+    "class": "container product-recommendations-wrapper",
+    "settings": [
+        {
+            "type": "header",
+            "content": "General"
+        },
+        {
+            "type": "paragraph",
+            "content": {
+               "en": "Dynamic recommendations use order and product information to change and improve over time. [Learn more](https:\/\/help.shopify.com\/themes\/development\/recommended-products)",
+               "de": "Dynamische Empfehlungen nutzen Bestell- und Produktinformationen, um sich mit der Zeit zu verändern und zu verbessern. [Weitere Informationen](https:\/\/help.shopify.com\/themes\/development\/recommended-products)",
+               "es": "Las recomendaciones dinámicas usan información de pedidos y productos para cambiar y mejorar con el tiempo. [Más información](https:\/\/help.shopify.com\/themes\/development\/recommended-products)",
+               "fr": "Les recommandations dynamiques utilisent les informations sur les commandes et les produits pour changer et s'améliorer au fil du temps. [En savoir plus](https:\/\/help.shopify.com\/themes\/development\/recommended-products)",
+               "pt-PT": "As recomendações dinâmicas utilizam informações de encomenda e de produto para alterar e melhorar ao longo do tempo. [Saber mais](https:\/\/help.shopify.com\/themes\/development\/recommended-products)"
+            }
+        },
+        {
+          "type": "paragraph",
+          "content": "To change your grid image size go to Theme settings > Product grids > Grid image size"
+        },
+        {
+            "type": "checkbox",
+            "id": "show_product_recommendations",
+            "label": {
+                "en": "Show dynamic recommendations",
+                "de": "Dynamische Empfehlungen anzeigen",
+                "es": "Mostrar recomendaciones dinámicas",
+                "fr": "Montrer des recommandations dynamiques",
+                "pt-PT": "Mostrar recomendações dinâmicas"
+            },
+            "default": true
+        },
+        {
+            "type": "text",
+            "id": "product_recommendations_heading",
+            "label": {
+                "en": "Heading",
+                "de": "Überschrift",
+                "es": "Encabezado",
+                "fr": "Rubrique",
+                "pt-PT": "Título"
+            },
+            "default": {
+                "en": "You may also like",
+                "de": "Ihnen könnte auch gefallen",
+                "es": "También podría gustarle",
+                "fr": "Vous aimerez peut-être aussi",
+                "pt-PT": "Também poderá gostar de"
+            }
+        },
+        {
+            "type": "header",
+            "content": "Quick view"
+        },
+        {
+            "type": "checkbox",
+            "id": "quick_view_enabled",
+            "label": "Enable quick view",
+            "default": true
+        },
+        {
+            "type": "select",
+            "id": "quick-view-image-size",
+            "label": {
+                "en": "Image size",
+                "de": "Bildgröße",
+                "es": "Tamaño de la imagen",
+                "fr": "Taille de l'image",
+                "pt-PT": "Tamanho da imagem"
+            },
+            "default": "square",
+            "options": [
+                {
+                "value": "natural",
+                "label": {
+                    "en": "Natural",
+                    "fr": "Naturel",
+                    "de": "Natürlich",
+                    "es": "Natural",
+                    "pt-PT": "Natural"
+                }
+                },
+                {
+                "value": "square",
+                "label": {
+                    "en": "Square (1:1)",
+                    "fr": "Carré (1: 1)",
+                    "de": "Quadrat (1:1)",
+                    "es": "Cuadrado (1:1)",
+                    "pt-PT": "Quadrado (1:1)"
+                }
+                },
+                {
+                "value": "tall",
+                "label": {
+                    "en": "Tall (2:3)",
+                    "fr": "Grand (2: 3)",
+                    "de": "Groß (2:3)",
+                    "es": "Vertical (2:3)",
+                    "pt-PT": "Estreito (2:3)"
+                }
+                },
+                {
+                "value": "wide",
+                "label": {
+                    "en": "Wide (4:3)",
+                    "fr": "Large (4: 3)",
+                    "de": "Weit (4:3)",
+                    "es": "Ancho (4:3)",
+                    "pt-PT": "Largo (4:3)"
+                }
+                }
+            ]
+        },
+        {
+            "type": "radio",
+            "id": "discount-display",
+            "label": "Discount display",
+            "default": "hide",
+            "options": [
+                {
+                    "value": "percentage",
+                    "label": "Percentage"
+                },
+                {
+                    "value": "value",
+                    "label": "Value"
+                },
+                {
+                    "value": "hide",
+                    "label": "Hide"
+                }
+            ]
+        },
+        {
+            "type": "checkbox",
+            "id": "show_product_description",
+            "label": "Show product description",
+            "default": true
+        },
+        {
+            "type": "checkbox",
+            "id": "show_variant_labels",
+            "label": "Show variant labels",
+            "default": true
+        },
+        {
+            "type": "checkbox",
+            "id": "show_sold_out_variants",
+            "label": "Show out of stock variants",
+            "default": true,
+            "info": {
+                "en": "This setting only applies to products with a single set of variant options.",
+                "de": "Diese Einstellung gilt nur für Produkte mit einer einzigen Variantenoption.",
+                "es": "Esta configuración solo se aplica a los productos con un solo conjunto de opciones de variante.",
+                "fr": "Ce paramètre s'applique uniquement aux produits avec un seul ensemble d'options de variante.",
+                "pt-PT": "Esta configuração só se aplica a produtos com um único conjunto de opções de variante."
+            }
+        },
+        {
+            "type": "checkbox",
+            "id": "show_dynamic_checkout_button",
+            "label": "Show dynamic checkout button",
+            "default": true
+        },
+        {
+            "type": "checkbox",
+            "id": "enable_on_mobile",
+            "label": "Enable on small screen sizes",
+            "default": true
+        }
+    ]
+}
+{% endschema %}
