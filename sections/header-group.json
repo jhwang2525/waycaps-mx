@@ -1,1 +1,133 @@
-{"type":"header","name":"Header","sections":{"header":{"type":"header","blocks":{"content-0":{"type":"content","settings":{"mega-menu":"NEW ARRIVALS","mega_image_1":"shopify:\/\/shop_images\/Untitled_design_4.png","mega_image_header_1":"V1 - Solid Velcro Baseball Cap","mega_image_subheader_1":"DZ \/ $15.00","mega_image_link_1":"shopify:\/\/products\/regular-velcro-solid","mega_image_2":"shopify:\/\/shop_images\/Untitled_design_5.png","mega_image_header_2":"TC - 2 TONE","mega_image_subheader_2":"DZ\/ $36.00","mega_image_link_2":"shopify:\/\/products\/t-c-5panel-snap-back-split"}},"content-1":{"type":"content","settings":{"mega-menu":"PRODUCTS","mega_image_1":"shopify:\/\/shop_images\/Untitled_design_8.png","mega_image_header_1":"STM - SPONGE - SOLID","mega_image_subheader_1":"$18.00","mega_image_link_1":"shopify:\/\/products\/sponge-trucker-mesh-solid","mega_image_2":"shopify:\/\/shop_images\/Untitled_design_9.png","mega_image_header_2":"STM - Sponge - 2TONE","mega_image_subheader_2":"$18.00","mega_image_link_2":""}},"9aaab44d-addc-424e-a6f3-9c09a485a509":{"type":"content","settings":{"mega-menu":"BEST SELLER","mega_image_1":"shopify:\/\/shop_images\/best-seller.png","mega_image_header_1":"","mega_image_subheader_1":"Best Seller","mega_image_link_1":"shopify:\/\/collections\/best-seller","mega_image_2":"shopify:\/\/shop_images\/Untitled_design_11.png","mega_image_header_2":"","mega_image_subheader_2":"Beanines","mega_image_link_2":"shopify:\/\/collections\/beanie-2"}},"143e8020-44c6-4eef-ae52-54124fd135d1":{"type":"content","settings":{"mega-menu":"","mega_image_header_1":"","mega_image_subheader_1":"","mega_image_link_1":"","mega_image_header_2":"","mega_image_subheader_2":"","mega_image_link_2":""}},"f56a52b5-1c3c-4f27-860f-91b7b03e5d4a":{"type":"content","settings":{"mega-menu":"","mega_image_header_1":"","mega_image_subheader_1":"","mega_image_link_1":"","mega_image_header_2":"","mega_image_subheader_2":"","mega_image_link_2":""}}},"block_order":["content-0","content-1","9aaab44d-addc-424e-a6f3-9c09a485a509","143e8020-44c6-4eef-ae52-54124fd135d1","f56a52b5-1c3c-4f27-860f-91b7b03e5d4a"],"custom_css":["@media (min-width: 768px) {h6 {position: relative; top: 50px; } h5 {position: relative; top: 5rem; left: 40rem; }}",".search-show {display: none;}",".search {position: relative; right: 25rem; font-size: 18px;}","#text-account {position: relative; top: 72px; left: 28rem;}"],"settings":{"sticky_header":true,"overlay_header":false,"logo":"shopify:\/\/shop_images\/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Brown_and_Cream_Scrapbook_Curriculum_Vitae_A4_Document_2.png","logo_max_width":310,"logo_max_width_mobile":150,"sticky_header_logo":false,"search-enable":true,"label-enable":false,"icon-size":"18","cart-style":"shopping-cart","cart-number":"total","main_linklist":"mega-menu-1","nav-placement":"center"}},"announcement-bar":{"type":"announcement-bar","blocks":{"announcement-0":{"type":"announcement","settings":{"announcement_text":"<p>Vast inventory of blank hats are ready to ship in 1 ~2 business days!<\/p>"}}},"block_order":["announcement-0"],"custom_css":[],"settings":{"notification-bar--background-color":"#080808","notification-bar--text-color":"#f5f5f5","menu":"","multi_msg_nav":true,"social-enable":true,"enable_country_selector":true,"enable_locale_selector":false,"announcement-font":"body","announcement-font-size":14,"section_width":"full","padding_top":8,"padding_bottom":8}}},"order":["header","announcement-bar"]}
+{
+  "type": "header",
+  "name": "Header",
+  "sections": {
+    "header": {
+      "type": "header",
+      "blocks": {
+        "content-0": {
+          "type": "content",
+          "settings": {
+            "mega-menu": "NEW ARRIVALS",
+            "mega_image_header_1": "V1 - Solid Velcro Baseball Cap",
+            "mega_image_subheader_1": "DZ \/ $15.00",
+            "mega_image_link_1": "shopify:\/\/products\/regular-velcro-solid",
+            "mega_image_header_2": "TC - 2 TONE",
+            "mega_image_subheader_2": "DZ\/ $36.00",
+            "mega_image_link_2": "shopify:\/\/products\/t-c-5panel-snap-back-split"
+          }
+        },
+        "content-1": {
+          "type": "content",
+          "settings": {
+            "mega-menu": "PRODUCTS",
+            "mega_image_header_1": "STM - SPONGE - SOLID",
+            "mega_image_subheader_1": "$18.00",
+            "mega_image_link_1": "shopify:\/\/products\/sponge-trucker-mesh-solid",
+            "mega_image_header_2": "STM - Sponge - 2TONE",
+            "mega_image_subheader_2": "$18.00",
+            "mega_image_link_2": ""
+          }
+        },
+        "9aaab44d-addc-424e-a6f3-9c09a485a509": {
+          "type": "content",
+          "settings": {
+            "mega-menu": "BEST SELLER",
+            "mega_image_header_1": "",
+            "mega_image_subheader_1": "Best Seller",
+            "mega_image_link_1": "shopify:\/\/collections\/best-seller",
+            "mega_image_header_2": "",
+            "mega_image_subheader_2": "Beanines",
+            "mega_image_link_2": "shopify:\/\/collections\/beanie-2"
+          }
+        },
+        "143e8020-44c6-4eef-ae52-54124fd135d1": {
+          "type": "content",
+          "settings": {
+            "mega-menu": "",
+            "mega_image_header_1": "",
+            "mega_image_subheader_1": "",
+            "mega_image_link_1": "",
+            "mega_image_header_2": "",
+            "mega_image_subheader_2": "",
+            "mega_image_link_2": ""
+          }
+        },
+        "f56a52b5-1c3c-4f27-860f-91b7b03e5d4a": {
+          "type": "content",
+          "settings": {
+            "mega-menu": "",
+            "mega_image_header_1": "",
+            "mega_image_subheader_1": "",
+            "mega_image_link_1": "",
+            "mega_image_header_2": "",
+            "mega_image_subheader_2": "",
+            "mega_image_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "content-0",
+        "content-1",
+        "9aaab44d-addc-424e-a6f3-9c09a485a509",
+        "143e8020-44c6-4eef-ae52-54124fd135d1",
+        "f56a52b5-1c3c-4f27-860f-91b7b03e5d4a"
+      ],
+      "custom_css": [
+        "@media (min-width: 768px) {h6 {position: relative; top: 50px; } h5 {position: relative; top: 5rem; left: 40rem; }}",
+        ".search-show {display: none;}",
+        ".search {position: relative; right: 25rem; font-size: 18px;}",
+        "#text-account {position: relative; top: 72px; left: 28rem;}"
+      ],
+      "settings": {
+        "sticky_header": true,
+        "overlay_header": false,
+        "logo_max_width": 300,
+        "logo_max_width_mobile": 150,
+        "sticky_header_logo": false,
+        "search-enable": true,
+        "label-enable": false,
+        "icon-size": "18",
+        "cart-style": "shopping-cart",
+        "cart-number": "total",
+        "main_linklist": "",
+        "nav-placement": "center"
+      }
+    },
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-0": {
+          "type": "announcement",
+          "settings": {
+            "announcement_text": "<p>Vast inventory of blank hats are ready to ship in 1 ~2 business days!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "announcement-0"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "notification-bar--background-color": "#080808",
+        "notification-bar--text-color": "#f5f5f5",
+        "menu": "",
+        "multi_msg_nav": true,
+        "social-enable": true,
+        "enable_country_selector": true,
+        "enable_locale_selector": false,
+        "announcement-font": "body",
+        "announcement-font-size": 14,
+        "section_width": "full",
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    }
+  },
+  "order": [
+    "header",
+    "announcement-bar"
+  ]
+}
