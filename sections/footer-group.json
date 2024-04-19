@@ -1,1 +1,52 @@
-{"type":"footer","name":"Footer","sections":{"footer-main":{"type":"footer-main","blocks":{"block_2":{"type":"menu","settings":{"menu_title":"QUICK LINKS","footer_linklist":"footer-mega-menu"}},"282bb736-6d3d-4d31-8728-d482019d6989":{"type":"menu","settings":{"menu_title":"company","footer_linklist":"footer"}},"block_3":{"type":"text","settings":{"title":"Contact Us","richtext":"<p><\/p><p>📞 <strong>1-213-352-8888<\/strong><\/p><p>✉️ <a href=\"mailto:info@waycaps.com\" target=\"_blank\" title=\"mailto:info@waycaps.com\"><span style=\"text-decoration:underline\"><strong>info@waycaps.com<\/strong><\/span><\/a><\/p><p><br\/>Monday - Friday <\/p><p>9am to 5pm PST<\/p>"}}},"block_order":["block_2","282bb736-6d3d-4d31-8728-d482019d6989","block_3"],"settings":{"alignment":"center"}},"footer-bottom":{"type":"footer-bottom","settings":{"show_methods_of_payment":true,"enable_country_selector":true,"enable_locale_selector":false}}},"order":["footer-main","footer-bottom"]}
+{
+  "type": "footer",
+  "name": "Footer",
+  "sections": {
+    "footer-main": {
+      "type": "footer-main",
+      "blocks": {
+        "block_2": {
+          "type": "menu",
+          "settings": {
+            "menu_title": "QUICK LINKS",
+            "footer_linklist": ""
+          }
+        },
+        "282bb736-6d3d-4d31-8728-d482019d6989": {
+          "type": "menu",
+          "settings": {
+            "menu_title": "company",
+            "footer_linklist": "footer"
+          }
+        },
+        "block_3": {
+          "type": "text",
+          "settings": {
+            "title": "Contacta con nosotras",
+            "richtext": "<p><\/p><p>📞 <strong>1-213-352-8888<\/strong><\/p><p>✉️ <a href=\"mailto:info@waycaps.com\" target=\"_blank\" title=\"mailto:info@waycaps.com\"><span style=\"text-decoration:underline\"><strong>info@waycaps.com<\/strong><\/span><\/a><\/p><p><br\/>Lunes - Viernes<\/p><p>9AM to 5PM<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "block_2",
+        "282bb736-6d3d-4d31-8728-d482019d6989",
+        "block_3"
+      ],
+      "settings": {
+        "alignment": "center"
+      }
+    },
+    "footer-bottom": {
+      "type": "footer-bottom",
+      "settings": {
+        "show_methods_of_payment": true,
+        "enable_country_selector": true,
+        "enable_locale_selector": false
+      }
+    }
+  },
+  "order": [
+    "footer-main",
+    "footer-bottom"
+  ]
+}
