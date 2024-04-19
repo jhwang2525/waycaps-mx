@@ -398,8 +398,8 @@
           "type": "text",
           "settings": {
             "icon": "dollar-sign",
-            "heading": "Low Minimum",
-            "subheading": "Buy As Low As One Dozen",
+            "heading": "Mínimo bajo",
+            "subheading": "Comprar tan baja como una docena",
             "link": ""
           }
         },
@@ -407,7 +407,7 @@
           "type": "text",
           "settings": {
             "icon": "phone",
-            "heading": "Contact Us",
+            "heading": "Contacta con nosotras",
             "subheading": "+1 (213) 352-8888",
             "link": ""
           }
