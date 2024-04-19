@@ -23,7 +23,7 @@
           "type": "text",
           "settings": {
             "title": "Contacta con nosotras",
-            "richtext": "<p><\/p><p>📞 <strong>1-213-352-8888<\/strong><\/p><p>✉️ <a href=\"mailto:info@waycaps.com\" target=\"_blank\" title=\"mailto:info@waycaps.com\"><span style=\"text-decoration:underline\"><strong>info@waycaps.com<\/strong><\/span><\/a><\/p><p><br\/>Lunes - Viernes<\/p><p>9AM to 5PM<\/p>"
+            "richtext": "<p><\/p><p>📞 <strong>1-213-352-8888<\/strong><\/p><p>✉️ <a href=\"mailto:info@waycaps.com\" target=\"_blank\" title=\"mailto:info@waycaps.com\"><span style=\"text-decoration:underline\"><strong>info@waycaps.com<\/strong><\/span><\/a><\/p><p><br\/>Lunes - Viernes<\/p><p>9AM - 5PM<\/p>"
           }
         }
       },
