@@ -120,8 +120,8 @@
       "settings": {
         "colors": "white",
         "subheading": "",
-        "title": "AT WAYCAPS",
-        "text": "<p>Waycap stand prepared to dispatch your orders within the following business day. Crafted with precision, our premium blank caps offer an effortlessly smooth and stable surface, ideal for both embroidery and screen printing. Whether you're tackling a substantial project or seeking our custom services, our dedicated team is poised to support you with quotes, virtual samples, and conceptual assistance.<\/p>",
+        "title": "EN WAYCAPS",
+        "text": "<p>Waycap está preparado para enviar sus pedidos dentro del siguiente día hábil. Fabricadas con precisión, nuestras tapas en blanco premium ofrecen una superficie suave y estable sin esfuerzo, ideal tanto para bordado como para serigrafía. Ya sea que esté abordando un proyecto importante o buscando nuestros servicios personalizados, nuestro equipo dedicado está preparado para ayudarlo con cotizaciones, muestras virtuales y asistencia conceptual.<\/p>",
         "button_link": "",
         "button_label": "",
         "section_width": "container",
@@ -339,8 +339,8 @@
       "settings": {
         "colors": "white",
         "subheading": "",
-        "title": "WHOLESALE HATS AT WAYCAPS.COM",
-        "text": "<p>The Waycap Inc is a hat wholesale company which was established in 2017 in Los Angeles, California. We have our own factory in China since 2008. Waycap Inc sells mostly blank caps with different designs such as Velcro hats, trucker hats, buckets hats, beanies, snapbacks etc.<\/p>",
+        "title": "SOMBREROS AL POR MAYOR EN WAYCAPS.COM",
+        "text": "<p>Waycap Inc es una empresa mayorista de sombreros que se estableció en 2017 en Los Ángeles, California. Tenemos nuestra propia fábrica en China desde 2008. Waycap Inc vende principalmente gorras en blanco con diferentes diseños, como gorras con velcro, gorras de camionero, gorras tipo cubo, gorros, gorras tipo snapback, etc.<\/p>",
         "button_link": "",
         "button_label": "",
         "section_width": "container",
@@ -356,8 +356,8 @@
       "settings": {
         "colors": "white",
         "subheading": "",
-        "title": "UNBEATABLE SELECTION OF BLANK HATS FOR WHOLESALE",
-        "text": "<p>From trucker hats to dad hats, from snapback hats to beanies, Waycap is the trusted provider of top-tier blank hats and caps. Serving a diverse clientele, from screen printers and embroidery shops to fashion brands and promotional companies, we've become the go-to for branded headwear solutions. With our dedicated production facilities in China, we ensure that every customer benefits from genuine factory-direct prices.<\/p>",
+        "title": "INMEJORABLE SELECCIÓN DE SOMBREROS EN BLANCO AL POR MAYOR",
+        "text": "<p>Desde gorras de camionero hasta gorras de papá, desde gorras snapback hasta gorros, Waycap es el proveedor confiable de gorras y sombreros en blanco de primer nivel. Al atender a una clientela diversa, desde serigrafistas y tiendas de bordado hasta marcas de moda y empresas de promoción, nos hemos convertido en la opción ideal para soluciones de sombreros de marca. Con nuestras instalaciones de producción dedicadas en China, garantizamos que cada cliente se beneficie de precios genuinos directos de fábrica.<\/p>",
         "button_link": "",
         "button_label": "",
         "section_width": "container",
@@ -373,8 +373,8 @@
       "settings": {
         "colors": "white",
         "subheading": "",
-        "title": "TOP-QUALITY WHOLESALE TRUCKER HATS AT COMPETITIVE PRICES",
-        "text": "<p>Our commitment to excellence is reflected in the meticulously verified quality of our products. Each item undergoes rigorous testing to ensure it meets the highest standards, providing you with a reliable and top-notch experience.We take pride in offering our customers not only superior products but also an affordable pricing structure. Our goal is to make quality accessible, ensuring that you receive exceptional value for your investment without compromising on excellence.<\/p>",
+        "title": "GORRAS DE BÉISBOL AL POR MAYOR DE PRIMERA CALIDAD A PRECIOS COMPETITIVOS",
+        "text": "<p>Nuestro compromiso con la excelencia se refleja en la calidad meticulosamente verificada de nuestros productos. Cada artículo se somete a pruebas rigurosas para garantizar que cumpla con los más altos estándares, brindándole una experiencia confiable y de primer nivel. Estamos orgullosos de ofrecer a nuestros clientes no solo productos superiores sino también una estructura de precios asequible. Nuestro objetivo es hacer que la calidad sea accesible, garantizando que usted reciba un valor excepcional por su inversión sin comprometer la excelencia.<\/p>",
         "button_link": "",
         "button_label": "",
         "section_width": "container",
@@ -389,8 +389,8 @@
           "type": "text",
           "settings": {
             "icon": "truck",
-            "heading": "Store Pickup",
-            "subheading": "100 W 17th St Ste 18 Los Angeles, CA 90015",
+            "heading": "Recoger en tienda",
+            "subheading": "AV. DE LA EFICIENCIA # 167 INT. A 1, PARQUE INDUSTRIAL NUEVO NOGALES. NOGALES, SONORA, MEXICO C.P. 84094",
             "link": ""
           }
         },
