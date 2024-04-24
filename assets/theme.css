@@ -20703,3 +20703,12 @@ article.page {
 
 h4.search_article {
   margin-top: 30px !important; }
+
+.product-grid--pricing--price-per-unit:after {
+  content: "Dozen";
+  text-transform: capitalize;
+}
+
+.product-grid--pricing--price-per-unit:before {
+   content: "|";
+}
