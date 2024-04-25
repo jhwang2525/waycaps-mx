@@ -6,52 +6,7 @@
         "template--14756824055872__9c7c8c0d-009b-4489-b9c9-9c234cccb826-slide-1": {
           "type": "slide",
           "settings": {
-            "subheading": "",
-            "title": "",
-            "text": "",
-            "enlarge-text": false,
-            "button_1_label": "",
-            "button_1_link": "",
-            "button_2_label": "",
-            "button_2_link": "",
-            "button_3_label": "",
-            "button_3_link": "",
-            "caption-background": "rgba(0,0,0,0)",
-            "caption-text": "#ffffff",
-            "button-text": "#ffffff",
-            "button-background": "#000000",
-            "button-background-hover": "#797979",
-            "horizontal-alignment": "left",
-            "text-alignment": "left",
-            "vertical-alignment": "middle"
-          }
-        },
-        "9f4345f0-01f1-40ae-bcf4-be8e3c9c8045": {
-          "type": "slide",
-          "settings": {
-            "subheading": "",
-            "title": "",
-            "text": "",
-            "enlarge-text": false,
-            "button_1_label": "",
-            "button_1_link": "",
-            "button_2_label": "",
-            "button_2_link": "",
-            "button_3_label": "",
-            "button_3_link": "",
-            "caption-background": "rgba(0,0,0,0)",
-            "caption-text": "#ffffff",
-            "button-text": "#ffffff",
-            "button-background": "#000000",
-            "button-background-hover": "#797979",
-            "horizontal-alignment": "left",
-            "text-alignment": "left",
-            "vertical-alignment": "middle"
-          }
-        },
-        "f9a0d085-74f3-483d-85a3-43bb9977235e": {
-          "type": "slide",
-          "settings": {
+            "image": "shopify:\/\/shop_images\/10_OFF.jpg",
             "subheading": "",
             "title": "",
             "text": "",
@@ -74,9 +29,7 @@
         }
       },
       "block_order": [
-        "template--14756824055872__9c7c8c0d-009b-4489-b9c9-9c234cccb826-slide-1",
-        "9f4345f0-01f1-40ae-bcf4-be8e3c9c8045",
-        "f9a0d085-74f3-483d-85a3-43bb9977235e"
+        "template--14756824055872__9c7c8c0d-009b-4489-b9c9-9c234cccb826-slide-1"
       ],
       "custom_css": [
         "@media (max-width: 749px) {.slider-section--template--14796096110656__9c7c8c0d-009b-4489-b9c9-9c234cccb826 img {width: 32rem; height: 200px; }}"
@@ -104,6 +57,7 @@
         "@media screen and (max-width: 749px) {.image-section--large {object-fit: fill; height: 150px; }}"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/SOFT_BURCKHAM_1.jpg",
         "parallax": false,
         "hero_size": "large",
         "section_width": "full",
