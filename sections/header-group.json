@@ -74,7 +74,7 @@
         "f56a52b5-1c3c-4f27-860f-91b7b03e5d4a"
       ],
       "custom_css": [
-        "@media (min-width: 768px) {h6 {position: relative; top: 50px; } h5 {position: relative; top: 5rem; left: 40rem; }}",
+        "@media (min-width: 768px) {h6 {position: relative; top: 50px; } h5 {position: relative; top: 5rem; left: 25rem; }}",
         ".search-show {display: none;}",
         ".search {position: relative; right: 25rem; font-size: 18px;}",
         "#text-account {position: relative; top: 72px; left: 28rem;}"
