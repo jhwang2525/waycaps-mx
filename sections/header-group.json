@@ -19,18 +19,6 @@
             "mega_image_link_2": "shopify:\/\/products\/t-c-5panel-snap-back-split"
           }
         },
-        "content_L9QPpd": {
-          "type": "content",
-          "settings": {
-            "mega-menu": "",
-            "mega_image_header_1": "",
-            "mega_image_subheader_1": "",
-            "mega_image_link_1": "",
-            "mega_image_header_2": "",
-            "mega_image_subheader_2": "",
-            "mega_image_link_2": ""
-          }
-        },
         "content-1": {
           "type": "content",
           "settings": {
@@ -86,7 +74,6 @@
       },
       "block_order": [
         "content-0",
-        "content_L9QPpd",
         "content-1",
         "9aaab44d-addc-424e-a6f3-9c09a485a509",
         "143e8020-44c6-4eef-ae52-54124fd135d1",
