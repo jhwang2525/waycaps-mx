@@ -9,9 +9,11 @@
           "type": "content",
           "settings": {
             "mega-menu": "NEW ARRIVALS",
+            "mega_image_1": "shopify:\/\/shop_images\/Untitled_design_5.png",
             "mega_image_header_1": "V1 - Solid Velcro Baseball Cap",
             "mega_image_subheader_1": "DZ \/ $15.00",
             "mega_image_link_1": "shopify:\/\/products\/regular-velcro-solid",
+            "mega_image_2": "shopify:\/\/shop_images\/Untitled_design_4.png",
             "mega_image_header_2": "TC - 2 TONE",
             "mega_image_subheader_2": "DZ\/ $36.00",
             "mega_image_link_2": "shopify:\/\/products\/t-c-5panel-snap-back-split"
@@ -21,9 +23,11 @@
           "type": "content",
           "settings": {
             "mega-menu": "PRODUCTS",
+            "mega_image_1": "shopify:\/\/shop_images\/Untitled_design_8.png",
             "mega_image_header_1": "STM - SPONGE - SOLID",
             "mega_image_subheader_1": "$18.00",
             "mega_image_link_1": "shopify:\/\/products\/sponge-trucker-mesh-solid",
+            "mega_image_2": "shopify:\/\/shop_images\/Untitled_design_9.png",
             "mega_image_header_2": "STM - Sponge - 2TONE",
             "mega_image_subheader_2": "$18.00",
             "mega_image_link_2": ""
@@ -33,12 +37,14 @@
           "type": "content",
           "settings": {
             "mega-menu": "BEST SELLER",
+            "mega_image_1": "shopify:\/\/shop_images\/best-seller_1.png",
             "mega_image_header_1": "",
             "mega_image_subheader_1": "Best Seller",
             "mega_image_link_1": "shopify:\/\/collections\/best-seller",
+            "mega_image_2": "shopify:\/\/shop_images\/Untitled_design_11.png",
             "mega_image_header_2": "",
             "mega_image_subheader_2": "Beanines",
-            "mega_image_link_2": "shopify:\/\/collections\/beanie-2"
+            "mega_image_link_2": "shopify:\/\/collections\/beanie"
           }
         },
         "143e8020-44c6-4eef-ae52-54124fd135d1": {
