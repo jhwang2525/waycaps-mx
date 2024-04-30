@@ -33,18 +33,6 @@
             "mega_image_link_2": ""
           }
         },
-        "143e8020-44c6-4eef-ae52-54124fd135d1": {
-          "type": "content",
-          "settings": {
-            "mega-menu": "",
-            "mega_image_header_1": "",
-            "mega_image_subheader_1": "",
-            "mega_image_link_1": "",
-            "mega_image_header_2": "",
-            "mega_image_subheader_2": "",
-            "mega_image_link_2": ""
-          }
-        },
         "9aaab44d-addc-424e-a6f3-9c09a485a509": {
           "type": "content",
           "settings": {
@@ -57,6 +45,18 @@
             "mega_image_header_2": "",
             "mega_image_subheader_2": "Beanines",
             "mega_image_link_2": "shopify:\/\/collections\/beanie"
+          }
+        },
+        "143e8020-44c6-4eef-ae52-54124fd135d1": {
+          "type": "content",
+          "settings": {
+            "mega-menu": "",
+            "mega_image_header_1": "",
+            "mega_image_subheader_1": "",
+            "mega_image_link_1": "",
+            "mega_image_header_2": "",
+            "mega_image_subheader_2": "",
+            "mega_image_link_2": ""
           }
         },
         "f56a52b5-1c3c-4f27-860f-91b7b03e5d4a": {
@@ -75,8 +75,8 @@
       "block_order": [
         "content-0",
         "content-1",
-        "143e8020-44c6-4eef-ae52-54124fd135d1",
         "9aaab44d-addc-424e-a6f3-9c09a485a509",
+        "143e8020-44c6-4eef-ae52-54124fd135d1",
         "f56a52b5-1c3c-4f27-860f-91b7b03e5d4a"
       ],
       "custom_css": [
