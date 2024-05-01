@@ -224,6 +224,62 @@
         "title": "ORDER BOX BASE"
       }
     },
+    "info_columns_UzjEEq": {
+      "type": "info-columns",
+      "blocks": {
+        "image_and_text_kG8YpF": {
+          "type": "image_and_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-05-01_at_1.17.29_AM_09ef0dfa-a6ca-4fe0-9b7e-5d546e9e8798.png",
+            "grid_image_size": "square",
+            "heading": "New hats are in!",
+            "text": "<p>Browse through new hats.<\/p>",
+            "button_text": "Shop - Hats",
+            "button_link": "shopify:\/\/collections\/all"
+          }
+        },
+        "image_and_text_FkH3z3": {
+          "type": "image_and_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-05-01_at_1.17.36_AM_d05c3399-bf5b-428b-aeab-9ed19b74f79e.png",
+            "grid_image_size": "square",
+            "heading": "Emb thread",
+            "text": "<p>Browse variety of emb threads.<\/p>",
+            "button_text": "Shop - Threads",
+            "button_link": "shopify:\/\/collections\/all"
+          }
+        }
+      },
+      "block_order": [
+        "image_and_text_kG8YpF",
+        "image_and_text_FkH3z3"
+      ],
+      "settings": {
+        "colors": "light",
+        "subheading": "",
+        "heading": "",
+        "columns_per_row": 2,
+        "text_alignment": "left",
+        "vertical_alignment": "top",
+        "section_width": "container",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "text_rich_text_68tCji": {
+      "type": "text--rich-text",
+      "settings": {
+        "colors": "white",
+        "subheading": "",
+        "title": "Bienvenido a nuestra tienda",
+        "text": "<p>Utilice este bloque de texto para mostrar avisos de la tienda, anunciar productos y colecciones o, simplemente, para dar la bienvenida a los visitantes. <\/p>",
+        "button_link": "",
+        "button_label": "",
+        "section_width": "container-narrow",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
     "advanced_layout_custom_liquid_3CyxGU": {
       "type": "advanced-layout--custom-liquid",
       "disabled": true,
@@ -487,6 +543,8 @@
     "2fd5bef4-1aac-4842-a78d-b7d4abdc541a",
     "6f342fcc-69c2-4fc9-b714-9af93d77ec25",
     "product_slider_bqgwHW",
+    "info_columns_UzjEEq",
+    "text_rich_text_68tCji",
     "advanced_layout_custom_liquid_3CyxGU",
     "collection-featured-collection-2",
     "149056b8-60ad-4793-af72-f96b8dd6a657",
