@@ -318,7 +318,8 @@
         "featured-collection-1"
       ],
       "custom_css": [
-        ".row {margin: 0px;}"
+        ".row {margin: 0px;}",
+        ".section-header-padding {text-align: center;}"
       ],
       "settings": {
         "colors": "light",
@@ -411,7 +412,8 @@
         "grid-card-1"
       ],
       "custom_css": [
-        ".row {margin: 0;}"
+        ".row {margin: 0;}",
+        ".section-header-padding{text-align: center;}"
       ],
       "settings": {
         "colors": "light",
