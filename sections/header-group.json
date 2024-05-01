@@ -95,8 +95,8 @@
         "search-enable": true,
         "label-enable": false,
         "icon-size": "18",
-        "cart-style": "shopping-cart",
-        "cart-number": "total",
+        "cart-style": "shopping-bag",
+        "cart-number": "quantity",
         "main_linklist": "mega-menu",
         "nav-placement": "center"
       }
