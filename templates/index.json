@@ -211,6 +211,7 @@
         "card_WBKjXw",
         "card_wUU3rE"
       ],
+      "disabled": true,
       "custom_css": [
         ".title {text-align: center;}",
         ".flickity-prev-next-button {display: none;}",
