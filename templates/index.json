@@ -65,6 +65,18 @@
         "padding_bottom": 36
       }
     },
+    "newsletter_newsletter_YrH3PT": {
+      "type": "newsletter--newsletter",
+      "settings": {
+        "colors": "light",
+        "subheading": "",
+        "title": "",
+        "newsletter_description": "<p>SUSCRÍBASE A NUESTRO BOLETÍN<\/p>",
+        "section_width": "container-full-width",
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
     "81cf1571-3a35-4143-8742-97d13edc2bdc": {
       "type": "text--rich-text",
       "custom_css": [
@@ -388,6 +400,7 @@
   "order": [
     "9c7c8c0d-009b-4489-b9c9-9c234cccb826",
     "7c778704-ac85-4a6f-96a7-918ba7bc87e4",
+    "newsletter_newsletter_YrH3PT",
     "81cf1571-3a35-4143-8742-97d13edc2bdc",
     "2fd5bef4-1aac-4842-a78d-b7d4abdc541a",
     "6f342fcc-69c2-4fc9-b714-9af93d77ec25",
