@@ -1,1 +1,127 @@
-{"sections":{"main":{"type":"template--product","blocks":{"product-title":{"type":"product-title","settings":{}},"product-price":{"type":"product-price","settings":{"show_discount":"hide","tax_included":false,"shipping_policy":false}},"98c2148d-af3f-4d5f-b1d8-26855deff89e":{"type":"shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8","settings":{}},"1dea453e-d9db-4bdd-acb3-edb424350903":{"type":"shopify:\/\/apps\/judge-me-reviews\/blocks\/all_reviews_text\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8","settings":{}},"product-options":{"type":"product-options","settings":{"show_variant_labels":true,"hide_out_of_stock":true,"pick_an_option":false}},"linked-products":{"type":"linked-products","settings":{"option_name":"Color","linked_products":[],"swatches_size":"small","swatches_aspect_ratio":"square"}},"quantity-selector":{"type":"quantity-selector","settings":{}},"payment-buttons":{"type":"payment-buttons","settings":{"show_smart_checkout":false,"enable_gift_card_recipient_form":true}},"4a4a330d-e558-45f9-bcce-4010e886aa67":{"type":"custom-liquid","settings":{"custom-liquid":"<h6>Dozen price = 12 pieces per color, size and style\n<br>\n<br>\nThe price will be calculated automatically based on the exact dozen and odd piece price that applies<\/h6>"}},"cfe076cf-acd7-41cf-8945-0c53825d4481":{"type":"product-description-block","settings":{"collapsible_tab":false,"icon":"none","heading":"Description","open_close_icon":"caret"}}},"block_order":["product-title","product-price","98c2148d-af3f-4d5f-b1d8-26855deff89e","1dea453e-d9db-4bdd-acb3-edb424350903","product-options","linked-products","quantity-selector","payment-buttons","4a4a330d-e558-45f9-bcce-4010e886aa67","cfe076cf-acd7-41cf-8945-0c53825d4481"],"custom_css":[".container {background-color: white;}","h6 {background-color: #fcf8e3; padding: 15px 15px 15px 15px; color: #8a6d3b; border: 1px solid #faebcc;}",".jdgm-widget.jdgm-widget {display: flex !important; margin-bottom: 8px;}",".button:not(:disabled) {width: 70px !important;}"],"settings":{"show_out_of_stock_email":true,"form_position":"below-payment-buttons","size_guide_link":"","size_guide_message":"What's my size?","size_guide_variant":"Size","image_size":"small","thumbnail_position":"left","enable_zoom":false,"enable_video_loop":false}},"170168304199de33b7":{"type":"apps","blocks":{"21c5967f-3793-4521-a43f-f9bd658b89c5":{"type":"shopify:\/\/apps\/judge-me-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8","settings":{"maxwidth":1080}},"e35da41d-89b6-4660-b89f-2f82705b2248":{"type":"shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8","settings":{}}},"block_order":["21c5967f-3793-4521-a43f-f9bd658b89c5","e35da41d-89b6-4660-b89f-2f82705b2248"],"custom_css":[".container {background-color: White;}"],"settings":{"include_margins":true}},"product-recommendations":{"type":"template--product--recommendations","custom_css":[".container {max-width: 100%;}"],"settings":{"show_product_recommendations":true,"product_recommendations_heading":"More Items from Waycap","quick_view_enabled":false,"quick-view-image-size":"natural","discount-display":"hide","show_product_description":false,"show_variant_labels":false,"show_sold_out_variants":true,"show_dynamic_checkout_button":false,"enable_on_mobile":true}}},"order":["main","170168304199de33b7","product-recommendations"]}
+{
+  "sections": {
+    "main": {
+      "type": "template--product",
+      "blocks": {
+        "product-title": {
+          "type": "product-title",
+          "settings": {
+          }
+        },
+        "product-price": {
+          "type": "product-price",
+          "settings": {
+            "show_discount": "hide",
+            "tax_included": false,
+            "shipping_policy": false
+          }
+        },
+        "product-options": {
+          "type": "product-options",
+          "settings": {
+            "show_variant_labels": true,
+            "hide_out_of_stock": true,
+            "pick_an_option": false
+          }
+        },
+        "linked-products": {
+          "type": "linked-products",
+          "settings": {
+            "option_name": "Color",
+            "linked_products": [
+
+            ],
+            "swatches_size": "small",
+            "swatches_aspect_ratio": "square"
+          }
+        },
+        "quantity-selector": {
+          "type": "quantity-selector",
+          "settings": {
+          }
+        },
+        "payment-buttons": {
+          "type": "payment-buttons",
+          "settings": {
+            "show_smart_checkout": false,
+            "enable_gift_card_recipient_form": true
+          }
+        },
+        "4a4a330d-e558-45f9-bcce-4010e886aa67": {
+          "type": "custom-liquid",
+          "settings": {
+            "custom-liquid": "<h6>Dozen price = 12 pieces per color, size and style\n<br>\n<br>\nThe price will be calculated automatically based on the exact dozen and odd piece price that applies<\/h6>"
+          }
+        },
+        "cfe076cf-acd7-41cf-8945-0c53825d4481": {
+          "type": "product-description-block",
+          "settings": {
+            "collapsible_tab": false,
+            "icon": "none",
+            "heading": "Description",
+            "open_close_icon": "caret"
+          }
+        }
+      },
+      "block_order": [
+        "product-title",
+        "product-price",
+        "product-options",
+        "linked-products",
+        "quantity-selector",
+        "payment-buttons",
+        "4a4a330d-e558-45f9-bcce-4010e886aa67",
+        "cfe076cf-acd7-41cf-8945-0c53825d4481"
+      ],
+      "custom_css": [
+        ".container {background-color: white;}",
+        "h6 {background-color: #fcf8e3; padding: 15px 15px 15px 15px; color: #8a6d3b; border: 1px solid #faebcc;}",
+        ".jdgm-widget.jdgm-widget {display: flex !important; margin-bottom: 8px;}",
+        ".button:not(:disabled) {width: 70px !important;}"
+      ],
+      "settings": {
+        "show_out_of_stock_email": true,
+        "form_position": "below-payment-buttons",
+        "size_guide_link": "",
+        "size_guide_message": "What's my size?",
+        "size_guide_variant": "Size",
+        "image_size": "small",
+        "thumbnail_position": "left",
+        "enable_zoom": false,
+        "enable_video_loop": false
+      }
+    },
+    "170168304199de33b7": {
+      "type": "apps",
+      "custom_css": [
+        ".container {background-color: White;}"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "product-recommendations": {
+      "type": "template--product--recommendations",
+      "custom_css": [
+        ".container {max-width: 100%;}"
+      ],
+      "settings": {
+        "show_product_recommendations": true,
+        "product_recommendations_heading": "Más artículos de Waycap",
+        "quick_view_enabled": false,
+        "quick-view-image-size": "natural",
+        "discount-display": "hide",
+        "show_product_description": false,
+        "show_variant_labels": false,
+        "show_sold_out_variants": true,
+        "show_dynamic_checkout_button": false,
+        "enable_on_mobile": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "170168304199de33b7",
+    "product-recommendations"
+  ]
+}
