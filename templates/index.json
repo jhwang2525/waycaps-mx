@@ -262,7 +262,7 @@
         ".row {margin: 0px;}"
       ],
       "settings": {
-        "colors": "white",
+        "colors": "light",
         "subheading": "",
         "title": "Best Sellers",
         "collection": "best-seller",
