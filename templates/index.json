@@ -142,6 +142,14 @@
         "padding_bottom": 50
       }
     },
+    "product_slider_bqgwHW": {
+      "type": "product-slider",
+      "settings": {
+        "navigation_amount": 4,
+        "navigation_color": "",
+        "title": "Products slider"
+      }
+    },
     "advanced_layout_custom_liquid_3CyxGU": {
       "type": "advanced-layout--custom-liquid",
       "disabled": true,
@@ -404,6 +412,7 @@
     "81cf1571-3a35-4143-8742-97d13edc2bdc",
     "2fd5bef4-1aac-4842-a78d-b7d4abdc541a",
     "6f342fcc-69c2-4fc9-b714-9af93d77ec25",
+    "product_slider_bqgwHW",
     "advanced_layout_custom_liquid_3CyxGU",
     "collection-featured-collection-2",
     "149056b8-60ad-4793-af72-f96b8dd6a657",
