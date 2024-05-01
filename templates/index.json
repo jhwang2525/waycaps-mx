@@ -156,6 +156,7 @@
     },
     "advanced_layout_custom_liquid_3CyxGU": {
       "type": "advanced-layout--custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<video autoplay=\"autoplay\" loop=\"loop\" muted defaultMuted playsinline  oncontextmenu=\"return false;\"  preload=\"auto\" id=\"openthinkingvideo\"><source src=\"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/98986a4272124b198f1c410f4ee99af7.mp4\" type=\"video\/mp4\"><\/video><style>#openthinkingvideo { display:block; max-width: 100%; width: 25%; padding: 0; margin: 0;position:relative; left:33rem;}<\/style>",
         "section_width": "container",
