@@ -254,6 +254,9 @@
         "image_and_text_kG8YpF",
         "image_and_text_FkH3z3"
       ],
+      "custom_css": [
+        "p {margin-top: 14px;}"
+      ],
       "settings": {
         "colors": "light",
         "subheading": "",
