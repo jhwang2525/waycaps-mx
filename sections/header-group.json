@@ -91,7 +91,7 @@
         "logo": "shopify:\/\/shop_images\/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Brown_and_Cream_Scrapbook_Curriculum_Vitae_A4_Document_2.png",
         "logo_max_width": 300,
         "logo_max_width_mobile": 150,
-        "sticky_header_logo": false,
+        "sticky_header_logo": true,
         "search-enable": true,
         "label-enable": false,
         "icon-size": "18",
