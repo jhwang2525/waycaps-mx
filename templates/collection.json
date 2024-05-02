@@ -51,7 +51,7 @@
         "grid-card-price"
       ],
       "custom_css": [
-
+        ".collection-filtering-section{width:20%;}"
       ],
       "settings": {
         "grid": 5,
