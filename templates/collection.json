@@ -60,6 +60,7 @@
         "desktop_position": "sidebar",
         "enable_filtering": true,
         "enable_sorting": true,
+        "collection-sidebar-image": "shopify:\/\/shop_images\/filter_banner.png",
         "collection-sidebar-link": "",
         "collection-sidebar-title": "",
         "collection-sidebar-richtext": "",
