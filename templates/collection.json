@@ -57,7 +57,7 @@
         "grid": 5,
         "rows": 8,
         "pagination_type": "paged_navigation",
-        "desktop_position": "topbar",
+        "desktop_position": "sidebar",
         "enable_filtering": true,
         "enable_sorting": true,
         "collection-sidebar-link": "",
