@@ -10,6 +10,7 @@
 {% endif %}
 
 <div class="complementary-product-card-wrapper">
+   {% include 'breadcrumbs' %}
   <a
     class="grid__image"
     href="{{ comp_product.url | within: collection }}"
