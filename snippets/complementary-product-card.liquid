@@ -17,7 +17,6 @@
     href="{{ comp_product.url | within: collection }}"
     tabindex="-1"
   >
-    {% include 'breadcrumbs' %}
     
     {% if image_crop %}<div class="aspect-ratio {{ image_crop }}">{% endif %}
         {% render 'responsive-image' with comp_product.media[0].preview_image, alt: comp_product.media[0].alt %}
