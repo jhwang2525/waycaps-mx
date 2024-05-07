@@ -85,7 +85,7 @@
         ".search {position: relative; right: 25rem; font-size: 18px;}",
         "#text-account {position: relative; top: 81px; left: 43rem;}",
         "#site-header svg:not(.icon-caret) {height: 35px;}",
-        ".nav{padding-left:15 rem;}"
+        ".nav-pills {padding-left: 15 rem;}"
       ],
       "settings": {
         "sticky_header": true,
