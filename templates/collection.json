@@ -51,7 +51,8 @@
         "grid-card-price"
       ],
       "custom_css": [
-        "@media screen and (min-width: 750px) {.collection-filtering-section {width: 20%;}}"
+        "@media screen and (min-width: 750px) {.collection-filtering-section {width: 20%; }}",
+        ".field__input{border: 1px solid black;}"
       ],
       "settings": {
         "grid": 5,
