@@ -8,7 +8,7 @@
         "content-0": {
           "type": "content",
           "settings": {
-            "mega-menu": "NEW ARRIVALS",
+            "mega-menu": "NUEVO PRODUCTO",
             "mega_image_1": "shopify:\/\/shop_images\/Untitled_design_5.png",
             "mega_image_header_1": "V1 - Solid Velcro Baseball Cap",
             "mega_image_subheader_1": "DZ \/ $15.00",
@@ -36,7 +36,7 @@
         "9aaab44d-addc-424e-a6f3-9c09a485a509": {
           "type": "content",
           "settings": {
-            "mega-menu": "BEST SELLER",
+            "mega-menu": "LOS MAS VEDIDOS",
             "mega_image_1": "shopify:\/\/shop_images\/best-seller_1.png",
             "mega_image_header_1": "",
             "mega_image_subheader_1": "Best Seller",
