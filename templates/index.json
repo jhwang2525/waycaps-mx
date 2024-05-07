@@ -232,8 +232,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Screenshot_2024-05-01_at_1.17.29_AM_09ef0dfa-a6ca-4fe0-9b7e-5d546e9e8798.png",
             "grid_image_size": "square",
-            "heading": "New hats are in!",
-            "text": "<p>Browse through new hats.<\/p>",
+            "heading": "Nuevos sombreros han llegado!",
+            "text": "<p>Explora los nuevos sombreros<\/p>",
             "button_text": "Shop - Hats",
             "button_link": "shopify:\/\/collections\/all"
           }
@@ -413,7 +413,7 @@
       ],
       "custom_css": [
         ".row {margin: 0;}",
-        ".section-header-padding{text-align: center;}"
+        ".section-header-padding {text-align: center;}"
       ],
       "settings": {
         "colors": "light",
