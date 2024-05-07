@@ -13,11 +13,11 @@
 
 {% capture priceTagMessage %}
   {% if liquidObject.tags contains 'dozen' or liquidObject.tags contains 'Dozen' or liquidObject.tags contains 'DOZEN' %}
-  <span class="tagged-message">/ Dozen</span>
+  <span class="tagged-message">/ Docena</span>
   {% elsif liquidObject.tags contains 'pcs' or liquidObject.tags contains 'PCS' or liquidObject.tags contains 'Pcs' %}
   <span class="tagged-message">/ Pcs</span>
   {% elsif liquidObject.tags contains 'boxes' or liquidObject.tags contains 'Boxes' or liquidObject.tags contains 'BOXES' %}
-  <span class="tagged-message">/ Box</span>
+  <span class="tagged-message">/ Cajas</span>
   {% endif %}
 {% endcapture %}
 
