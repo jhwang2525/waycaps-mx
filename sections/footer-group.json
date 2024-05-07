@@ -41,7 +41,7 @@
       "settings": {
         "show_methods_of_payment": true,
         "enable_country_selector": true,
-        "enable_locale_selector": false
+        "enable_locale_selector": true
       }
     }
   },
