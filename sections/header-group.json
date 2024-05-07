@@ -80,7 +80,7 @@
         "f56a52b5-1c3c-4f27-860f-91b7b03e5d4a"
       ],
       "custom_css": [
-        "@media (min-width: 768px) {h6 {position: relative; top: 50px; } h5 {position: relative; top: 3rem; left: 25rem; }}",
+        "@media (min-width: 768px) {h6 {position: relative; top: 15px; } h5 {position: relative; top: 3rem; left: 25rem; }}",
         ".search-show {display: none;}",
         ".search {position: relative; right: 25rem; font-size: 18px;}",
         "#text-account {position: relative; top: 81px; left: 43rem;}",
