@@ -7,6 +7,13 @@
       <span class="money">{{ current_variant.price | money }}</span>
     {% endif %}
   </span>
+    {% if product.tags contains 'dozen' or product.tags contains 'Dozen' or product.tags contains 'DOZEN' %}
+  <span class="tagged-message">/ Docena</span>
+  {% elsif product.tags contains 'pcs' or product.tags contains 'PCS' or product.tags contains 'Pcs' %}
+  <span class="tagged-message">/ Pcs</span>
+  {% elsif product.tags contains 'boxes' or product.tags contains 'Boxes' or product.tags contains 'BOXES' %}
+  <span class="tagged-message">/ Cajas</span>
+  {% endif %}
 </li>
 
 <!-- Variant 'compare at' price -->
