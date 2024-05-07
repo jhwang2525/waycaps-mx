@@ -274,7 +274,30 @@
     {% endcapture %}
 
     {% capture main_icons %}
-      
+        <localization-form>
+    {%- form 'localization', id: 'FooterLanguageForm', class: 'localization-form' -%}
+      <div class="js">
+        <div class="disclosure">
+            <button type="button" class="disclosure__button alt-focus" aria-expanded="false" aria-controls="FooterLanguageList" aria-describedby="FooterLanguageLabel">
+            {{ localization.language.endonym_name | capitalize }}
+            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewBox="0 0 10 6">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
+            </svg>
+            </button>
+            <ul id="FooterLanguageList" role="list" class="disclosure__list localization__list" hidden>
+            {%- for language in localization.available_languages -%}
+                <li class="disclosure__item" tabindex="-1" {% if language.iso_code == localization.language.iso_code %}selected{% endif %}>
+                <a href="#" hreflang="{{ language.iso_code }}" lang="{{ language.iso_code }}"{% if language.iso_code == localization.language.iso_code %} aria-current="true"{% endif %} data-value="{{ language.iso_code }}">
+                    {{ language.endonym_name | capitalize }}
+                </a>
+                </li>
+            {%- endfor -%}
+            </ul>
+        </div>
+        <input type="hidden" name="locale_code" value="{{ localization.language.iso_code }}">
+      </div>
+    {%- endform -%}
+  </localization-form>
          <a href="/account" class="account-text" id="text-account" >
            
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 125" style="enable-background:new 0 0 100 100;" xml:space="preserve"><g><g><path d="M65.5,34.6c0-8.6-6.9-15.5-15.5-15.5c-8.6,0-15.5,6.9-15.5,15.5C34.5,43.1,41.4,50,50,50C58.6,50,65.5,43.1,65.5,34.6z     M38.5,34.6c0-6.3,5.2-11.5,11.5-11.5c6.3,0,11.5,5.2,11.5,11.5C61.5,40.9,56.3,46,50,46C43.7,46,38.5,40.9,38.5,34.6z"/></g><g><path d="M25.3,72c-1.8,4.4,1.4,9.3,6.2,9.3h37.8c4.8,0,8-4.9,6.2-9.3c-4.7-11.2-14.2-18.8-25.1-18.8C39.4,53.2,29.9,60.8,25.3,72z     M50.4,57.2c9,0,17.2,6.3,21.4,16.4c0.5,1.2,0,2.2-0.2,2.5c-0.2,0.4-1,1.2-2.3,1.2H31.5c-1.3,0-2-0.8-2.3-1.2    c-0.2-0.4-0.7-1.3-0.2-2.5C33.2,63.5,41.4,57.2,50.4,57.2z"/></g></g><text x="0" y="115" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif"></text><text x="0" y="120" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif"></text></svg>
