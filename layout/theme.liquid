@@ -79,6 +79,18 @@
 {% else %}
 <script>window.location='/account/login?checkout_url='+window.location.pathname</script>
 {% endif %}
+  <script>
+const pfInterval = setInterval(() => {
+var headerSearch = document.querySelector('.header__search')
+var form = document.querySelector('localization-form')
+if(form) {
+clearInterval(pfInterval)
+var formClone =  form.cloneNode(true);
+headerSearch.append(formClone)
+}
+},100)
+
+ </script>
 </head> 
             {% endif %}
       {% else %}<!DOCTYPE html>
