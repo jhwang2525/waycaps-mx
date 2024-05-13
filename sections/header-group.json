@@ -84,8 +84,7 @@
         ".search-show {display: none;}",
         ".search {position: relative; right: 25rem; font-size: 18px;}",
         "#text-account {position: relative; top: 81px; left: 43rem;}",
-        "#site-header svg:not(.icon-caret) {height: 35px;}",
-        "cart--shipping-message{margin-left:0px; margin-right:0px;}"
+        "#site-header svg:not(.icon-caret) {height: 35px;}"
       ],
       "settings": {
         "sticky_header": true,
