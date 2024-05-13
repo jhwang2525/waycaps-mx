@@ -106,6 +106,12 @@
           "button_vertical_position": "lowest",
           "greeting_message": ""
         }
+      },
+      "8924079168617604943": {
+        "type": "shopify:\/\/apps\/ali-reviews\/blocks\/widget-popup\/bf2eea72-0400-4db1-8908-44b7418f9a88",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
