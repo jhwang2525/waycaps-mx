@@ -1,1 +1,72 @@
-{"sections":{"main":{"type":"template--cart","settings":{}},"rich-text":{"type":"text--rich-text","settings":{"colors":"light","subheading":"","text":"<p>Use this text to share information about your brand. Describe a product, show store announcements, or highlight promotions.<\/p>","button_link":"","button_label":""}},"featured-collection":{"type":"collection--featured-collection","blocks":{"grid-card-0":{"type":"grid-card-title","settings":{}},"grid-card-1":{"type":"grid-card-price","settings":{}},"grid-card-2":{"type":"grid-card-swatches","settings":{}}},"block_order":["grid-card-0","grid-card-1","grid-card-2"],"settings":{"colors":"white","subheading":"Subheading","rows":1,"show_view_all":false}}},"order":["main","rich-text","featured-collection"]}
+{
+  "sections": {
+    "main": {
+      "type": "template--cart",
+      "settings": {
+      }
+    },
+    "rich-text": {
+      "type": "text--rich-text",
+      "settings": {
+        "colors": "light",
+        "subheading": "",
+        "text": "<p>Use this text to share information about your brand. Describe a product, show store announcements, or highlight promotions.<\/p>",
+        "button_link": "",
+        "button_label": ""
+      }
+    },
+    "featured-collection": {
+      "type": "collection--featured-collection",
+      "blocks": {
+        "grid-card-0": {
+          "type": "grid-card-title",
+          "settings": {
+          }
+        },
+        "grid-card-1": {
+          "type": "grid-card-price",
+          "settings": {
+          }
+        },
+        "grid-card-2": {
+          "type": "grid-card-swatches",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "grid-card-0",
+        "grid-card-1",
+        "grid-card-2"
+      ],
+      "settings": {
+        "colors": "white",
+        "subheading": "Subheading",
+        "rows": 1,
+        "show_view_all": false
+      }
+    },
+    "alireviews-section-546560dd-aea2-4d07-863a-bdd6017d9297": {
+      "type": "apps",
+      "blocks": {
+        "9e2751e8-8f6c-4d24-9029-a05f80b9cf62": {
+          "type": "shopify:\/\/apps\/ali-reviews\/blocks\/widget-box-in-cart\/bf2eea72-0400-4db1-8908-44b7418f9a88",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "9e2751e8-8f6c-4d24-9029-a05f80b9cf62"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich-text",
+    "featured-collection",
+    "alireviews-section-546560dd-aea2-4d07-863a-bdd6017d9297"
+  ]
+}
