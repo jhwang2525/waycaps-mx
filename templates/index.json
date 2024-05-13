@@ -216,7 +216,8 @@
         ".flickity-prev-next-button {display: none;}",
         ".flickity-prev-next-button.previous {display: none;}",
         ".dot {background-color: white;}",
-        ".title-wrapper-with-link {top: 0px;}"
+        ".title-wrapper-with-link {top: 0px;}",
+        ".price{text-align:center;}"
       ],
       "settings": {
         "navigation_amount": 4,
