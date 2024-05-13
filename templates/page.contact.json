@@ -1,1 +1,93 @@
-{"sections":{"main":{"type":"template--page","custom_css":[".main-heading {text-align: left;}"],"settings":{}},"contact-form":{"type":"template--contact-form","blocks":{"name_input":{"type":"name_input","settings":{"required":true,"input_width":"partial"}},"email_input":{"type":"email_input","settings":{"required":true,"input_width":"partial"}},"tel_input":{"type":"tel_input","settings":{"required":false,"input_width":"partial"}},"custom_input-0":{"type":"custom_input","settings":{"input_label":"Order number","required":false,"input_width":"partial"}},"message_input":{"type":"message_input","settings":{"required":true,"input_width":"full"}}},"block_order":["name_input","email_input","tel_input","custom_input-0","message_input"],"custom_css":["textarea {width: auto;}",".btn {width: auto !important; background: #00347a;}","input {width: 200px;}"],"settings":{"section_color_scheme":"white","section_subheading":"","section_heading":"","section_width":"container-narrow","padding_top":50,"padding_bottom":50}},"newsletter":{"type":"newsletter--newsletter","settings":{"colors":"light","subheading":"Sign up for news and special offers","title":"","newsletter_description":"<p>Get all the latest information on Events, Sales and Offers. Sign up for our newsletter today<\/p>","section_width":"container","padding_top":50,"padding_bottom":50}}},"order":["main","contact-form","newsletter"]}
+{
+  "sections": {
+    "main": {
+      "type": "template--page",
+      "custom_css": [
+        ".main-heading {text-align: left;}"
+      ],
+      "settings": {
+      }
+    },
+    "contact-form": {
+      "type": "template--contact-form",
+      "blocks": {
+        "name_input": {
+          "type": "name_input",
+          "settings": {
+            "required": true,
+            "input_width": "partial"
+          }
+        },
+        "email_input": {
+          "type": "email_input",
+          "settings": {
+            "required": true,
+            "input_width": "partial"
+          }
+        },
+        "tel_input": {
+          "type": "tel_input",
+          "settings": {
+            "required": false,
+            "input_width": "partial"
+          }
+        },
+        "custom_input-0": {
+          "type": "custom_input",
+          "settings": {
+            "input_label": "Order number",
+            "required": false,
+            "input_width": "partial"
+          }
+        },
+        "message_input": {
+          "type": "message_input",
+          "settings": {
+            "required": true,
+            "input_width": "full"
+          }
+        }
+      },
+      "block_order": [
+        "name_input",
+        "email_input",
+        "tel_input",
+        "custom_input-0",
+        "message_input"
+      ],
+      "custom_css": [
+        "textarea {width: auto;}",
+        ".btn {width: auto !important; background: #00347a;}",
+        "input {width: 200px;}"
+      ],
+      "settings": {
+        "section_color_scheme": "white",
+        "section_subheading": "",
+        "section_heading": "",
+        "section_width": "container-narrow",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "newsletter": {
+      "type": "newsletter--newsletter",
+      "custom_css": [
+        "[type=\"submit\"] {color: black; right: 95px;}"
+      ],
+      "settings": {
+        "colors": "light",
+        "subheading": "Sign up for news and special offers",
+        "title": "",
+        "newsletter_description": "<p>Get all the latest information on Events, Sales and Offers. Sign up for our newsletter today<\/p>",
+        "section_width": "container",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    }
+  },
+  "order": [
+    "main",
+    "contact-form",
+    "newsletter"
+  ]
+}
