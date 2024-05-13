@@ -95,6 +95,9 @@
     },
     "newsletter": {
       "type": "newsletter--newsletter",
+      "custom_css": [
+        "[type=\"submit\"] {color: black; right:95px;}"
+      ],
       "settings": {
         "colors": "light",
         "subheading": "INSCRÍBETE PARA RECIBIR NOTICIAS Y OFERTAS ESPECIALES",
