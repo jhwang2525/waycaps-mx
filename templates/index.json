@@ -57,7 +57,8 @@
         "template--14756824055872__9c7c8c0d-009b-4489-b9c9-9c234cccb826-slide-1"
       ],
       "custom_css": [
-        "@media (max-width: 749px) {.slider-block--template--14756824055872__9c7c8c0d-009b-4489-b9c9-9c234cccb826-slide-1 .slideshow-desktop-as-mobile-image {width: 32rem; height: 200px; }}"
+        "@media (max-width: 749px) {.slider-block--template--14756824055872__9c7c8c0d-009b-4489-b9c9-9c234cccb826-slide-1 .slideshow-desktop-as-mobile-image {width: 32rem; height: 200px; }}",
+        ".flex-direction-nav.slider--template--22541732806932__9c7c8c0d-009b-4489-b9c9-9c234cccb826 svg{display:none;}"
       ],
       "settings": {
         "slider-animation": "fade",
