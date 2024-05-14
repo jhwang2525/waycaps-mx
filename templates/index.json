@@ -32,7 +32,7 @@
         "template--14756824055872__9c7c8c0d-009b-4489-b9c9-9c234cccb826-slide-1"
       ],
       "custom_css": [
-        "@media (max-width: 749px) {.slider-section--template--14796096110656__9c7c8c0d-009b-4489-b9c9-9c234cccb826 img {width: 32rem; height: 200px; }}"
+        "@media (max-width: 749px) {.slider-block--template--14756824055872__9c7c8c0d-009b-4489-b9c9-9c234cccb826-slide-1 .slideshow-desktop-as-mobile-image {width: 32rem; height: 200px; }}"
       ],
       "settings": {
         "slider-animation": "fade",
@@ -217,7 +217,7 @@
         ".flickity-prev-next-button.previous {display: none;}",
         ".dot {background-color: white;}",
         ".title-wrapper-with-link {top: 0px;}",
-        ".price{text-align:center;}"
+        ".price {text-align: center;}"
       ],
       "settings": {
         "navigation_amount": 4,
