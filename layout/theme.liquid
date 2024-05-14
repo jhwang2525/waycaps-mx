@@ -74,12 +74,15 @@
 {% if page_description %}
   <meta name="description" content="{{ page_description | escape }}">
 {% endif %}
+<script>
+const returnUrl = encodeURIComponent(window.location.pathname + window.location.search);
 {% if shop.metafields.adv_reg.showRegistrationPageFirst == 'on' %}
-<script>window.location='/account/register?checkout_url='+window.location.pathname</script>
+window.location = '/account/register?checkout_url='+returnUrl;
 {% else %}
-<script>window.location='/account/login?checkout_url='+window.location.pathname</script>
+window.location = '/account/login?checkout_url='+returnUrl;
 {% endif %}
-  
+</script>
+
 </head> 
             {% endif %}
       {% else %}<!DOCTYPE html>
