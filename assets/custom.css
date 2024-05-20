@@ -6,6 +6,9 @@ We highly recommend labelling changes, or App installs, so these can also be upd
 
 */
 
+  body, html{
+    overflow-x: hidden;
+}
 
 .site-header__logo-image { 
   background-color: transparent !important; animation: none !important;
