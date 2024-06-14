@@ -387,6 +387,8 @@
       "add_to_cart": "Add to cart",
       "added": "Added",
       "sorry_stock": "Sorry, currently out of stock",
+      "inventory_title": "Title",
+      "inventory": "Available Quantity",
       "quantity": "Quantity",
       "thanks": "Thanks! We will notify you when this product becomes available!",
       "out-stock_html": "Enter your email to be notified by email when <strong>{{ product }} {{ variant }}<\/strong> becomes available.",
