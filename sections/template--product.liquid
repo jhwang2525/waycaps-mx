@@ -231,7 +231,7 @@
                         {% endfor %}
                       </tbody>
                     </table>
-                    {% if variant.size > 8 %}
+                    {% if product.variants.size > 8 %}
                       <a href="javascript:void(0);" class="show_more_rows">{{ 'products.product.inventory_show_more' | t }}</a>
                       <a href="javascript:void(0);" class="show_less_rows" style="display: none;">{{ 'products.product.inventory_show_less' | t }}</a>
                     {% endif %}
