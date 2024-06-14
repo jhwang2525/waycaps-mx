@@ -21,6 +21,20 @@
           "settings": {
           }
         },
+        "stock_level_indicator_6jeYaa": {
+          "type": "stock-level-indicator",
+          "settings": {
+            "stock-level-indicator-style": "bar",
+            "bar-indicator-color": "standard",
+            "stock_indicator_animation": true,
+            "stock-range": 20,
+            "show-stock-count": true,
+            "stock-level-notice": "always",
+            "in-stock-message": "Ready to ship",
+            "low-stock-message": "Selling fast",
+            "out-of-stock-message": "Back in soon"
+          }
+        },
         "product-options": {
           "type": "product-options",
           "settings": {
@@ -72,6 +86,7 @@
         "product-title",
         "product-price",
         "ali_reviews_widget_star_rating_mWVkUj",
+        "stock_level_indicator_6jeYaa",
         "product-options",
         "linked-products",
         "quantity-selector",
