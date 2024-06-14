@@ -112,6 +112,11 @@
         "enable_video_loop": false
       }
     },
+    "product-inventory-table": {
+      "type": "product-inventory-table",
+      "settings": {
+      }
+    },
     "alireviews-section-7bbd763d-f8ec-4b57-b986-1bda7078b8f3": {
       "type": "apps",
       "blocks": {
@@ -155,6 +160,7 @@
   },
   "order": [
     "main",
+    "product-inventory-table",
     "alireviews-section-7bbd763d-f8ec-4b57-b986-1bda7078b8f3",
     "product-recommendations"
   ]
