@@ -215,7 +215,24 @@
                 </div>
 
               {% when 'variant-inventory-level' %}
-                
+
+                {% unless product.has_only_default_variant %}
+                  <div class="variant-inventory-level rte">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {% for variant in product.variants %}
+                          <tr><td>{{ variant.title }}</td><td>{{ variant.inventory_quantity }}</td></tr>
+                        {% endfor %}
+                      </tbody>
+                    </table>
+                  </div>
+                {% endunless %}
                 
               {% when 'quantity-selector' %}
 
