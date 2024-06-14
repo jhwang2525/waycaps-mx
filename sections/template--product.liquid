@@ -227,7 +227,7 @@
                       </thead>
                       <tbody>
                         {% for variant in product.variants %}
-                          <tr><td>{{ variant.title }}</td><td>{{ variant.inventory_quantity }}</td></tr>
+                          <tr{% if forloop.index > 8 %} style="display:none;"{% endif %}><td>{{ variant.title }}</td><td>{{ variant.inventory_quantity }}</td></tr>
                         {% endfor %}
                       </tbody>
                     </table>
