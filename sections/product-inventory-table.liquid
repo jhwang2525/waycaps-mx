@@ -1,18 +1,20 @@
 {% unless product.has_only_default_variant %}
-  <div class="variant-inventory-level rte">
-    <table>
-      <thead>
-        <tr>
-          <th>{{ 'products.product.inventory_title' | t }}</th>
-          <th>{{ 'products.product.inventory' | t }}</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for variant in product.variants %}
-          <tr><td>{{ variant.title }}</td><td>{{ variant.inventory_quantity }}</td></tr>
-        {% endfor %}
-      </tbody>
-    </table>
+  <div class="container">
+    <div class="variant-inventory-level rte">
+      <table>
+        <thead>
+          <tr>
+            <th>{{ 'products.product.inventory_title' | t }}</th>
+            <th>{{ 'products.product.inventory' | t }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for variant in product.variants %}
+            <tr><td>{{ variant.title }}</td><td>{{ variant.inventory_quantity }}</td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
   </div>
 {% endunless %}
 
