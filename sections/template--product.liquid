@@ -214,6 +214,9 @@
                   {% render block %}
                 </div>
 
+              {% when 'variant-inventory-level' %}
+                
+                
               {% when 'quantity-selector' %}
 
                 <div class="quantity-controls__outer {% if settings.show_swatches %}swatches-wrapper{% else %}selector-wrapper{% endif %}" {{ block.shopify_attributes }}>
