@@ -66,6 +66,11 @@
             "enable_gift_card_recipient_form": true
           }
         },
+        "variant_inventory_level_3XQz96": {
+          "type": "variant-inventory-level",
+          "settings": {
+          }
+        },
         "4a4a330d-e558-45f9-bcce-4010e886aa67": {
           "type": "custom-liquid",
           "settings": {
@@ -91,6 +96,7 @@
         "linked-products",
         "quantity-selector",
         "payment-buttons",
+        "variant_inventory_level_3XQz96",
         "4a4a330d-e558-45f9-bcce-4010e886aa67",
         "cfe076cf-acd7-41cf-8945-0c53825d4481"
       ],
