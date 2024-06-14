@@ -66,11 +66,6 @@
             "enable_gift_card_recipient_form": true
           }
         },
-        "variant_inventory_level_ADFnX4": {
-          "type": "variant-inventory-level",
-          "settings": {
-          }
-        },
         "4a4a330d-e558-45f9-bcce-4010e886aa67": {
           "type": "custom-liquid",
           "settings": {
@@ -96,7 +91,6 @@
         "linked-products",
         "quantity-selector",
         "payment-buttons",
-        "variant_inventory_level_ADFnX4",
         "4a4a330d-e558-45f9-bcce-4010e886aa67",
         "cfe076cf-acd7-41cf-8945-0c53825d4481"
       ],
@@ -116,11 +110,6 @@
         "thumbnail_position": "left",
         "enable_zoom": false,
         "enable_video_loop": false
-      }
-    },
-    "product-inventory-table": {
-      "type": "product-inventory-table",
-      "settings": {
       }
     },
     "alireviews-section-7bbd763d-f8ec-4b57-b986-1bda7078b8f3": {
@@ -166,7 +155,6 @@
   },
   "order": [
     "main",
-    "product-inventory-table",
     "alireviews-section-7bbd763d-f8ec-4b57-b986-1bda7078b8f3",
     "product-recommendations"
   ]
