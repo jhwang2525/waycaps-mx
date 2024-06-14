@@ -253,7 +253,28 @@
                     }
                   </style>
                   <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const inventoryTable = document.querySelector('.variant-inventory-level table'),
+                              rows = inventoryTable.getElementsByTagName('tr'),
+                              showMoreButton = document.querySelector('.show_more_rows'),
+                              showLessButton = document.querySelector('.show_less_rows');
                     
+                        showMoreButton.addEventListener('click', function() {
+                          for (let i = 8; i < rows.length; i++) {
+                              rows[i].style.display = '';
+                          }
+                          this.style.display = "none";
+                          showLessButton.style.display = "none";
+                        });
+
+                        showLessButton.addEventListener('click', function() {
+                          for (let i = 8; i < rows.length; i++) {
+                              rows[i].style.display = 'none';
+                          }
+                          this.style.display = "none";
+                          showMoreButton.style.display = "none";
+                        });
+                    });
                   </script>
                 {% endunless %}
                 
