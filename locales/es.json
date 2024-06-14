@@ -360,6 +360,8 @@
       "add_to_cart": "Añadir a la cesta",
       "inventory_title": "Título",
       "inventory": "Cantidad disponible",
+      "inventory_show_more": "Mostrar más filas",
+      "inventory_show_less": "Mostrar menos filas",
       "added": "Adicional",
       "sorry_stock": "Lo sentimos, actualmente no disponible",
       "quantity": "Cantidad",
