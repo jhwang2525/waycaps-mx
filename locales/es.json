@@ -358,6 +358,8 @@
       "value_unavailable": "{{ option_value }}: no disponible",
       "make_a_selection": "Has una elección",
       "add_to_cart": "Añadir a la cesta",
+      "inventory_title": "Title",
+      "inventory": "Available Quantity",
       "added": "Adicional",
       "sorry_stock": "Lo sentimos, actualmente no disponible",
       "quantity": "Cantidad",
