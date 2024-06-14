@@ -389,6 +389,8 @@
       "sorry_stock": "Sorry, currently out of stock",
       "inventory_title": "Title",
       "inventory": "Available Quantity",
+      "inventory_show_more": "Show More Rows",
+      "inventory_show_less": "Show Less Rows",
       "quantity": "Quantity",
       "thanks": "Thanks! We will notify you when this product becomes available!",
       "out-stock_html": "Enter your email to be notified by email when <strong>{{ product }} {{ variant }}<\/strong> becomes available.",
