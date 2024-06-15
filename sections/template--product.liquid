@@ -215,8 +215,22 @@
                 </div>
 
               {% when 'variant-inventory-level' %}
+                {% assign show_table = false %}
+                {% if section.settings.hide_for_tags == blank %}
+                  {% assign show_table = true %}
+                {% else %}
+                  {% assign allTags = section.settings.hide_for_tags | replace: ', ',',' | replace: ' ,',',' | split: ',' %}
+                  {% for allT in allTags %}
+                    {% for tag in product.tags %}
+                      {% if tag == allT %}
+                        {% assign show_table = false %}
+                        {% break %}
+                      {% endif %}
+                    {% endfor %}
+                  {% endfor %}
+                {% endif %}
 
-                {% unless product.has_only_default_variant %}
+                {% unless product.has_only_default_variant and show_table == false %}
                   <div class="variant-inventory-level rte">
                     <table>
                       <thead>
@@ -1027,7 +1041,16 @@
         {
           "type":"variant-inventory-level",
           "name": "Variant Inventory Table",
-          "limit": 1
+          "limit": 1,
+          "settings": [
+            {
+              "id": "hide_for_tags",
+              "type": "textarea",
+              "default": "ABC, Test",
+              "label": "Hide tables for tagged products ?",
+              "info":"Add product tags separated with ',' (comma) to hide table on products."
+            }
+          ]
         },
         {
           "name": "Product Vendor/SKU",
