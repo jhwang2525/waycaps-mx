@@ -215,10 +215,8 @@
                 </div>
 
               {% when 'variant-inventory-level' %}
-                {% assign show_table = false %}
-                {% if block.settings.hide_for_tags == blank %}
-                  {% assign show_table = true %}
-                {% else %}
+                {% assign show_table = true %}
+                {% if block.settings.hide_for_tags != blank %}
                   {% assign allTags = block.settings.hide_for_tags | replace: ', ',',' | replace: ' ,',',' | split: ',' %}
                   {% for allT in allTags %}
                     {% for tag in product.tags %}
