@@ -69,7 +69,7 @@
         "variant_inventory_level_3XQz96": {
           "type": "variant-inventory-level",
           "settings": {
-            "hide_for_tags": "ABC, dozen"
+            "hide_for_tags": "ABC, Test"
           }
         },
         "4a4a330d-e558-45f9-bcce-4010e886aa67": {
