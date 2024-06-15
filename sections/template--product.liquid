@@ -216,10 +216,10 @@
 
               {% when 'variant-inventory-level' %}
                 {% assign show_table = false %}
-                {% if section.settings.hide_for_tags == blank %}
+                {% if block.settings.hide_for_tags == blank %}
                   {% assign show_table = true %}
                 {% else %}
-                  {% assign allTags = section.settings.hide_for_tags | replace: ', ',',' | replace: ' ,',',' | split: ',' %}
+                  {% assign allTags = block.settings.hide_for_tags | replace: ', ',',' | replace: ' ,',',' | split: ',' %}
                   {% for allT in allTags %}
                     {% for tag in product.tags %}
                       {% if tag == allT %}
