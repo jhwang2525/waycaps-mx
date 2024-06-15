@@ -230,7 +230,8 @@
                   {% endfor %}
                 {% endif %}
 
-                {% unless product.has_only_default_variant and show_table == false %}
+                {% if show_table %}
+                {% unless product.has_only_default_variant %}
                   <div class="variant-inventory-level rte">
                     <table>
                       <thead>
@@ -297,7 +298,7 @@
                     });
                   </script>
                 {% endunless %}
-                
+                {% endif %}
               {% when 'quantity-selector' %}
 
                 <div class="quantity-controls__outer {% if settings.show_swatches %}swatches-wrapper{% else %}selector-wrapper{% endif %}" {{ block.shopify_attributes }}>
