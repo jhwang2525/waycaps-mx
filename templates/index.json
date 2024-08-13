@@ -345,7 +345,7 @@
         ".section-header-padding {text-align: center;}"
       ],
       "settings": {
-        "colors": "light",
+        "colors": "white",
         "subheading": "",
         "title": "Los Mas Vedidos",
         "collection": "tc",
