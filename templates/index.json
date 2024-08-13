@@ -205,12 +205,6 @@
             "product_item": "t-c-5panel-snap-back-split"
           }
         },
-        "card_G697hp": {
-          "type": "card",
-          "settings": {
-            "product_item": "tc-mexico-36-dz-min-order-one-dozen"
-          }
-        },
         "card_GBU4CQ": {
           "type": "card",
           "settings": {
@@ -229,7 +223,6 @@
         "card_iEEa3Q",
         "card_Qrp6GV",
         "card_37QLj9",
-        "card_G697hp",
         "card_GBU4CQ",
         "card_yzmyEm"
       ],
