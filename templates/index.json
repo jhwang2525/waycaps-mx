@@ -348,7 +348,7 @@
         "colors": "light",
         "subheading": "",
         "title": "Los Mas Vedidos",
-        "collection": "best-seller",
+        "collection": "tc",
         "columns": 4,
         "rows": 1,
         "product_limit": 12,
@@ -405,48 +405,6 @@
         "colors": "white",
         "subheading": "",
         "title": "",
-        "section_width": "container",
-        "padding_top": 16,
-        "padding_bottom": 20
-      }
-    },
-    "collection-featured-collection-1": {
-      "type": "collection--featured-collection",
-      "blocks": {
-        "55c5982b-d7fe-45ec-ad48-fff7877dbb88": {
-          "type": "grid-card-vendor",
-          "settings": {
-          }
-        },
-        "grid-card-0": {
-          "type": "grid-card-title",
-          "settings": {
-          }
-        },
-        "grid-card-1": {
-          "type": "grid-card-price",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "55c5982b-d7fe-45ec-ad48-fff7877dbb88",
-        "grid-card-0",
-        "grid-card-1"
-      ],
-      "custom_css": [
-        ".row {margin: 0;}",
-        ".section-header-padding {text-align: center;}"
-      ],
-      "settings": {
-        "colors": "light",
-        "subheading": "",
-        "title": "Beanie",
-        "collection": "beanie",
-        "columns": 4,
-        "rows": 1,
-        "product_limit": 4,
-        "show_view_all": true,
         "section_width": "container",
         "padding_top": 16,
         "padding_bottom": 20
@@ -576,7 +534,6 @@
     "advanced_layout_custom_liquid_3CyxGU",
     "collection-featured-collection-2",
     "149056b8-60ad-4793-af72-f96b8dd6a657",
-    "collection-featured-collection-1",
     "newsletter_newsletter_YrH3PT",
     "1701711010a8210712",
     "d12164e6-6d92-4d2d-968a-e2fd85692d03",
