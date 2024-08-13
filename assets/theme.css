@@ -20706,4 +20706,5 @@ h4.search_article {
 
 .fade-in-image-zoom .background-size-cover.lazyloaded {
   transform: none !important;
+  anmiation: none! important;
 }
