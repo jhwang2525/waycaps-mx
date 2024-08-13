@@ -120,6 +120,7 @@
     },
     "2fd5bef4-1aac-4842-a78d-b7d4abdc541a": {
       "type": "video--video",
+      "disabled": true,
       "settings": {
         "subheading": "",
         "title": "",
