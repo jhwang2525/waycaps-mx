@@ -120,6 +120,14 @@
     "6f342fcc-69c2-4fc9-b714-9af93d77ec25": {
       "type": "image--gallery",
       "blocks": {
+        "image_hN8Qhg": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "title": "",
+            "description": ""
+          }
+        },
         "template--14756824055872__6f342fcc-69c2-4fc9-b714-9af93d77ec25-image-1": {
           "type": "image",
           "settings": {
@@ -149,6 +157,7 @@
         }
       },
       "block_order": [
+        "image_hN8Qhg",
         "template--14756824055872__6f342fcc-69c2-4fc9-b714-9af93d77ec25-image-1",
         "template--14756824055872__6f342fcc-69c2-4fc9-b714-9af93d77ec25-image-2",
         "d019bccb-33f8-4117-8c92-f350d56934df"
