@@ -20704,3 +20704,6 @@ article.page {
 h4.search_article {
   margin-top: 30px !important; }
 
+.fade-in-image-zoom .background-size-cover.lazyloaded {
+  transform: none !important;
+}
