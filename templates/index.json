@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "9c7c8c0d-009b-4489-b9c9-9c234cccb826": {
@@ -171,71 +180,57 @@
     "product_slider_bqgwHW": {
       "type": "product-slider",
       "blocks": {
-        "card_3DkEQK": {
-          "type": "card",
-          "settings": {
-            "product_item": "pigment-dyed-dad-hat-solid"
-          }
-        },
-        "card_HFAXMr": {
-          "type": "card",
-          "settings": {
-            "product_item": "v1-velcro-solid-252-box-18dz-216-pcs"
-          }
-        },
-        "card_4XPKpE": {
-          "type": "card",
-          "settings": {
-            "product_item": "box-v2-velcro-solid-270-box-18dz-216-pcs"
-          }
-        },
-        "card_aWgWm3": {
-          "type": "card",
-          "settings": {
-            "product_item": "box-v3-sandwich-velcro-270-box-one-box-18dz-216pcs"
-          }
-        },
-        "card_DpWkCX": {
-          "type": "card",
-          "settings": {
-            "product_item": "box-v4-sun-visor-velcro-252-box-1-box-18dz-216-pcs"
-          }
-        },
-        "card_4GayNV": {
-          "type": "card",
-          "settings": {
-            "product_item": "box-cdh-cotton-dad-hat-396-box-1-box-18dz-216-pcs-22-dz"
-          }
-        },
-        "card_3jtNMg": {
-          "type": "card",
-          "settings": {
-            "product_item": "box-lb-long-beanie-360-box-1-box-24dz-288-pcs-15-dz"
-          }
-        },
         "card_WBKjXw": {
           "type": "card",
           "settings": {
             "product_item": "box-tc-solid-594-box-1box-18dz-216pcs-33-dz"
           }
         },
-        "card_wUU3rE": {
+        "card_iEEa3Q": {
           "type": "card",
           "settings": {
-            "product_item": "box-trtm-2tone-486-box-1box-18dz-216pcs-27"
+            "product_item": "box-tc-2-tone-594-box-1box-18dz-216pcs-33-dz"
+          }
+        },
+        "card_Qrp6GV": {
+          "type": "card",
+          "settings": {
+            "product_item": "copy-of-tc-5panel-tencel-curve-36-dz"
+          }
+        },
+        "card_37QLj9": {
+          "type": "card",
+          "settings": {
+            "product_item": "t-c-5panel-snap-back-split"
+          }
+        },
+        "card_G697hp": {
+          "type": "card",
+          "settings": {
+            "product_item": "tc-mexico-36-dz-min-order-one-dozen"
+          }
+        },
+        "card_GBU4CQ": {
+          "type": "card",
+          "settings": {
+            "product_item": "tcu-tc-with-under-bill"
+          }
+        },
+        "card_yzmyEm": {
+          "type": "card",
+          "settings": {
+            "product_item": "tcu-blk-under-bill-36-dz"
           }
         }
       },
       "block_order": [
-        "card_3DkEQK",
-        "card_HFAXMr",
-        "card_4XPKpE",
-        "card_aWgWm3",
-        "card_DpWkCX",
-        "card_4GayNV",
-        "card_3jtNMg",
         "card_WBKjXw",
-        "card_wUU3rE"
+        "card_iEEa3Q",
+        "card_Qrp6GV",
+        "card_37QLj9",
+        "card_G697hp",
+        "card_GBU4CQ",
+        "card_yzmyEm"
       ],
       "custom_css": [
         ".title {text-align: center;}",
