@@ -377,6 +377,9 @@
     },
     "newsletter_newsletter_YrH3PT": {
       "type": "newsletter--newsletter",
+      "custom_css": [
+        "@media (max-width: 749px) {{display: none; }}"
+      ],
       "settings": {
         "colors": "light",
         "subheading": "",
