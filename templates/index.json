@@ -342,7 +342,7 @@
       ],
       "custom_css": [
         ".row {margin: 0px;}",
-        ".section-header-padding {text-align: center;}"
+        ".section-header-padding {text-align: center; background-color:white! important;}"
       ],
       "settings": {
         "colors": "white",
