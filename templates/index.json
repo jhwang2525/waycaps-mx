@@ -65,6 +65,7 @@
         "slide_jwFYpU",
         "template--14756824055872__9c7c8c0d-009b-4489-b9c9-9c234cccb826-slide-1"
       ],
+      "disabled": true,
       "custom_css": [
         "@media (max-width: 749px) {.slider-block--template--14756824055872__9c7c8c0d-009b-4489-b9c9-9c234cccb826-slide-1 .slideshow-desktop-as-mobile-image {width: 32rem; height: 200px; }}",
         ".flex-direction-nav.slider--template--22541732806932__9c7c8c0d-009b-4489-b9c9-9c234cccb826 svg {display: none;}"
@@ -88,6 +89,7 @@
     },
     "7c778704-ac85-4a6f-96a7-918ba7bc87e4": {
       "type": "image--image",
+      "disabled": true,
       "custom_css": [
         "@media screen and (max-width: 749px) {.image-section--large {object-fit: fill; height: 150px; }}"
       ],
@@ -98,24 +100,6 @@
         "section_width": "full",
         "padding_top": 20,
         "padding_bottom": 36
-      }
-    },
-    "81cf1571-3a35-4143-8742-97d13edc2bdc": {
-      "type": "text--rich-text",
-      "custom_css": [
-        ".col {padding: 0;}",
-        "@media (min-width: 751px) {.title-bar {padding-left: 38rem; }}"
-      ],
-      "settings": {
-        "colors": "white",
-        "subheading": "",
-        "title": "EN WAYCAPS",
-        "text": "<p>Waycap está preparado para enviar sus pedidos dentro del siguiente día hábil. Fabricadas con precisión, nuestras tapas en blanco premium ofrecen una superficie suave y estable sin esfuerzo, ideal tanto para bordado como para serigrafía. Ya sea que esté abordando un proyecto importante o buscando nuestros servicios personalizados, nuestro equipo dedicado está preparado para ayudarlo con cotizaciones, muestras virtuales y asistencia conceptual.<\/p>",
-        "button_link": "",
-        "button_label": "",
-        "section_width": "container",
-        "padding_top": 40,
-        "padding_bottom": 20
       }
     },
     "2fd5bef4-1aac-4842-a78d-b7d4abdc541a": {
@@ -169,6 +153,7 @@
         "template--14756824055872__6f342fcc-69c2-4fc9-b714-9af93d77ec25-image-2",
         "d019bccb-33f8-4117-8c92-f350d56934df"
       ],
+      "disabled": true,
       "settings": {
         "colors": "white",
         "subheading": "",
@@ -240,20 +225,6 @@
         "title": "BASE DE LA CAJA DE PEDIDO"
       }
     },
-    "text_rich_text_68tCji": {
-      "type": "text--rich-text",
-      "settings": {
-        "colors": "white",
-        "subheading": "",
-        "title": "PRECIO AESQUIBLE DE GORRAS AL POR MAYOR",
-        "text": "<p>Para obtener los mejores precios en gorras lisas, especialmente al hacer pedidos para un grupo, considera aprovechar nuestros descuentos por volumen en compras al por mayor. No es necesario que seas minorista o un entusiasta de las gorras para disfrutar de estas excelentes ofertas. Simplemente selecciona las gorras que desees y haz tu pedido con la cantidad que necesites.<\/p>",
-        "button_link": "",
-        "button_label": "",
-        "section_width": "container-narrow",
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
     "info_columns_UzjEEq": {
       "type": "info-columns",
       "blocks": {
@@ -284,6 +255,7 @@
         "image_and_text_kG8YpF",
         "image_and_text_FkH3z3"
       ],
+      "disabled": true,
       "custom_css": [
         "p {margin-top: 14px;}"
       ],
@@ -415,6 +387,38 @@
         "padding_bottom": 28
       }
     },
+    "81cf1571-3a35-4143-8742-97d13edc2bdc": {
+      "type": "text--rich-text",
+      "custom_css": [
+        ".col {padding: 0;}",
+        "@media (min-width: 751px) {.title-bar {padding-left: 38rem; }}"
+      ],
+      "settings": {
+        "colors": "white",
+        "subheading": "",
+        "title": "EN WAYCAPS",
+        "text": "<p>Waycap está preparado para enviar sus pedidos dentro del siguiente día hábil. Fabricadas con precisión, nuestras tapas en blanco premium ofrecen una superficie suave y estable sin esfuerzo, ideal tanto para bordado como para serigrafía. Ya sea que esté abordando un proyecto importante o buscando nuestros servicios personalizados, nuestro equipo dedicado está preparado para ayudarlo con cotizaciones, muestras virtuales y asistencia conceptual.<\/p>",
+        "button_link": "",
+        "button_label": "",
+        "section_width": "container",
+        "padding_top": 40,
+        "padding_bottom": 20
+      }
+    },
+    "text_rich_text_68tCji": {
+      "type": "text--rich-text",
+      "settings": {
+        "colors": "white",
+        "subheading": "",
+        "title": "PRECIO AESQUIBLE DE GORRAS AL POR MAYOR",
+        "text": "<p>Para obtener los mejores precios en gorras lisas, especialmente al hacer pedidos para un grupo, considera aprovechar nuestros descuentos por volumen en compras al por mayor. No es necesario que seas minorista o un entusiasta de las gorras para disfrutar de estas excelentes ofertas. Simplemente selecciona las gorras que desees y haz tu pedido con la cantidad que necesites.<\/p>",
+        "button_link": "",
+        "button_label": "",
+        "section_width": "container",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
     "1701711010a8210712": {
       "type": "apps",
       "settings": {
@@ -518,16 +522,16 @@
   "order": [
     "9c7c8c0d-009b-4489-b9c9-9c234cccb826",
     "7c778704-ac85-4a6f-96a7-918ba7bc87e4",
-    "81cf1571-3a35-4143-8742-97d13edc2bdc",
     "2fd5bef4-1aac-4842-a78d-b7d4abdc541a",
     "6f342fcc-69c2-4fc9-b714-9af93d77ec25",
     "product_slider_bqgwHW",
-    "text_rich_text_68tCji",
     "info_columns_UzjEEq",
     "advanced_layout_custom_liquid_3CyxGU",
     "collection-featured-collection-2",
     "149056b8-60ad-4793-af72-f96b8dd6a657",
     "newsletter_newsletter_YrH3PT",
+    "81cf1571-3a35-4143-8742-97d13edc2bdc",
+    "text_rich_text_68tCji",
     "1701711010a8210712",
     "d12164e6-6d92-4d2d-968a-e2fd85692d03",
     "5ce5ceab-8a65-41ee-b7ad-98f55a3c65aa",
