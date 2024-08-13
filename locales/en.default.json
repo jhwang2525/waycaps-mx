@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin language editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "general": {
     "404": {
@@ -483,6 +492,14 @@
         },
         "item_label": {
           "many": "{{count}} items"
+        },
+        "unfulfillable_product": {
+          "message": {
+            "many": "%{delivery_method} is no longer available for these items."
+          },
+          "default_message": {
+            "many": "The chosen delivery method is no longer available for these items."
+          }
         }
       },
       "order_summary": {
@@ -695,6 +712,9 @@
         "cancel_reason": {
           "many": "Other"
         }
+      },
+      "cart": {
+        "bundle_products_not_supported_for_b2b_draft": "Bundled items could not be added to B2B orders for this branch."
       }
     },
     "page_titles": {
@@ -743,6 +763,9 @@
         },
         "gift_resend_failure": {
           "many": "There was a problem resending your gift cards. Please try again or contact us."
+        },
+        "delivered_description_digital": {
+          "many": "These items are complete."
         }
       },
       "if_not_received": {
@@ -783,6 +806,13 @@
       },
       "month": {
         "many": "months"
+      }
+    },
+    "date": {
+      "humanize": {
+        "lessThanOneHourAgo": {
+          "many": "{{count}} minutes ago"
+        }
       }
     }
   }
