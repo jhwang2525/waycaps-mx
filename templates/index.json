@@ -247,6 +247,20 @@
         "title": "BASE DE LA CAJA DE PEDIDO"
       }
     },
+    "text_rich_text_68tCji": {
+      "type": "text--rich-text",
+      "settings": {
+        "colors": "white",
+        "subheading": "",
+        "title": "PRECIO AESQUIBLE DE GORRAS AL POR MAYOR",
+        "text": "<p>Para obtener los mejores precios en gorras lisas, especialmente al hacer pedidos para un grupo, considera aprovechar nuestros descuentos por volumen en compras al por mayor. No es necesario que seas minorista o un entusiasta de las gorras para disfrutar de estas excelentes ofertas. Simplemente selecciona las gorras que desees y haz tu pedido con la cantidad que necesites.<\/p>",
+        "button_link": "",
+        "button_label": "",
+        "section_width": "container-narrow",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
     "info_columns_UzjEEq": {
       "type": "info-columns",
       "blocks": {
@@ -292,20 +306,6 @@
         "padding_bottom": 50
       }
     },
-    "text_rich_text_68tCji": {
-      "type": "text--rich-text",
-      "settings": {
-        "colors": "white",
-        "subheading": "",
-        "title": "PRECIO AESQUIBLE DE GORRAS AL POR MAYOR",
-        "text": "<p>Para obtener los mejores precios en gorras lisas, especialmente al hacer pedidos para un grupo, considera aprovechar nuestros descuentos por volumen en compras al por mayor. No es necesario que seas minorista o un entusiasta de las gorras para disfrutar de estas excelentes ofertas. Simplemente selecciona las gorras que desees y haz tu pedido con la cantidad que necesites.<\/p>",
-        "button_link": "",
-        "button_label": "",
-        "section_width": "container-narrow",
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
     "advanced_layout_custom_liquid_3CyxGU": {
       "type": "advanced-layout--custom-liquid",
       "disabled": true,
@@ -342,7 +342,7 @@
       ],
       "custom_css": [
         ".row {margin: 0px;}",
-        ".section-header-padding {text-align: center; background-color:white! important;}"
+        ".section-header-padding {text-align: center; background-color: white !important;}"
       ],
       "settings": {
         "colors": "white",
@@ -529,8 +529,8 @@
     "2fd5bef4-1aac-4842-a78d-b7d4abdc541a",
     "6f342fcc-69c2-4fc9-b714-9af93d77ec25",
     "product_slider_bqgwHW",
-    "info_columns_UzjEEq",
     "text_rich_text_68tCji",
+    "info_columns_UzjEEq",
     "advanced_layout_custom_liquid_3CyxGU",
     "collection-featured-collection-2",
     "149056b8-60ad-4793-af72-f96b8dd6a657",
