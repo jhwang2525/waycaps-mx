@@ -93,7 +93,8 @@
         ".search-show {display: none;}",
         ".search {position: relative; right: 25rem; font-size: 18px;}",
         "#text-account {position: relative; top: 85px; left: 43rem;}",
-        "#site-header svg:not(.icon-caret) {height: 40px;}"
+        "#site-header svg:not(.icon-caret) {height: 40px;}",
+        ".header-wrapper button{color:black! important;}"
       ],
       "settings": {
         "sticky_header": true,
@@ -124,13 +125,12 @@
       "block_order": [
         "announcement-0"
       ],
-      "disabled": true,
       "custom_css": [
 
       ],
       "settings": {
-        "notification-bar--background-color": "#101010",
-        "notification-bar--text-color": "#f5f5f5",
+        "notification-bar--background-color": "#ffffff",
+        "notification-bar--text-color": "#050505",
         "menu": "",
         "multi_msg_nav": true,
         "social-enable": true,
