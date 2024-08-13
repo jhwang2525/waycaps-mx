@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "current": {
     "pluginseo_structuredDataDisplayLogo": true,
@@ -68,7 +77,7 @@
     "popup--show-social-icons": false,
     "favicon": "shopify:\/\/shop_images\/Screenshot_2023-12-18_at_4.37.27_AM.png",
     "predictive_search_show_price": false,
-    "animations_enabled": true,
+    "animations_enabled": false,
     "checkout_logo_image": "shopify:\/\/shop_images\/Copy_of_Copy_of_Copy_of_Copy_of_Copy_of_Brown_and_Cream_Scrapbook_Curriculum_Vitae_A4_Document_2.png",
     "checkout_logo_size": "small",
     "content_for_index": [
