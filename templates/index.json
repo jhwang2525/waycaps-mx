@@ -199,7 +199,7 @@
       "custom_css": [
         ".row {margin: 0px;}",
         ".section-header-padding {text-align: center; background-color: white !important;}",
-        ".grid__item{animation: none! important;}"
+        ".grid__item {animation: none !important;}"
       ],
       "settings": {
         "colors": "white",
@@ -224,22 +224,16 @@
             "product_item": "box-tc-solid-594-box-1box-18dz-216pcs-33-dz"
           }
         },
-        "card_iEEa3Q": {
+        "card_37QLj9": {
           "type": "card",
           "settings": {
-            "product_item": "box-tc-2-tone-594-box-1box-18dz-216pcs-33-dz"
+            "product_item": "t-c-5panel-snap-back-split"
           }
         },
         "card_Qrp6GV": {
           "type": "card",
           "settings": {
             "product_item": "copy-of-tc-5panel-tencel-curve-36-dz"
-          }
-        },
-        "card_37QLj9": {
-          "type": "card",
-          "settings": {
-            "product_item": "t-c-5panel-snap-back-split"
           }
         },
         "card_GBU4CQ": {
@@ -257,9 +251,8 @@
       },
       "block_order": [
         "card_WBKjXw",
-        "card_iEEa3Q",
-        "card_Qrp6GV",
         "card_37QLj9",
+        "card_Qrp6GV",
         "card_GBU4CQ",
         "card_yzmyEm"
       ],
