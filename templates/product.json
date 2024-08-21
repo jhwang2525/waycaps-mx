@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -86,6 +95,11 @@
             "heading": "Description",
             "open_close_icon": "caret"
           }
+        },
+        "avada_order_limits_app_block_jXDU4N": {
+          "type": "shopify:\/\/apps\/avada-order-limits\/blocks\/app-block\/d3021427-4f7b-49c8-8963-29d1d52b8956",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -99,7 +113,8 @@
         "payment-buttons",
         "variant_inventory_level_3XQz96",
         "4a4a330d-e558-45f9-bcce-4010e886aa67",
-        "cfe076cf-acd7-41cf-8945-0c53825d4481"
+        "cfe076cf-acd7-41cf-8945-0c53825d4481",
+        "avada_order_limits_app_block_jXDU4N"
       ],
       "custom_css": [
         ".container {background-color: white;}",
