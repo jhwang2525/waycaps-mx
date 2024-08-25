@@ -1,0 +1,183 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "template--product",
+      "blocks": {
+        "product-title": {
+          "type": "product-title",
+          "settings": {
+          }
+        },
+        "product-price": {
+          "type": "product-price",
+          "settings": {
+            "show_discount": "hide",
+            "tax_included": false,
+            "shipping_policy": false
+          }
+        },
+        "ali_reviews_widget_star_rating_mWVkUj": {
+          "type": "shopify:\/\/apps\/ali-reviews\/blocks\/widget-star-rating\/bf2eea72-0400-4db1-8908-44b7418f9a88",
+          "settings": {
+          }
+        },
+        "stock_level_indicator_6jeYaa": {
+          "type": "stock-level-indicator",
+          "settings": {
+            "stock-level-indicator-style": "bar",
+            "bar-indicator-color": "standard",
+            "stock_indicator_animation": true,
+            "stock-range": 20,
+            "show-stock-count": true,
+            "stock-level-notice": "always",
+            "in-stock-message": "Ready to ship",
+            "low-stock-message": "Selling fast",
+            "out-of-stock-message": "Back in soon"
+          }
+        },
+        "product-options": {
+          "type": "product-options",
+          "settings": {
+            "show_variant_labels": true,
+            "hide_out_of_stock": true,
+            "pick_an_option": false
+          }
+        },
+        "linked-products": {
+          "type": "linked-products",
+          "settings": {
+            "option_name": "Color",
+            "linked_products": [
+
+            ],
+            "swatches_size": "small",
+            "swatches_aspect_ratio": "square"
+          }
+        },
+        "quantity-selector": {
+          "type": "quantity-selector",
+          "settings": {
+          }
+        },
+        "payment-buttons": {
+          "type": "payment-buttons",
+          "settings": {
+            "show_smart_checkout": false,
+            "enable_gift_card_recipient_form": true
+          }
+        },
+        "variant_inventory_level_3XQz96": {
+          "type": "variant-inventory-level",
+          "settings": {
+            "hide_for_tags": "ABC, Test"
+          }
+        },
+        "4a4a330d-e558-45f9-bcce-4010e886aa67": {
+          "type": "custom-liquid",
+          "settings": {
+            "custom-liquid": "<h6>Dozen price = 12 pieces per color, size and style\n<br>\n<br>\nThe price will be calculated automatically based on the exact dozen and odd piece price that applies<\/h6>"
+          }
+        },
+        "cfe076cf-acd7-41cf-8945-0c53825d4481": {
+          "type": "product-description-block",
+          "settings": {
+            "collapsible_tab": false,
+            "icon": "none",
+            "heading": "Description",
+            "open_close_icon": "caret"
+          }
+        },
+        "avada_order_limits_app_block_jXDU4N": {
+          "type": "shopify:\/\/apps\/avada-order-limits\/blocks\/app-block\/d3021427-4f7b-49c8-8963-29d1d52b8956",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "product-title",
+        "product-price",
+        "ali_reviews_widget_star_rating_mWVkUj",
+        "stock_level_indicator_6jeYaa",
+        "product-options",
+        "linked-products",
+        "quantity-selector",
+        "payment-buttons",
+        "variant_inventory_level_3XQz96",
+        "4a4a330d-e558-45f9-bcce-4010e886aa67",
+        "cfe076cf-acd7-41cf-8945-0c53825d4481",
+        "avada_order_limits_app_block_jXDU4N"
+      ],
+      "custom_css": [
+        ".container {background-color: white;}",
+        "h6 {background-color: #fcf8e3; padding: 15px 15px 15px 15px; color: #8a6d3b; border: 1px solid #faebcc;}",
+        ".jdgm-widget.jdgm-widget {display: flex !important; margin-bottom: 8px;}",
+        ".button:not(:disabled) {width: 70px !important;}"
+      ],
+      "settings": {
+        "show_out_of_stock_email": true,
+        "form_position": "below-payment-buttons",
+        "size_guide_link": "",
+        "size_guide_message": "What's my size?",
+        "size_guide_variant": "Size",
+        "image_size": "small",
+        "thumbnail_position": "left",
+        "enable_zoom": false,
+        "enable_video_loop": false
+      }
+    },
+    "alireviews-section-7bbd763d-f8ec-4b57-b986-1bda7078b8f3": {
+      "type": "apps",
+      "blocks": {
+        "0be9e727-534e-41cc-ac60-f8b46bffe3a0": {
+          "type": "shopify:\/\/apps\/ali-reviews\/blocks\/widget-box\/bf2eea72-0400-4db1-8908-44b7418f9a88",
+          "settings": {
+            "product": "",
+            "name": "Review Box",
+            "vertical_alignment": "2",
+            "rating_color": "#1f1f1f",
+            "section_color": "#ffffff",
+            "primary_text_color": "#1f1f1f"
+          }
+        }
+      },
+      "block_order": [
+        "0be9e727-534e-41cc-ac60-f8b46bffe3a0"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "product-recommendations": {
+      "type": "template--product--recommendations",
+      "custom_css": [
+        ".container {max-width: 100%;}"
+      ],
+      "settings": {
+        "show_product_recommendations": true,
+        "product_recommendations_heading": "Más artículos de Waycap",
+        "quick_view_enabled": false,
+        "quick-view-image-size": "natural",
+        "discount-display": "hide",
+        "show_product_description": false,
+        "show_variant_labels": false,
+        "show_sold_out_variants": true,
+        "show_dynamic_checkout_button": false,
+        "enable_on_mobile": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "alireviews-section-7bbd763d-f8ec-4b57-b986-1bda7078b8f3",
+    "product-recommendations"
+  ]
+}
