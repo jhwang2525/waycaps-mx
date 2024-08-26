@@ -166,18 +166,6 @@
             "product_item": "t-c-5panel-snap-back-split"
           }
         },
-        "card_Qrp6GV": {
-          "type": "card",
-          "settings": {
-            "product_item": "copy-of-tc-5panel-tencel-curve-36-dz"
-          }
-        },
-        "card_GBU4CQ": {
-          "type": "card",
-          "settings": {
-            "product_item": "tcu-tc-with-under-bill"
-          }
-        },
         "card_yzmyEm": {
           "type": "card",
           "settings": {
@@ -188,8 +176,6 @@
       "block_order": [
         "card_WBKjXw",
         "card_37QLj9",
-        "card_Qrp6GV",
-        "card_GBU4CQ",
         "card_yzmyEm"
       ],
       "custom_css": [
