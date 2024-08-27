@@ -131,10 +131,17 @@
           "settings": {
             "announcement_text": "<p>Un gran inventario de sombreros en blanco está listo para enviarse en 1 a 2 días hábiles!<\/p>"
           }
+        },
+        "announcement_9nzTag": {
+          "type": "announcement",
+          "settings": {
+            "announcement_text": "<p>Enviado directamente desde USA<\/p>"
+          }
         }
       },
       "block_order": [
-        "announcement-0"
+        "announcement-0",
+        "announcement_9nzTag"
       ],
       "custom_css": [
 
