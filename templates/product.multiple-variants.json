@@ -25,6 +25,11 @@
             "shipping_policy": false
           }
         },
+        "judge_me_reviews_preview_badge_GaVEwJ": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        },
         "stock_level_indicator_6jeYaa": {
           "type": "stock-level-indicator",
           "settings": {
@@ -100,6 +105,7 @@
       "block_order": [
         "product-title",
         "product-price",
+        "judge_me_reviews_preview_badge_GaVEwJ",
         "stock_level_indicator_6jeYaa",
         "product-options",
         "linked-products",
