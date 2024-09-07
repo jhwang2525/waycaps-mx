@@ -25,8 +25,8 @@
             "shipping_policy": false
           }
         },
-        "judge_me_reviews_preview_badge_GaVEwJ": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "kudosi_ali_reviews_widget_star_rating_NfXVUH": {
+          "type": "shopify:\/\/apps\/kudosi-ali-reviews\/blocks\/widget-star-rating\/bf2eea72-0400-4db1-8908-44b7418f9a88",
           "settings": {
           }
         },
@@ -105,7 +105,7 @@
       "block_order": [
         "product-title",
         "product-price",
-        "judge_me_reviews_preview_badge_GaVEwJ",
+        "kudosi_ali_reviews_widget_star_rating_NfXVUH",
         "stock_level_indicator_6jeYaa",
         "product-options",
         "linked-products",
