@@ -15,7 +15,7 @@
         "@media screen and (max-width: 749px) {.image-section--large {height: 110px; } .img {height: 26vw; }}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/We_1500_x_350_px_7e46e81d-c8cd-432f-8ed6-e3e1cee47aa6.png",
+        "image": "shopify://shop_images/We_3.png",
         "parallax": false,
         "hero_size": "large",
         "section_width": "full",
@@ -30,7 +30,7 @@
         "@media screen and (max-width: 749px) {.image-section--large {object-fit: fill; height: 150px; }}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/SOFT_BURCKHAM_1.jpg",
+        "image": "shopify://shop_images/SOFT_BURCKHAM_1.jpg",
         "parallax": false,
         "hero_size": "large",
         "section_width": "full",
@@ -44,7 +44,7 @@
       "settings": {
         "subheading": "",
         "title": "",
-        "url": "https:\/\/vimeo.com\/901793737?share=copy",
+        "url": "https://vimeo.com/901793737?share=copy",
         "autoplay": true,
         "loop": true,
         "mute": true,
@@ -67,7 +67,7 @@
         "template--14756824055872__6f342fcc-69c2-4fc9-b714-9af93d77ec25-image-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/factory_pic_2.jpg",
+            "image": "shopify://shop_images/factory_pic_2.jpg",
             "link": "",
             "title": "",
             "description": ""
@@ -76,7 +76,7 @@
         "template--14756824055872__6f342fcc-69c2-4fc9-b714-9af93d77ec25-image-2": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/factory_pic_1.jpg",
+            "image": "shopify://shop_images/factory_pic_1.jpg",
             "link": "",
             "title": "",
             "description": ""
@@ -85,7 +85,7 @@
         "d019bccb-33f8-4117-8c92-f350d56934df": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/factory_pic_3.jpg",
+            "image": "shopify://shop_images/factory_pic_3.jpg",
             "link": "",
             "title": "",
             "description": ""
@@ -198,23 +198,23 @@
         "image_and_text_kG8YpF": {
           "type": "image_and_text",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screenshot_2024-05-01_at_1.17.29_AM_09ef0dfa-a6ca-4fe0-9b7e-5d546e9e8798.png",
+            "image": "shopify://shop_images/Screenshot_2024-05-01_at_1.17.29_AM_09ef0dfa-a6ca-4fe0-9b7e-5d546e9e8798.png",
             "grid_image_size": "square",
             "heading": "Nuevos sombreros han llegado!",
-            "text": "<p>Explora los nuevos sombreros<\/p>",
+            "text": "<p>Explora los nuevos sombreros</p>",
             "button_text": "Shop - Hats",
-            "button_link": "shopify:\/\/collections\/all"
+            "button_link": "shopify://collections/all"
           }
         },
         "image_and_text_FkH3z3": {
           "type": "image_and_text",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screenshot_2024-05-01_at_1.17.36_AM_d05c3399-bf5b-428b-aeab-9ed19b74f79e.png",
+            "image": "shopify://shop_images/Screenshot_2024-05-01_at_1.17.36_AM_d05c3399-bf5b-428b-aeab-9ed19b74f79e.png",
             "grid_image_size": "square",
             "heading": "hilo de bordar",
-            "text": "<p>Explora la variedad de hilos de bordado<\/p>",
+            "text": "<p>Explora la variedad de hilos de bordado</p>",
             "button_text": "Shop - Threads",
-            "button_link": "shopify:\/\/collections\/all"
+            "button_link": "shopify://collections/all"
           }
         }
       },
@@ -242,7 +242,7 @@
       "type": "advanced-layout--custom-liquid",
       "disabled": true,
       "settings": {
-        "custom_liquid": "<video autoplay=\"autoplay\" loop=\"loop\" muted defaultMuted playsinline  oncontextmenu=\"return false;\"  preload=\"auto\" id=\"openthinkingvideo\"><source src=\"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/98986a4272124b198f1c410f4ee99af7.mp4\" type=\"video\/mp4\"><\/video><style>#openthinkingvideo { display:block; max-width: 100%; width: 25%; padding: 0; margin: 0;position:relative; left:33rem;}<\/style>",
+        "custom_liquid": "<video autoplay=\"autoplay\" loop=\"loop\" muted defaultMuted playsinline  oncontextmenu=\"return false;\"  preload=\"auto\" id=\"openthinkingvideo\"><source src=\"https://cdn.shopify.com/videos/c/o/v/98986a4272124b198f1c410f4ee99af7.mp4\" type=\"video/mp4\"></video><style>#openthinkingvideo { display:block; max-width: 100%; width: 25%; padding: 0; margin: 0;position:relative; left:33rem;}</style>",
         "section_width": "container",
         "padding_top": 12,
         "padding_bottom": 24
@@ -309,7 +309,7 @@
         "colors": "light",
         "subheading": "",
         "title": "",
-        "newsletter_description": "<p>SUSCRÍBASE A NUESTRO BOLETÍN<\/p>",
+        "newsletter_description": "<p>SUSCRÍBASE A NUESTRO BOLETÍN</p>",
         "section_width": "container-full-width",
         "padding_top": 28,
         "padding_bottom": 28
@@ -325,7 +325,7 @@
         "colors": "white",
         "subheading": "",
         "title": "EN WAYCAPS",
-        "text": "<p>Waycap está preparado para enviar sus pedidos dentro del siguiente día hábil. Fabricadas con precisión, nuestras tapas en blanco premium ofrecen una superficie suave y estable sin esfuerzo, ideal tanto para bordado como para serigrafía. Ya sea que esté abordando un proyecto importante o buscando nuestros servicios personalizados, nuestro equipo dedicado está preparado para ayudarlo con cotizaciones, muestras virtuales y asistencia conceptual.<\/p>",
+        "text": "<p>Waycap está preparado para enviar sus pedidos dentro del siguiente día hábil. Fabricadas con precisión, nuestras tapas en blanco premium ofrecen una superficie suave y estable sin esfuerzo, ideal tanto para bordado como para serigrafía. Ya sea que esté abordando un proyecto importante o buscando nuestros servicios personalizados, nuestro equipo dedicado está preparado para ayudarlo con cotizaciones, muestras virtuales y asistencia conceptual.</p>",
         "button_link": "",
         "button_label": "",
         "section_width": "container",
@@ -339,7 +339,7 @@
         "colors": "white",
         "subheading": "",
         "title": "PRECIO AESQUIBLE DE GORRAS AL POR MAYOR",
-        "text": "<p>Para obtener los mejores precios en gorras lisas, especialmente al hacer pedidos para un grupo, considera aprovechar nuestros descuentos por volumen en compras al por mayor. No es necesario que seas minorista o un entusiasta de las gorras para disfrutar de estas excelentes ofertas. Simplemente selecciona las gorras que desees y haz tu pedido con la cantidad que necesites.<\/p>",
+        "text": "<p>Para obtener los mejores precios en gorras lisas, especialmente al hacer pedidos para un grupo, considera aprovechar nuestros descuentos por volumen en compras al por mayor. No es necesario que seas minorista o un entusiasta de las gorras para disfrutar de estas excelentes ofertas. Simplemente selecciona las gorras que desees y haz tu pedido con la cantidad que necesites.</p>",
         "button_link": "",
         "button_label": "",
         "section_width": "container",
@@ -359,7 +359,7 @@
         "colors": "white",
         "subheading": "",
         "title": "SOMBREROS AL POR MAYOR EN WAYCAPS.COM",
-        "text": "<p>Waycap Inc es una empresa mayorista de sombreros que se estableció en 2017 en Los Ángeles, California. Tenemos nuestra propia fábrica en China desde 2008. Waycap Inc vende principalmente gorras en blanco con diferentes diseños, como gorras con velcro, gorras de camionero, gorras tipo cubo, gorros, gorras tipo snapback, etc.<\/p>",
+        "text": "<p>Waycap Inc es una empresa mayorista de sombreros que se estableció en 2017 en Los Ángeles, California. Tenemos nuestra propia fábrica en China desde 2008. Waycap Inc vende principalmente gorras en blanco con diferentes diseños, como gorras con velcro, gorras de camionero, gorras tipo cubo, gorros, gorras tipo snapback, etc.</p>",
         "button_link": "",
         "button_label": "",
         "section_width": "container",
@@ -376,7 +376,7 @@
         "colors": "white",
         "subheading": "",
         "title": "INMEJORABLE SELECCIÓN DE SOMBREROS EN BLANCO AL POR MAYOR",
-        "text": "<p>Desde gorras de camionero hasta gorras de papá, desde gorras snapback hasta gorros, Waycap es el proveedor confiable de gorras y sombreros en blanco de primer nivel. Al atender a una clientela diversa, desde serigrafistas y tiendas de bordado hasta marcas de moda y empresas de promoción, nos hemos convertido en la opción ideal para soluciones de sombreros de marca. Con nuestras instalaciones de producción dedicadas en China, garantizamos que cada cliente se beneficie de precios genuinos directos de fábrica.<\/p>",
+        "text": "<p>Desde gorras de camionero hasta gorras de papá, desde gorras snapback hasta gorros, Waycap es el proveedor confiable de gorras y sombreros en blanco de primer nivel. Al atender a una clientela diversa, desde serigrafistas y tiendas de bordado hasta marcas de moda y empresas de promoción, nos hemos convertido en la opción ideal para soluciones de sombreros de marca. Con nuestras instalaciones de producción dedicadas en China, garantizamos que cada cliente se beneficie de precios genuinos directos de fábrica.</p>",
         "button_link": "",
         "button_label": "",
         "section_width": "container",
@@ -393,7 +393,7 @@
         "colors": "white",
         "subheading": "",
         "title": "GORRAS DE BÉISBOL AL POR MAYOR DE PRIMERA CALIDAD A PRECIOS COMPETITIVOS",
-        "text": "<p>Nuestro compromiso con la excelencia se refleja en la calidad meticulosamente verificada de nuestros productos. Cada artículo se somete a pruebas rigurosas para garantizar que cumpla con los más altos estándares, brindándole una experiencia confiable y de primer nivel. Estamos orgullosos de ofrecer a nuestros clientes no solo productos superiores sino también una estructura de precios asequible. Nuestro objetivo es hacer que la calidad sea accesible, garantizando que usted reciba un valor excepcional por su inversión sin comprometer la excelencia.<\/p>",
+        "text": "<p>Nuestro compromiso con la excelencia se refleja en la calidad meticulosamente verificada de nuestros productos. Cada artículo se somete a pruebas rigurosas para garantizar que cumpla con los más altos estándares, brindándole una experiencia confiable y de primer nivel. Estamos orgullosos de ofrecer a nuestros clientes no solo productos superiores sino también una estructura de precios asequible. Nuestro objetivo es hacer que la calidad sea accesible, garantizando que usted reciba un valor excepcional por su inversión sin comprometer la excelencia.</p>",
         "button_link": "",
         "button_label": "",
         "section_width": "container",
