@@ -26,7 +26,7 @@
           }
         },
         "kudosi_ali_reviews_widget_star_rating_NfXVUH": {
-          "type": "shopify:\/\/apps\/kudosi-ali-reviews\/blocks\/widget-star-rating\/bf2eea72-0400-4db1-8908-44b7418f9a88",
+          "type": "shopify://apps/kudosi-ali-reviews/blocks/widget-star-rating/bf2eea72-0400-4db1-8908-44b7418f9a88",
           "settings": {
           }
         },
@@ -65,18 +65,20 @@
         },
         "quantity-selector": {
           "type": "quantity-selector",
+          "disabled": true,
           "settings": {
           }
         },
         "payment-buttons": {
           "type": "payment-buttons",
+          "disabled": true,
           "settings": {
             "show_smart_checkout": false,
             "enable_gift_card_recipient_form": true
           }
         },
         "avada_order_limits_app_block_jXDU4N": {
-          "type": "shopify:\/\/apps\/avada-order-limits\/blocks\/app-block\/d3021427-4f7b-49c8-8963-29d1d52b8956",
+          "type": "shopify://apps/avada-order-limits/blocks/app-block/d3021427-4f7b-49c8-8963-29d1d52b8956",
           "settings": {
           }
         },
@@ -89,7 +91,7 @@
         "4a4a330d-e558-45f9-bcce-4010e886aa67": {
           "type": "custom-liquid",
           "settings": {
-            "custom-liquid": "<h6>Precio por docena = 12 piezas por color, tamaño y estilo\n<br>\n<br>\nPedido mínimo $648 \/ 18 docenas<\/h6>"
+            "custom-liquid": "<h6>Precio por docena = 12 piezas por color, tamaño y estilo\n<br>\n<br>\nPedido mínimo $648 / 18 docenas</h6>"
           }
         },
         "cfe076cf-acd7-41cf-8945-0c53825d4481": {
@@ -138,7 +140,7 @@
       "type": "apps",
       "blocks": {
         "0be9e727-534e-41cc-ac60-f8b46bffe3a0": {
-          "type": "shopify:\/\/apps\/kudosi-ali-reviews\/blocks\/widget-box\/bf2eea72-0400-4db1-8908-44b7418f9a88",
+          "type": "shopify://apps/kudosi-ali-reviews/blocks/widget-box/bf2eea72-0400-4db1-8908-44b7418f9a88",
           "settings": {
             "product": "",
             "name": "Review Box",
