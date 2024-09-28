@@ -136,7 +136,7 @@
         ".row {margin: 0px;}",
         ".section-header-padding {text-align: center; background-color: white !important;}",
         ".grid__item {animation: none !important;}",
-        ".money-styling{display: none! important;}"
+        ".money-styling {display: none !important;}"
       ],
       "settings": {
         "colors": "white",
@@ -185,7 +185,7 @@
         ".flickity-prev-next-button.previous {display: none;}",
         ".dot {background-color: white;}",
         ".title-wrapper-with-link {top: 0px;}",
-        ".price {text-align: center;}"
+        ".price {display:none;}"
       ],
       "settings": {
         "navigation_amount": 4,
