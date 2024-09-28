@@ -152,47 +152,6 @@
         "padding_bottom": 20
       }
     },
-    "product_slider_bqgwHW": {
-      "type": "product-slider",
-      "blocks": {
-        "card_WBKjXw": {
-          "type": "card",
-          "settings": {
-            "product_item": "box-tc-solid-594-box-1box-18dz-216pcs-33-dz"
-          }
-        },
-        "card_37QLj9": {
-          "type": "card",
-          "settings": {
-            "product_item": "t-c-5panel-snap-back-split"
-          }
-        },
-        "card_yzmyEm": {
-          "type": "card",
-          "settings": {
-            "product_item": "tcu-blk-under-bill-36-dz"
-          }
-        }
-      },
-      "block_order": [
-        "card_WBKjXw",
-        "card_37QLj9",
-        "card_yzmyEm"
-      ],
-      "custom_css": [
-        ".title {text-align: center;}",
-        ".flickity-prev-next-button {display: none;}",
-        ".flickity-prev-next-button.previous {display: none;}",
-        ".dot {background-color: white;}",
-        ".title-wrapper-with-link {top: 0px;}",
-        ".price {display: none;}"
-      ],
-      "settings": {
-        "navigation_amount": 4,
-        "navigation_color": "",
-        "title": "BASE DE LA CAJA DE PEDIDO"
-      }
-    },
     "info_columns_UzjEEq": {
       "type": "info-columns",
       "blocks": {
@@ -454,7 +413,6 @@
     "2fd5bef4-1aac-4842-a78d-b7d4abdc541a",
     "6f342fcc-69c2-4fc9-b714-9af93d77ec25",
     "collection-featured-collection-2",
-    "product_slider_bqgwHW",
     "info_columns_UzjEEq",
     "advanced_layout_custom_liquid_3CyxGU",
     "149056b8-60ad-4793-af72-f96b8dd6a657",
