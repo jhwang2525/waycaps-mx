@@ -26,7 +26,7 @@
           }
         },
         "judge_me_reviews_preview_badge_YDiewD": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
           }
         },
@@ -63,13 +63,21 @@
             "swatches_aspect_ratio": "square"
           }
         },
+        "custom_liquid_irFDPH": {
+          "type": "custom-liquid",
+          "settings": {
+            "custom-liquid": "<h4>To place an order, please Whatsapp or email us. +523331716981 / waycapmx@gmail.com</h4>"
+          }
+        },
         "quantity-selector": {
           "type": "quantity-selector",
+          "disabled": true,
           "settings": {
           }
         },
         "payment-buttons": {
           "type": "payment-buttons",
+          "disabled": true,
           "settings": {
             "show_smart_checkout": false,
             "enable_gift_card_recipient_form": true
@@ -84,7 +92,7 @@
         "4a4a330d-e558-45f9-bcce-4010e886aa67": {
           "type": "custom-liquid",
           "settings": {
-            "custom-liquid": "<h6>Dozen price = 12 pieces per color, size and style\n<br>\n<br>\nThe price will be calculated automatically based on the exact dozen and odd piece price that applies<\/h6>"
+            "custom-liquid": "<h6>Dozen price = 12 pieces per color, size and style\n<br>\n<br>\nThe price will be calculated automatically based on the exact dozen and odd piece price that applies</h6>"
           }
         },
         "cfe076cf-acd7-41cf-8945-0c53825d4481": {
@@ -97,7 +105,7 @@
           }
         },
         "avada_order_limits_app_block_jXDU4N": {
-          "type": "shopify:\/\/apps\/avada-order-limits\/blocks\/app-block\/d3021427-4f7b-49c8-8963-29d1d52b8956",
+          "type": "shopify://apps/avada-order-limits/blocks/app-block/d3021427-4f7b-49c8-8963-29d1d52b8956",
           "settings": {
           }
         }
@@ -109,6 +117,7 @@
         "stock_level_indicator_6jeYaa",
         "product-options",
         "linked-products",
+        "custom_liquid_irFDPH",
         "quantity-selector",
         "payment-buttons",
         "variant_inventory_level_3XQz96",
@@ -138,7 +147,7 @@
       "type": "apps",
       "blocks": {
         "0be9e727-534e-41cc-ac60-f8b46bffe3a0": {
-          "type": "shopify:\/\/apps\/kudosi-ali-reviews\/blocks\/widget-box\/bf2eea72-0400-4db1-8908-44b7418f9a88",
+          "type": "shopify://apps/kudosi-ali-reviews/blocks/widget-box/bf2eea72-0400-4db1-8908-44b7418f9a88",
           "settings": {
             "product": "",
             "name": "Review Box",
