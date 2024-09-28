@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "wrapper": "div.collection-main--wrapper",
   "sections": {
@@ -38,17 +47,11 @@
           "type": "grid-card-title",
           "settings": {
           }
-        },
-        "grid-card-price": {
-          "type": "grid-card-price",
-          "settings": {
-          }
         }
       },
       "block_order": [
         "3bc97644-2ade-4afe-be3b-4399305951b6",
-        "grid-card-title",
-        "grid-card-price"
+        "grid-card-title"
       ],
       "custom_css": [
         "@media screen and (min-width: 750px) {.collection-filtering-section {width: 20%; }}",
@@ -61,7 +64,7 @@
         "desktop_position": "sidebar",
         "enable_filtering": true,
         "enable_sorting": true,
-        "collection-sidebar-image": "shopify:\/\/shop_images\/filter_banner.jpg",
+        "collection-sidebar-image": "shopify://shop_images/filter_banner.jpg",
         "collection-sidebar-link": "",
         "collection-sidebar-title": "",
         "collection-sidebar-richtext": "",
