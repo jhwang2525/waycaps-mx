@@ -141,7 +141,7 @@
         "colors": "white",
         "subheading": "",
         "title": "Los Mas Vedidos",
-        "collection": "tc",
+        "collection": "all-products",
         "columns": 4,
         "rows": 1,
         "product_limit": 12,
