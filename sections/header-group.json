@@ -129,19 +129,12 @@
         "announcement-0": {
           "type": "announcement",
           "settings": {
-            "announcement_text": "<p>Un gran inventario de sombreros en blanco está listo para enviarse en 1 a 2 días hábiles!</p>"
-          }
-        },
-        "announcement_VyLxmt": {
-          "type": "announcement",
-          "settings": {
-            "announcement_text": "<p>Si deseas hacer un pedido, por favor haz clic <a href=\"/pages/contact\" title=\"CONTÁCTANOS\">aquí</a></p>"
+            "announcement_text": "<p>Para realizar un pedido, por favor envíanos un WhatsApp o un correo electrónico. +523331716981 / <a>waycapmx@gmail.com</a></p>"
           }
         }
       },
       "block_order": [
-        "announcement-0",
-        "announcement_VyLxmt"
+        "announcement-0"
       ],
       "custom_css": [
 
