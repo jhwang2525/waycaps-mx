@@ -69,6 +69,12 @@
             "custom-liquid": "<h4>To place an order, please Whatsapp or email us. +523331716981 / waycapmx@gmail.com</h4>"
           }
         },
+        "custom_liquid_zQRJMH": {
+          "type": "custom-liquid",
+          "settings": {
+            "custom-liquid": "<h4>Para realizar un pedido, por favor envíanos un WhatsApp o un correo electrónico. +523331716981 / waycapmx@gmail.com</h4>"
+          }
+        },
         "quantity-selector": {
           "type": "quantity-selector",
           "disabled": true,
@@ -118,6 +124,7 @@
         "product-options",
         "linked-products",
         "custom_liquid_irFDPH",
+        "custom_liquid_zQRJMH",
         "quantity-selector",
         "payment-buttons",
         "variant_inventory_level_3XQz96",
