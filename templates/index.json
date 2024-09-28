@@ -15,10 +15,10 @@
         "@media screen and (max-width: 749px) {.image-section--large {height: 110px; } .img {height: 26vw; }}"
       ],
       "settings": {
-        "image": "shopify://shop_images/We_3.png",
+        "image": "shopify://shop_images/We_5.png",
         "parallax": false,
-        "hero_size": "large",
-        "section_width": "full",
+        "hero_size": "medium",
+        "section_width": "page",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -185,7 +185,7 @@
         ".flickity-prev-next-button.previous {display: none;}",
         ".dot {background-color: white;}",
         ".title-wrapper-with-link {top: 0px;}",
-        ".price {display:none;}"
+        ".price {display: none;}"
       ],
       "settings": {
         "navigation_amount": 4,
