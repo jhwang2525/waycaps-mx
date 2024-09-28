@@ -142,10 +142,10 @@
         "subheading": "",
         "title": "Los Mas Vedidos",
         "collection": "all-products",
-        "columns": 4,
+        "columns": 3,
         "rows": 1,
         "product_limit": 12,
-        "show_view_all": true,
+        "show_view_all": false,
         "section_width": "container",
         "padding_top": 16,
         "padding_bottom": 20
