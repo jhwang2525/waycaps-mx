@@ -135,7 +135,8 @@
       "custom_css": [
         ".row {margin: 0px;}",
         ".section-header-padding {text-align: center; background-color: white !important;}",
-        ".grid__item {animation: none !important;}"
+        ".grid__item {animation: none !important;}",
+        ".money-styling{display: none! important;}"
       ],
       "settings": {
         "colors": "white",
