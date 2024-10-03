@@ -146,7 +146,7 @@
       "custom_css": [
         ".flex-direction-nav .flex-next {display: none;}",
         ".flex-direction-nav .flex-prev {display: none;}",
-        ".flex-control-nav{bottom:0px;}"
+        ".flex-control-nav {bottom: -15px;}"
       ],
       "settings": {
         "notification-bar--background-color": "#ffffff",
