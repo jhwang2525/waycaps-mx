@@ -144,7 +144,8 @@
         "announcement_XiqLpM"
       ],
       "custom_css": [
-
+        ".flex-direction-nav .flex-next {display: none;}",
+        ".flex-direction-nav .flex-prev{display:none;}"
       ],
       "settings": {
         "notification-bar--background-color": "#ffffff",
