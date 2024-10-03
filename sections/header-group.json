@@ -129,13 +129,13 @@
         "announcement-0": {
           "type": "announcement",
           "settings": {
-            "announcement_text": "<p>Para realizar un pedido, por favor envíanos un WhatsApp o un correo electrónico. +523331716981 / <a>waycapmx@gmail.com</a></p>"
+            "announcement_text": "<p><strong>Para realizar un pedido, por favor envíanos un WhatsApp o un correo electrónico. +523331716981 / </strong><a><strong>waycapmx@gmail.com</strong></a></p>"
           }
         },
         "announcement_XiqLpM": {
           "type": "announcement",
           "settings": {
-            "announcement_text": "<p>No aceptamos pedidos a través del sitio web en este momento</p>"
+            "announcement_text": "<p><strong>No aceptamos pedidos a través del sitio web en este momento</strong></p>"
           }
         }
       },
@@ -145,7 +145,7 @@
       ],
       "custom_css": [
         ".flex-direction-nav .flex-next {display: none;}",
-        ".flex-direction-nav .flex-prev{display:none;}"
+        ".flex-direction-nav .flex-prev {display: none;}"
       ],
       "settings": {
         "notification-bar--background-color": "#ffffff",
