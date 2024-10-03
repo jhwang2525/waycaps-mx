@@ -105,7 +105,8 @@
         ".search-show {display: none;}",
         ".search {position: relative; right: 25rem; font-size: 18px;}",
         "#text-account {position: relative; top: 85px; left: 43rem;}",
-        "#site-header svg:not(.icon-caret) {height: 40px;}"
+        "#site-header svg:not(.icon-caret) {height: 40px;}",
+        ".mobile-header--wrapper{background-color:white;}"
       ],
       "settings": {
         "sticky_header": true,
@@ -147,7 +148,7 @@
         ".flex-direction-nav .flex-next {display: none;}",
         ".flex-direction-nav .flex-prev {display: none;}",
         ".flex-control-nav {bottom: -15px;}",
-        ".notification-bar__wrapper{border-top:1px solid black; border-bottom:1px solid black;}"
+        ".notification-bar__wrapper {border-top: 1px solid black; border-bottom: 1px solid black;}"
       ],
       "settings": {
         "notification-bar--background-color": "#ffffff",
