@@ -28,6 +28,7 @@
         "collection-title",
         "collection-description"
       ],
+      "disabled": true,
       "custom_css": [
         "h2 {text-align: left;}",
         "@media screen and (min-width: 767px) {.collection-header-wrapper {text-align: left; padding-right: 55rem; position: relative; left: 15rem; }}"
