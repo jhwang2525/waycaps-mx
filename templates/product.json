@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -14,8 +14,7 @@
       "blocks": {
         "product-title": {
           "type": "product-title",
-          "settings": {
-          }
+          "settings": {}
         },
         "product-price": {
           "type": "product-price",
@@ -28,8 +27,7 @@
         },
         "judge_me_reviews_preview_badge_YDiewD": {
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
+          "settings": {}
         },
         "stock_level_indicator_6jeYaa": {
           "type": "stock-level-indicator",
@@ -57,9 +55,7 @@
           "type": "linked-products",
           "settings": {
             "option_name": "Color",
-            "linked_products": [
-
-            ],
+            "linked_products": [],
             "swatches_size": "small",
             "swatches_aspect_ratio": "square"
           }
@@ -79,8 +75,7 @@
         "quantity-selector": {
           "type": "quantity-selector",
           "disabled": true,
-          "settings": {
-          }
+          "settings": {}
         },
         "payment-buttons": {
           "type": "payment-buttons",
@@ -113,8 +108,7 @@
         },
         "avada_order_limits_app_block_jXDU4N": {
           "type": "shopify://apps/avada-order-limits/blocks/app-block/d3021427-4f7b-49c8-8963-29d1d52b8956",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -176,7 +170,8 @@
     "product-recommendations": {
       "type": "template--product--recommendations",
       "custom_css": [
-        ".container {max-width: 100%;}"
+        ".container {max-width: 100%;}",
+        ".money-styling {display: none! important;}"
       ],
       "settings": {
         "show_product_recommendations": true,
