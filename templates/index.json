@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "image_image_yPL4yW": {
@@ -113,18 +113,15 @@
       "blocks": {
         "00c6ee31-1946-45b1-ba4b-70c2ddc5bcad": {
           "type": "grid-card-vendor",
-          "settings": {
-          }
+          "settings": {}
         },
         "featured-collection-0": {
           "type": "grid-card-title",
-          "settings": {
-          }
+          "settings": {}
         },
         "featured-collection-1": {
           "type": "grid-card-price",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -387,7 +384,7 @@
           "settings": {
             "icon": "phone",
             "heading": "Contacta con nosotras",
-            "subheading": "+1 (213) 352-8888",
+            "subheading": "+523331716981",
             "link": ""
           }
         }
