@@ -15,7 +15,7 @@
         "@media screen and (max-width: 749px) {.image-section--large {height: 110px; } .img {height: 26vw; } .image-section--medium {height: 115px; }}"
       ],
       "settings": {
-        "image": "shopify://shop_images/We_5_e0c4bbf4-a45f-4b63-ae88-2f55f953e319.png",
+        "image": "shopify://shop_images/Guadalajara_Banner.png",
         "parallax": false,
         "hero_size": "medium",
         "section_width": "page",
