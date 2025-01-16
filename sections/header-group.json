@@ -127,6 +127,12 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "announcement_8xKBjd": {
+          "type": "announcement",
+          "settings": {
+            "announcement_text": "<p>Asistiremos Exhibiciones Intermoda 21 al 24 de enero Stand #447</p>"
+          }
+        },
         "announcement-0": {
           "type": "announcement",
           "settings": {
@@ -138,18 +144,12 @@
           "settings": {
             "announcement_text": "<p><strong>No aceptamos pedidos a través del sitio web en este momento</strong></p>"
           }
-        },
-        "announcement_8xKBjd": {
-          "type": "announcement",
-          "settings": {
-            "announcement_text": "<p>Asistiremos Exhibiciones Intermoda 21 al 24 de enero Stand #447</p>"
-          }
         }
       },
       "block_order": [
+        "announcement_8xKBjd",
         "announcement-0",
-        "announcement_XiqLpM",
-        "announcement_8xKBjd"
+        "announcement_XiqLpM"
       ],
       "custom_css": [
         ".flex-direction-nav .flex-next {display: none;}",
