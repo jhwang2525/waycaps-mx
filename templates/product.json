@@ -60,8 +60,8 @@
             "swatches_aspect_ratio": "square"
           }
         },
-        "unlimited_bundles_product_page_placeholder_YYFBx8": {
-          "type": "shopify://apps/unlimited-bundles/blocks/product-page-placeholder/d33d0f48-dee0-42a0-b156-2a5dce91814a",
+        "unlimited_bundles_embed_all_PXaQCe": {
+          "type": "shopify://apps/unlimited-bundles/blocks/embed-all/d33d0f48-dee0-42a0-b156-2a5dce91814a",
           "settings": {}
         },
         "custom_liquid_irFDPH": {
@@ -122,7 +122,7 @@
         "stock_level_indicator_6jeYaa",
         "product-options",
         "linked-products",
-        "unlimited_bundles_product_page_placeholder_YYFBx8",
+        "unlimited_bundles_embed_all_PXaQCe",
         "custom_liquid_irFDPH",
         "custom_liquid_zQRJMH",
         "quantity-selector",
