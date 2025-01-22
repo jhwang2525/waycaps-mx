@@ -171,7 +171,7 @@
       "type": "template--product--recommendations",
       "custom_css": [
         ".container {max-width: 100%;}",
-        ".money-styling {display: none! important;}"
+        ".money-styling {display: none !important;}"
       ],
       "settings": {
         "show_product_recommendations": true,
@@ -185,10 +185,26 @@
         "show_dynamic_checkout_button": false,
         "enable_on_mobile": true
       }
+    },
+    "1737565170a362a135": {
+      "type": "apps",
+      "blocks": {
+        "hulk_discounts_offer_table_block_VUEBWQ": {
+          "type": "shopify://apps/hulk-discounts/blocks/offer_table_block/25745434-52e7-4378-88f1-890df18a0110",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "hulk_discounts_offer_table_block_VUEBWQ"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
+    "1737565170a362a135",
     "alireviews-section-7bbd763d-f8ec-4b57-b986-1bda7078b8f3",
     "product-recommendations"
   ]
