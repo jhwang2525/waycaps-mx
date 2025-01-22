@@ -42,7 +42,6 @@ We highly recommend labelling changes, or App installs, so these can also be upd
 {
  overflow:auto;
   height:100%;
-  pointer-events: none;
 }
 .price-message-link{color:#ff6565 !important;}
 
