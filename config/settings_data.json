@@ -116,11 +116,6 @@
         "disabled": false,
         "settings": {}
       },
-      "558381514691908246": {
-        "type": "shopify://apps/hulk-discounts/blocks/app-embed/25745434-52e7-4378-88f1-890df18a0110",
-        "disabled": false,
-        "settings": {}
-      },
       "16477348613150133823": {
         "type": "shopify://apps/unlimited-bundles/blocks/script-app-block/d33d0f48-dee0-42a0-b156-2a5dce91814a",
         "disabled": true,
@@ -132,6 +127,11 @@
           "enable_reload_on_bundle_auto_match": false,
           "use_h2_header": false
         }
+      },
+      "558381514691908246": {
+        "type": "shopify://apps/hulk-discounts/blocks/app-embed/25745434-52e7-4378-88f1-890df18a0110",
+        "disabled": true,
+        "settings": {}
       }
     }
   },
