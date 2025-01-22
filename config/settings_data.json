@@ -116,20 +116,13 @@
         "disabled": false,
         "settings": {}
       },
-      "16477348613150133823": {
-        "type": "shopify://apps/unlimited-bundles/blocks/script-app-block/d33d0f48-dee0-42a0-b156-2a5dce91814a",
-        "disabled": true,
-        "settings": {
-          "reload_on_line_item_properties": false,
-          "disable_reload_on_cart_update": false,
-          "disable_cart_attribute_tracker": false,
-          "disable_facebook_events": false,
-          "enable_reload_on_bundle_auto_match": false,
-          "use_h2_header": false
-        }
-      },
       "558381514691908246": {
         "type": "shopify://apps/hulk-discounts/blocks/app-embed/25745434-52e7-4378-88f1-890df18a0110",
+        "disabled": false,
+        "settings": {}
+      },
+      "8924079168617604943": {
+        "type": "shopify://apps/kudosi-ali-reviews/blocks/widget-popup/bf2eea72-0400-4db1-8908-44b7418f9a88",
         "disabled": false,
         "settings": {}
       }
