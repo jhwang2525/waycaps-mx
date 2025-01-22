@@ -60,6 +60,10 @@
             "swatches_aspect_ratio": "square"
           }
         },
+        "unlimited_bundles_product_page_placeholder_YYFBx8": {
+          "type": "shopify://apps/unlimited-bundles/blocks/product-page-placeholder/d33d0f48-dee0-42a0-b156-2a5dce91814a",
+          "settings": {}
+        },
         "custom_liquid_irFDPH": {
           "type": "custom-liquid",
           "settings": {
@@ -118,6 +122,7 @@
         "stock_level_indicator_6jeYaa",
         "product-options",
         "linked-products",
+        "unlimited_bundles_product_page_placeholder_YYFBx8",
         "custom_liquid_irFDPH",
         "custom_liquid_zQRJMH",
         "quantity-selector",
@@ -185,26 +190,10 @@
         "show_dynamic_checkout_button": false,
         "enable_on_mobile": true
       }
-    },
-    "1737565170a362a135": {
-      "type": "apps",
-      "blocks": {
-        "hulk_discounts_offer_table_block_VUEBWQ": {
-          "type": "shopify://apps/hulk-discounts/blocks/offer_table_block/25745434-52e7-4378-88f1-890df18a0110",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "hulk_discounts_offer_table_block_VUEBWQ"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
     "main",
-    "1737565170a362a135",
     "alireviews-section-7bbd763d-f8ec-4b57-b986-1bda7078b8f3",
     "product-recommendations"
   ]
