@@ -64,6 +64,17 @@
           "type": "shopify://apps/hulk-discounts/blocks/offer_table_block/25745434-52e7-4378-88f1-890df18a0110",
           "settings": {}
         },
+        "quantity-selector": {
+          "type": "quantity-selector",
+          "settings": {}
+        },
+        "payment-buttons": {
+          "type": "payment-buttons",
+          "settings": {
+            "show_smart_checkout": false,
+            "enable_gift_card_recipient_form": true
+          }
+        },
         "custom_liquid_irFDPH": {
           "type": "custom-liquid",
           "settings": {
@@ -74,19 +85,6 @@
           "type": "custom-liquid",
           "settings": {
             "custom-liquid": "<h4>Para realizar un pedido, por favor envíanos un WhatsApp o un correo electrónico. +523331716981 / waycapmx@gmail.com</h4>"
-          }
-        },
-        "quantity-selector": {
-          "type": "quantity-selector",
-          "disabled": true,
-          "settings": {}
-        },
-        "payment-buttons": {
-          "type": "payment-buttons",
-          "disabled": true,
-          "settings": {
-            "show_smart_checkout": false,
-            "enable_gift_card_recipient_form": true
           }
         },
         "variant_inventory_level_3XQz96": {
@@ -123,10 +121,10 @@
         "product-options",
         "linked-products",
         "hulk_discounts_offer_table_block_fQFaPc",
-        "custom_liquid_irFDPH",
-        "custom_liquid_zQRJMH",
         "quantity-selector",
         "payment-buttons",
+        "custom_liquid_irFDPH",
+        "custom_liquid_zQRJMH",
         "variant_inventory_level_3XQz96",
         "4a4a330d-e558-45f9-bcce-4010e886aa67",
         "cfe076cf-acd7-41cf-8945-0c53825d4481",
