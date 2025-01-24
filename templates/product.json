@@ -189,11 +189,32 @@
         "show_dynamic_checkout_button": false,
         "enable_on_mobile": true
       }
+    },
+    "advanced_layout_custom_html_Cp98yW": {
+      "type": "advanced-layout--custom-html",
+      "blocks": {
+        "html_Wkwpgm": {
+          "type": "html",
+          "settings": {
+            "code": "<style>\n.quantity-controls__outer.swatches-wrapper, .product-page--submit-action {\n    display: none;\n}\n</style>",
+            "width": "100%"
+          }
+        }
+      },
+      "block_order": [
+        "html_Wkwpgm"
+      ],
+      "settings": {
+        "section_width": "full",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
     }
   },
   "order": [
     "main",
     "alireviews-section-7bbd763d-f8ec-4b57-b986-1bda7078b8f3",
-    "product-recommendations"
+    "product-recommendations",
+    "advanced_layout_custom_html_Cp98yW"
   ]
 }
