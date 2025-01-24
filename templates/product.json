@@ -67,12 +67,10 @@
         },
         "quantity-selector": {
           "type": "quantity-selector",
-          "disabled": true,
           "settings": {}
         },
         "payment-buttons": {
           "type": "payment-buttons",
-          "disabled": true,
           "settings": {
             "show_smart_checkout": false,
             "enable_gift_card_recipient_form": true
