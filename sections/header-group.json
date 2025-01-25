@@ -107,7 +107,8 @@
         "#text-account {position: relative; top: 85px; left: 43rem;}",
         "#site-header svg:not(.icon-caret) {height: 40px;}",
         ".mobile-header--wrapper {background-color: white;}",
-        ".header-icons ul li a{display:none;}"
+        ".header-icons ul li a {display: none;}",
+        ".localization-form button{display:none;}"
       ],
       "settings": {
         "sticky_header": true,
