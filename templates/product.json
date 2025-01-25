@@ -76,16 +76,10 @@
             "enable_gift_card_recipient_form": true
           }
         },
-        "custom_liquid_irFDPH": {
-          "type": "custom-liquid",
-          "settings": {
-            "custom-liquid": "<h4>To place an order, please Whatsapp or email us. +523331716981 / waycapmx@gmail.com</h4>"
-          }
-        },
         "custom_liquid_zQRJMH": {
           "type": "custom-liquid",
           "settings": {
-            "custom-liquid": "<h4>Para realizar un pedido, por favor envíanos un WhatsApp o un correo electrónico. +523331716981 / waycapmx@gmail.com</h4>"
+            "custom-liquid": "<h4>Ordene más de 15 cajas - Por favor contáctenos +523331716981 / waycapmx@gmail.com</h4>"
           }
         },
         "variant_inventory_level_3XQz96": {
@@ -124,7 +118,6 @@
         "hulk_discounts_offer_table_block_fQFaPc",
         "quantity-selector",
         "payment-buttons",
-        "custom_liquid_irFDPH",
         "custom_liquid_zQRJMH",
         "variant_inventory_level_3XQz96",
         "4a4a330d-e558-45f9-bcce-4010e886aa67",
