@@ -131,14 +131,14 @@
         "disabled": false,
         "settings": {}
       },
-      "6744518860797519131": {
-        "type": "shopify://apps/langwill-translate/blocks/floating-selector/35c05b0e-4f05-4fc9-adc7-77b6ccb6b2ca",
-        "disabled": false,
-        "settings": {}
-      },
       "18423266570658624584": {
         "type": "shopify://apps/best-currency-converter/blocks/doubly/267afa86-a419-4d5b-a61b-556038e7294d",
         "disabled": false,
+        "settings": {}
+      },
+      "6744518860797519131": {
+        "type": "shopify://apps/langwill-translate/blocks/floating-selector/35c05b0e-4f05-4fc9-adc7-77b6ccb6b2ca",
+        "disabled": true,
         "settings": {}
       }
     }
