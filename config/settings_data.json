@@ -342,7 +342,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".offer-options-list .option-total-price {margin-top: 8px; inline-size: max-content;}"
+      ".offer-options-list .option-total-price {margin-top: 8px; inline-size: max-content; display:flex;}"
     ]
   }
 }
