@@ -139,7 +139,7 @@
         "colors": "white",
         "subheading": "",
         "title": "Los Mas Vedidos",
-        "collection": "all-products",
+        "collection": "products",
         "columns": 5,
         "rows": 3,
         "product_limit": 12,
