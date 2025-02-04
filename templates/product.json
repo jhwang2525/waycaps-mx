@@ -38,8 +38,8 @@
             "stock-range": 20,
             "show-stock-count": true,
             "stock-level-notice": "always",
-            "in-stock-message": "Available (Pcs)",
-            "low-stock-message": "Available (Pcs)",
+            "in-stock-message": "Disponible (piezas)",
+            "low-stock-message": "Disponible (piezas)",
             "out-of-stock-message": "Back in soon"
           }
         },
