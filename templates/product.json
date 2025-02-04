@@ -31,7 +31,6 @@
         },
         "stock_level_indicator_6jeYaa": {
           "type": "stock-level-indicator",
-          "disabled": true,
           "settings": {
             "stock-level-indicator-style": "bar",
             "bar-indicator-color": "standard",
@@ -39,8 +38,8 @@
             "stock-range": 20,
             "show-stock-count": true,
             "stock-level-notice": "always",
-            "in-stock-message": "Ready to ship",
-            "low-stock-message": "Selling fast",
+            "in-stock-message": "Available (Pcs)",
+            "low-stock-message": "Available (Pcs)",
             "out-of-stock-message": "Back in soon"
           }
         },
