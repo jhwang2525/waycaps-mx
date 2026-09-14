@@ -224,7 +224,7 @@
 
                   {% comment %} Size guide {% endcomment %}
                   {% if section.settings.size_guide_link != blank and section.settings.size_guide_message != blank %}
-                    {% render 'size-guide' with section: section %}
+                    {% render 'size-guide' with section, section: section %}
                     {% comment %} Size guide link (no specific variant) {% endcomment %}
                     {% if section.settings.size_guide_variant == blank %}
                       <div class="col-md-12">
@@ -406,20 +406,7 @@
               {% render 'text-with-icon', icon: block.settings.icon, text: block.settings.text, link: block.settings.link, block_attributes: block.shopify_attributes, borders: true %}
 
             {% when 'stock-level-indicator' %}
-              {% render 'stock-level-indicator' with 
-                block_attributes: block.shopify_attributes,
-                stock_product: product,
-                stock_variant: current_variant,
-                stock_style: block.settings.stock-level-indicator-style,
-                stock_bar_color: block.settings.bar-indicator-color,
-                stock_indicator_animation: block.settings.stock_indicator_animation,
-                stock_amt: block.settings.stock-range,
-                stock_notice: block.settings.stock-level-notice,
-                show_stock_count: block.settings.show-stock-count,
-                in_stock_message: block.settings.in-stock-message,
-                low_stock_message: block.settings.low-stock-message,
-                out_of_stock_message: block.settings.out-of-stock-message
-              %}
+              {% render 'stock-level-indicator' with block_attributes, block_attributes: block.shopify_attributes, stock_product: product, stock_variant: current_variant, stock_style: block.settings.stock-level-indicator-style, stock_bar_color: block.settings.bar-indicator-color, stock_indicator_animation: block.settings.stock_indicator_animation, stock_amt: block.settings.stock-range, stock_notice: block.settings.stock-level-notice, show_stock_count: block.settings.show-stock-count, in_stock_message: block.settings.in-stock-message, low_stock_message: block.settings.low-stock-message, out_of_stock_message: block.settings.out-of-stock-message %}
               
           {% endcase %}
         {% endfor %}
@@ -1396,3 +1383,31 @@
     }
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'size-guide' with section: section %}"
+  to: "{% render 'size-guide' with section, section: section %}"
+  position: 11255..11311
+- from: "{% render 'stock-level-indicator' with \n                block_attributes:
+    block.shopify_attributes,\n                stock_product: product,\n                stock_variant:
+    current_variant,\n                stock_style: block.settings.stock-level-indicator-style,\n
+    \               stock_bar_color: block.settings.bar-indicator-color,\n                stock_indicator_animation:
+    block.settings.stock_indicator_animation,\n                stock_amt: block.settings.stock-range,\n
+    \               stock_notice: block.settings.stock-level-notice,\n                show_stock_count:
+    block.settings.show-stock-count,\n                in_stock_message: block.settings.in-stock-message,\n
+    \               low_stock_message: block.settings.low-stock-message,\n                out_of_stock_message:
+    block.settings.out-of-stock-message\n              %}"
+  to: "{% render 'stock-level-indicator' with block_attributes, block_attributes:
+    block.shopify_attributes, stock_product: product, stock_variant: current_variant,
+    stock_style: block.settings.stock-level-indicator-style, stock_bar_color: block.settings.bar-indicator-color,
+    stock_indicator_animation: block.settings.stock_indicator_animation, stock_amt:
+    block.settings.stock-range, stock_notice: block.settings.stock-level-notice, show_stock_count:
+    block.settings.show-stock-count, in_stock_message: block.settings.in-stock-message,
+    low_stock_message: block.settings.low-stock-message, out_of_stock_message: block.settings.out-of-stock-message
+    %}"
+  position: 19493..20132
+{% endcomment %}

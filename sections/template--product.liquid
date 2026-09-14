@@ -471,7 +471,7 @@
                 <!-- Size guide -->
                 {% if section.settings.size_guide_link != blank and section.settings.size_guide_message != blank %}
                   <div class="size-guide__wrapper">
-                    {% render 'size-guide' with section: section %}
+                    {% render 'size-guide' with section, section: section %}
                     <!-- Size guide link (no specific variant) -->
                     {% if section.settings.size_guide_variant == blank %}
                       <div class="col-md-12">
@@ -598,18 +598,18 @@
                 <div
                   {{ block.shopify_attributes }}
                 >
-                  {% render 'complementary-products-block' with block_settings: block.settings %}
+                  {% render 'complementary-products-block' with block_settings, block_settings: block.settings %}
                 </div> 
 
               {% when 'cross-sells' %}
 
                 {% if block.settings.cross_sell_product_1 != blank or block.settings.cross_sell_product_2 != blank or block.settings.cross_sell_product_3 != blank %}
-                  {% render 'cross-sells' with block_settings: block.settings, block_attributes: block.shopify_attributes %}
+                  {% render 'cross-sells' with block_settings, block_settings: block.settings, block_attributes: block.shopify_attributes %}
 				        {% endif %}
 
               {% when 'social-sharing' %}
 
-                {% render 'social-sharing' with block: block, block_attributes: block.shopify_attributes %}
+                {% render 'social-sharing' with block, block: block, block_attributes: block.shopify_attributes %}
 
               {% when 'local-pickup' %}
 
@@ -733,20 +733,7 @@
                 <a href="/pages/contact" class="btn request-a-quote-button" data-modal-open-btn="request-a-quote__{{ section.id }}" {{ block.shopify_attributes }}>{{ block.settings.button_label }}</a>
 
               {% when 'stock-level-indicator' %}
-                {% render 'stock-level-indicator' with 
-                  block_attributes: block.shopify_attributes,
-                  stock_product: product,
-                  stock_variant: current_variant,
-                  stock_style: block.settings.stock-level-indicator-style,
-                  stock_bar_color: block.settings.bar-indicator-color,
-                  stock_indicator_animation: block.settings.stock_indicator_animation,
-                  stock_amt: block.settings.stock-range,
-                  stock_notice: block.settings.stock-level-notice,
-                  show_stock_count: block.settings.show-stock-count,
-                  in_stock_message: block.settings.in-stock-message,
-                  low_stock_message: block.settings.low-stock-message,
-                  out_of_stock_message: block.settings.out-of-stock-message
-                %}
+                {% render 'stock-level-indicator' with block_attributes, block_attributes: block.shopify_attributes, stock_product: product, stock_variant: current_variant, stock_style: block.settings.stock-level-indicator-style, stock_bar_color: block.settings.bar-indicator-color, stock_indicator_animation: block.settings.stock_indicator_animation, stock_amt: block.settings.stock-range, stock_notice: block.settings.stock-level-notice, show_stock_count: block.settings.show-stock-count, in_stock_message: block.settings.in-stock-message, low_stock_message: block.settings.low-stock-message, out_of_stock_message: block.settings.out-of-stock-message %}
 
               {% endcase %}
             {% endfor %}
@@ -754,14 +741,7 @@
         {% endform %}
 
         {% if request_a_quote %}
-          {% render 'request-a-quote' with
-            heading: request_a_quote_heading,
-            text: request_a_quote_text,
-            name_input_type: name_input_type,
-            phone_input_type: phone_input_type,
-            message_input_type: message_input_type
-            block_id: block_id
-          %}
+          {% render 'request-a-quote' with heading, heading: request_a_quote_heading, text: request_a_quote_text, name_input_type: name_input_type, phone_input_type: phone_input_type, message_input_type: message_input_type, block_id: block_id %}
         {% endif %}
 
         {% if section.settings.form_position == "below-payment-buttons" and section.settings.show_out_of_stock_email %}
@@ -2982,3 +2962,59 @@
     ]
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'size-guide' with section: section %}"
+  to: "{% render 'size-guide' with section, section: section %}"
+  position: 23609..23665
+- from: "{% render 'complementary-products-block' with block_settings: block.settings
+    %}"
+  to: "{% render 'complementary-products-block' with block_settings, block_settings:
+    block.settings %}"
+  position: 30569..30664
+- from: "{% render 'cross-sells' with block_settings: block.settings, block_attributes:
+    block.shopify_attributes %}"
+  to: "{% render 'cross-sells' with block_settings, block_settings: block.settings,
+    block_attributes: block.shopify_attributes %}"
+  position: 30914..31036
+- from: "{% render 'social-sharing' with block: block, block_attributes: block.shopify_attributes
+    %}"
+  to: "{% render 'social-sharing' with block, block: block, block_attributes: block.shopify_attributes
+    %}"
+  position: 31121..31219
+- from: "{% render 'stock-level-indicator' with \n                  block_attributes:
+    block.shopify_attributes,\n                  stock_product: product,\n                  stock_variant:
+    current_variant,\n                  stock_style: block.settings.stock-level-indicator-style,\n
+    \                 stock_bar_color: block.settings.bar-indicator-color,\n                  stock_indicator_animation:
+    block.settings.stock_indicator_animation,\n                  stock_amt: block.settings.stock-range,\n
+    \                 stock_notice: block.settings.stock-level-notice,\n                  show_stock_count:
+    block.settings.show-stock-count,\n                  in_stock_message: block.settings.in-stock-message,\n
+    \                 low_stock_message: block.settings.low-stock-message,\n                  out_of_stock_message:
+    block.settings.out-of-stock-message\n                %}"
+  to: "{% render 'stock-level-indicator' with block_attributes, block_attributes:
+    block.shopify_attributes, stock_product: product, stock_variant: current_variant,
+    stock_style: block.settings.stock-level-indicator-style, stock_bar_color: block.settings.bar-indicator-color,
+    stock_indicator_animation: block.settings.stock_indicator_animation, stock_amt:
+    block.settings.stock-range, stock_notice: block.settings.stock-level-notice, show_stock_count:
+    block.settings.show-stock-count, in_stock_message: block.settings.in-stock-message,
+    low_stock_message: block.settings.low-stock-message, out_of_stock_message: block.settings.out-of-stock-message
+    %}"
+  position: 37208..37847
+- from: |-
+    {% render 'request-a-quote' with
+                heading: request_a_quote_heading,
+                text: request_a_quote_text,
+                name_input_type: name_input_type,
+                phone_input_type: phone_input_type,
+                message_input_type: message_input_type
+                block_id: block_id
+              %}
+  to: "{% render 'request-a-quote' with heading, heading: request_a_quote_heading,
+    text: request_a_quote_text, name_input_type: name_input_type, phone_input_type:
+    phone_input_type, message_input_type: message_input_type, block_id: block_id %}"
+  position: 37985..38220
+{% endcomment %}

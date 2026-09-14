@@ -54,7 +54,7 @@
   {% if enabled_on_mobile %}
     <div class="d-flex position-relative z-2 w-full quick-view-btn-container hide-m-up">
       <button id="quick-view-mobile" data-quick-view-trigger data-product-url="{{ button_product_url }}" class="w-full mt-0 mb-0 p-10 quick-view-button" aria-label="{{ 'collections.general.quick_view' | t }}">
-        {% render 'icons' with icon: 'quick_view', icon_fill_color: settings.add-to-cart-background-color, iconColor: settings.add-to-cart-text-color %}
+        {% render 'icons' with icon, icon: 'quick_view', icon_fill_color: settings.add-to-cart-background-color, iconColor: settings.add-to-cart-text-color %}
       </button>
     </div>
   {% endif %}
@@ -247,3 +247,15 @@
     {{ quick_view_product | json }}
   </script>
 </quick-view>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'icons' with icon: 'quick_view', icon_fill_color: settings.add-to-cart-background-color,
+    iconColor: settings.add-to-cart-text-color %}"
+  to: "{% render 'icons' with icon, icon: 'quick_view', icon_fill_color: settings.add-to-cart-background-color,
+    iconColor: settings.add-to-cart-text-color %}"
+  position: 2298..2448
+{% endcomment %}

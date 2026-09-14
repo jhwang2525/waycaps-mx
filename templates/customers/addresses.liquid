@@ -32,7 +32,7 @@
           aria-expanded="false"
           onclick="Shopify.CustomerAddress.toggleForm({{address.id}}); return false"
         >
-          {{ 'customer.addresses.edit' | t | }}
+          {{ 'customer.addresses.edit' | t }}
         </button>
 
         <span class="action_delete btn">{{ 'customer.addresses.delete' | t | delete_customer_address_link: address.id }}</span>
@@ -216,3 +216,13 @@
   </div>
 
 </div><!-- /.content -->
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{{ 'customer.addresses.edit' | t | }}"
+  to: "{{ 'customer.addresses.edit' | t }}"
+  position: 1506..1541
+{% endcomment %}

@@ -16,7 +16,7 @@
             {% endunless %}
 
             {% if section.settings.quick_view_enabled %}
-                {% render 'quick-view-drawer' with variant_has_label: section.settings.show_variant_labels %}
+                {% render 'quick-view-drawer' with variant_has_label, variant_has_label: section.settings.show_variant_labels %}
             {% endif %}
 
             <div class="row" data-section-id="{{ section.id }}">
@@ -230,3 +230,15 @@
     ]
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'quick-view-drawer' with variant_has_label: section.settings.show_variant_labels
+    %}"
+  to: "{% render 'quick-view-drawer' with variant_has_label, variant_has_label: section.settings.show_variant_labels
+    %}"
+  position: 793..905
+{% endcomment %}

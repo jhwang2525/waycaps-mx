@@ -134,7 +134,7 @@
 
                     <div class="collage-builder__background-video collage-builder__background-video--desktop collage-builder__background-video--{{ block_aspect_type }} type-{{ type }}{% if type == 'youtube' or type == 'vimeo' %} embed-container{% endif %}">
                       {% if block.settings.video %}
-                        {% render 'native-video' with video: block.settings.video, autoplay: true, loop: true, muted: true, overlay: false, controls: false %}
+                        {% render 'native-video' with video, video: block.settings.video, autoplay: true, loop: true, muted: true, overlay: false, controls: false %}
                       {% elsif block.settings.video_url %}
                         <wetheme-video
                           hero="true"
@@ -152,7 +152,7 @@
                     {% if block.settings.mobile_video_url != blank or block.settings.mobile_video %}
                       <div class="collage-builder__background-video collage-builder__background-video--mobile type-{{ mobile_type }}{% if type == 'youtube' or type == 'vimeo' %} embed-container{% endif %}">
                         {% if block.settings.mobile_video %}
-                          {% render 'native-video' with video: block.settings.mobile_video, autoplay: true, loop: true, muted: true, overlay: false, controls: false %}
+                          {% render 'native-video' with video, video: block.settings.mobile_video, autoplay: true, loop: true, muted: true, overlay: false, controls: false %}
                         {% elsif block.settings.mobile_video_url %}
                           <wetheme-video
                             hero="true"
@@ -192,7 +192,7 @@
                   <div class="collage-builder__media-wrapper">
                     <div class="collage-builder__video collage-builder__video--desktop type-{{ type }}{% if type == 'youtube' or type == 'vimeo' %} embed-container{% endif %}">
                       {% if block.settings.video %}
-                        {% render 'native-video' with video: block.settings.video, autoplay: false, loop: false, muted: false, overlay: true, controls: true %}
+                        {% render 'native-video' with video, video: block.settings.video, autoplay: false, loop: false, muted: false, overlay: true, controls: true %}
                       {% elsif block.settings.video_url %}
                         <wetheme-video
                           hero="false"
@@ -209,7 +209,7 @@
                     {% if block.settings.mobile_video_url != blank or block.settings.mobile_video %}
                       <div class="collage-builder__video collage-builder__video--mobile type-{{ mobile_type }}{% if type == 'youtube' or type == 'vimeo' %} embed-container{% endif %}">
                         {% if block.settings.mobile_video %}
-                          {% render 'native-video' with video: block.settings.mobile_video, autoplay: false, loop: false, muted: false, overlay: true, controls: true %}
+                          {% render 'native-video' with video, video: block.settings.mobile_video, autoplay: false, loop: false, muted: false, overlay: true, controls: true %}
                         {% elsif block.settings.mobile_video_url %}
                           <wetheme-video
                             hero="false"
@@ -1564,3 +1564,30 @@
     }
   }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'native-video' with video: block.settings.video, autoplay: true,
+    loop: true, muted: true, overlay: false, controls: false %}"
+  to: "{% render 'native-video' with video, video: block.settings.video, autoplay:
+    true, loop: true, muted: true, overlay: false, controls: false %}"
+  position: 7645..7786
+- from: "{% render 'native-video' with video: block.settings.mobile_video, autoplay:
+    true, loop: true, muted: true, overlay: false, controls: false %}"
+  to: "{% render 'native-video' with video, video: block.settings.mobile_video, autoplay:
+    true, loop: true, muted: true, overlay: false, controls: false %}"
+  position: 8725..8873
+- from: "{% render 'native-video' with video: block.settings.video, autoplay: false,
+    loop: false, muted: false, overlay: true, controls: true %}"
+  to: "{% render 'native-video' with video, video: block.settings.video, autoplay:
+    false, loop: false, muted: false, overlay: true, controls: true %}"
+  position: 10691..10833
+- from: "{% render 'native-video' with video: block.settings.mobile_video, autoplay:
+    false, loop: false, muted: false, overlay: true, controls: true %}"
+  to: "{% render 'native-video' with video, video: block.settings.mobile_video, autoplay:
+    false, loop: false, muted: false, overlay: true, controls: true %}"
+  position: 11751..11900
+{% endcomment %}

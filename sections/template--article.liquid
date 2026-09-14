@@ -75,7 +75,7 @@
 				{% for block in section.blocks %}
 				{% case block.type %}
 				{% when 'social-sharing' %}
-				{% render 'social-sharing' with block: block, block_attributes: block.shopify_attributes %}
+				{% render 'social-sharing' with block, block: block, block_attributes: block.shopify_attributes %}
 				{% endcase %}
 				{% endfor %}
 
@@ -451,4 +451,15 @@
 }
 ]
 }
-{% endschema %}
+{% endschema %}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'social-sharing' with block: block, block_attributes: block.shopify_attributes
+    %}"
+  to: "{% render 'social-sharing' with block, block: block, block_attributes: block.shopify_attributes
+    %}"
+  position: 2392..2490
+{%- endcomment -%}

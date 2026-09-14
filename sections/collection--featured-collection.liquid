@@ -30,7 +30,7 @@
           {% assign sold_out_variants_enabled = block.settings.show_sold_out_variants %}
           {% assign show_dynamic_checkout = block.settings.show_dynamic_checkout_button %}
           {% assign has_quick_view = true %}
-          {% render 'quick-view-drawer' with variant_has_label: show_variant_labels %}
+          {% render 'quick-view-drawer' with variant_has_label, variant_has_label: show_variant_labels %}
   {% endcase %}
 {% endfor %}
 
@@ -156,7 +156,7 @@
                   {% for block in section.blocks %}
                     {% case block.type %}
                       {% when 'quick-view' %}
-                        {% render 'quick-view' with img_aspect_ratio: img_aspect_ratio, enabled_on_mobile: quick_view_mobile_enabled, button_product_url: liquidObject.url, quick_view_product: liquidObject, scope: liquidObject.id, show_discount: discount_display, show_product_description: description_enabled, show_variant_labels: variant_labels_enabled, show_sold_out_variants: show_sold_out_variants, show_dynamic_checkout_button: show_dynamic_checkout %}
+                        {% render 'quick-view' with img_aspect_ratio, img_aspect_ratio: img_aspect_ratio, enabled_on_mobile: quick_view_mobile_enabled, button_product_url: liquidObject.url, quick_view_product: liquidObject, scope: liquidObject.id, show_discount: discount_display, show_product_description: description_enabled, show_variant_labels: variant_labels_enabled, show_sold_out_variants: show_sold_out_variants, show_dynamic_checkout_button: show_dynamic_checkout %}
                     {% endcase %}
                   {% endfor %}
                 </div>
@@ -662,3 +662,27 @@
     }
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'quick-view-drawer' with variant_has_label: show_variant_labels
+    %}"
+  to: "{% render 'quick-view-drawer' with variant_has_label, variant_has_label: show_variant_labels
+    %}"
+  position: 1567..1662
+- from: "{% render 'quick-view' with img_aspect_ratio: img_aspect_ratio, enabled_on_mobile:
+    quick_view_mobile_enabled, button_product_url: liquidObject.url, quick_view_product:
+    liquidObject, scope: liquidObject.id, show_discount: discount_display, show_product_description:
+    description_enabled, show_variant_labels: variant_labels_enabled, show_sold_out_variants:
+    show_sold_out_variants, show_dynamic_checkout_button: show_dynamic_checkout %}"
+  to: "{% render 'quick-view' with img_aspect_ratio, img_aspect_ratio: img_aspect_ratio,
+    enabled_on_mobile: quick_view_mobile_enabled, button_product_url: liquidObject.url,
+    quick_view_product: liquidObject, scope: liquidObject.id, show_discount: discount_display,
+    show_product_description: description_enabled, show_variant_labels: variant_labels_enabled,
+    show_sold_out_variants: show_sold_out_variants, show_dynamic_checkout_button:
+    show_dynamic_checkout %}"
+  position: 8105..8556
+{% endcomment %}

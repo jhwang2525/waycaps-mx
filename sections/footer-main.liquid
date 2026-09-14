@@ -72,7 +72,7 @@
 						<div class="{{ footer_item_width }} footer-block--wrapper" {{ block.shopify_attributes }}>
 							<h3 class="type-subheading type-subheading--1">{{ block.settings.menu_title | escape }}</h3>
 							<div class="footer__social-icons">
-								{% render 'social-links' with class: 'footer-block' %}
+								{% render 'social-links' with class, class: 'footer-block' %}
 							</div>
 						</div>
 
@@ -485,3 +485,13 @@
     }
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'social-links' with class: 'footer-block' %}"
+  to: "{% render 'social-links' with class, class: 'footer-block' %}"
+  position: 3177..3238
+{% endcomment %}

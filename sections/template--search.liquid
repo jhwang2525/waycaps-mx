@@ -24,7 +24,7 @@
       {% assign sold_out_variants_enabled = block.settings.show_sold_out_variants %}
       {% assign show_dynamic_checkout = block.settings.show_dynamic_checkout_button %}
       {% assign has_quick_view = true %}
-      {% render 'quick-view-drawer' with variant_has_label: show_variant_labels %}
+      {% render 'quick-view-drawer' with variant_has_label, variant_has_label: show_variant_labels %}
   {% endcase %}
 {% endfor %}
 
@@ -1014,3 +1014,15 @@
     ]
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'quick-view-drawer' with variant_has_label: show_variant_labels
+    %}"
+  to: "{% render 'quick-view-drawer' with variant_has_label, variant_has_label: show_variant_labels
+    %}"
+  position: 1555..1650
+{% endcomment %}
